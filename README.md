@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/021c2d4f-abcb-4a0a-8e1a-6e8a4d2db703/deploy-status)](https://app.netlify.com/sites/partypartydsm/deploys)
+
 # Party! Party!
 
 This repository contains the codebase that powers the Party! Party! website.
@@ -18,7 +20,7 @@ development and deployment easier. They include:
 [Gulp]: https://gulpjs.com/
 [Sass]: https://sass-lang.com/
 
-## Develop
+## Development
 
 1. `cd` into this directory and run `gulp serve` to start the Express server.
    This should open `http://localhost:3000` in a browser window.
@@ -31,6 +33,10 @@ Use ctrl+C to quit the `serve` and/or `watch` processes to stop them.
 
 If you ever want to compile the src/ files into dist/ without needing the
 `serve` or `watch` behavior, simply run `gulp build`.
+
+## Deployment
+
+Any changes to the remote `master` branch will automatically deploy to Netlify.
 
 ## Repository structure
 
