@@ -1,0 +1,8 @@
+# The built directory.
+dist
+
+# NPM dependencies.
+node_modules
+
+# Useless system files.
+.DS_Store

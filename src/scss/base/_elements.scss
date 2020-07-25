@@ -1,0 +1,20 @@
+// Styles that globally target HTML elements (relatively uncommon) live here.
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border-top: rhythm(1) solid $color-red;
+  margin: 0;
+  padding: rhythm(3);
+
+  @include breakpoint($from: medium) {
+    border-top-color: $color-blue;
+  }
+
+  @include breakpoint($from: large) {
+    border-top-color: $color-yellow;
+  }
+}

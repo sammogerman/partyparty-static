@@ -1,0 +1,26 @@
+// Contains all Sass variables.
+//
+// @see https://sass-lang.com/documentation/variables
+
+// Breakpoints.
+$breakpoints: (
+  medium: 720px,
+  large: 1024px
+) !default;
+
+// Colors.
+$color-blue: #00008B;
+$color-red: #8B0000;
+$color-yellow: #FC0;
+
+// Fonts.
+$font-family-sans: 'sans-serif';
+$font-family-serif: 'serif';
+
+// Font weights.
+$font-weight-regular: 400;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+
+// Units.
+$rhythm: 8px;

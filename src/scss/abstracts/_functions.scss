@@ -1,0 +1,13 @@
+// Contains all Sass functions.
+//
+// @see https://sass-lang.com/documentation/values/functions
+
+// Multiplies the provided number by the rhythm unit.
+//
+// Useful when margin and padding are all measured in a multiple of a common
+// rhythm, such as 8.
+//
+// @param {number} $multiplier - The desired number of units of rhythm.
+@function rhythm($multiplier) {
+  @return $multiplier * $rhythm;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "partypartydsm",
+  "version": "1.0.0",
+  "scripts": {},
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "browser-sync": "^2.26.10",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-nodemon": "^2.5.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "path": "^0.12.7",
+    "streamqueue": "^1.1.2"
+  },
+  "dependencies": {}
+}

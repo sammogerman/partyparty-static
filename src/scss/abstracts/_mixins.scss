@@ -1,0 +1,29 @@
+// Contains all Sass mixins.
+//
+// @see https://sass-lang.com/documentation/at-rules/mixin
+
+// Creates a media query to apply styles to a given breakpoint.
+//
+// @param {string} $from - The name of a breakpoint (within our $breakpoints
+//   variable). The styles within will be applied to all page widths at this
+//   breakpoint and larger.
+// @param {string} $until - The name of a breakpoint (within our $breakpoints
+//   variable). The styles within will be applied to all page widths below this
+//   breakpoint. In a mobile-first approach, this is used less often.
+@mixin breakpoint($from: false, $until: false) {
+  @if $from {
+    $px: map-get($breakpoints, $from);
+
+    @media screen and (min-width: $px) {
+      @content;
+    }
+  }
+
+  @if $until {
+    $px: map-get($breakpoints, $until) - 1;
+
+    @media screen and (max-width: $px) {
+      @content;
+    }
+  }
+}
