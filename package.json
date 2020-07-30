@@ -1,7 +1,9 @@
 {
   "name": "partypartydsm",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "start": "node server.js"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
@@ -17,5 +19,17 @@
     "path": "^0.12.7",
     "streamqueue": "^1.1.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/021c2d4f-abcb-4a0a-8e1a-6e8a4d2db703/deploy-status)](https://app.netlify.com/sites/partypartydsm/deploys)",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guschilds/partyparty-static.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guschilds/partyparty-static/issues"
+  },
+  "homepage": "https://github.com/guschilds/partyparty-static#readme"
 }
