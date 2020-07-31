@@ -22,8 +22,10 @@ development and deployment easier. They include:
 
 ## Development
 
-1. `cd` into this directory and run `gulp serve` to start the Express server.
-   This should open `http://localhost:3000` in a browser window.
+1. Install Node.js/npm if you don't already have them.
+1. `cd` into this directory and run `npm install` to install the dependencies.
+1. Run `gulp serve` to start the Express server. This should open
+   `http://localhost:3000` in a browser window.
 1. In a separate terminal, `cd` into this directory and run `gulp watch`.
 1. Edit files in the src/ directory. As you do so, `gulp watch` will compile the
    src/ files into the dist/ directory. As the dist/ files are updated, the page
