@@ -1,0 +1,147 @@
+.homepage {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* This was my attempt at the background color stuff, but it didn't work at all lol probably need some guidance on this.
+
+.homepage:before {
+  background-color: $color-stage-light-blue;
+  transform: skew(10deg, 10deg);
+}
+
+.homepage:after {
+  background-color: $color-stage-light-red;
+  transform: skew(170deg, 170deg);
+}
+*/
+
+
+.homepage__title {
+  align-items: center;
+  background-color: $color-title-background;
+  display: flex;
+  font-size: rhythm(4);
+  font-weight: $font-weight-bold;
+  height: 70px;
+  justify-content: center;
+  margin-top: 256px;
+  margin-bottom: rhythm(7);
+  text-align: center;
+  text-transform: uppercase;
+  width: 327px;
+
+
+  @include breakpoint($from: large) {
+    margin-bottom: rhythm(10);
+    font-size: rhythm(5.5);
+    height: 84px;
+    width: 293px;
+  }
+}
+
+.homepage__member-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-left: rhythm(2);
+  margin-right: rhythm(2);
+  padding: 0;
+
+  @include breakpoint($from: medium) {
+    flex-wrap: nowrap;
+    margin-left: rhythm(5);
+    margin-right: rhythm(5);
+  }
+
+  @include breakpoint($from: large) {
+    margin-left: 190px;
+    margin-right: 190px;
+  }
+}
+
+.homepage__member-list__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 181px;
+  justify-content: center;
+  padding: 0 20px 120px 20px;
+  text-align: center;
+  width: 160px;
+
+  /*
+  This last child selects the last list name to make it centered at small size,
+  then back in line at medium size. There's probably a better way to do this...?
+  */
+  &:last-child {
+    margin-top: 120px;
+    width: 100%;
+  }
+
+  @include breakpoint($from: medium) {
+    height: 300px;
+    width: 208px;
+    &:last-child {
+      margin-top: 0;
+      width: 33%;
+    }
+  }
+  @include breakpoint($from: large) {
+    height: 300px;
+    width: 208px;
+  }
+}
+
+.homepage__member-list__image {
+  background-color: gray;
+  border-radius: 50%;
+  height: rhythm(15);
+  width: rhythm(15);
+  
+  @include breakpoint($from: large) {
+    height: 208px;
+    width: 208px;
+  }
+}
+
+.homepage__member-list__name {
+  color: $color-band-member-info;
+  font-weight: $font-weight-bold;
+  font-size: 18px;
+
+  margin-top: 20.4px;
+  @include breakpoint($from: medium) {
+    font-size: rhythm(2.5);
+    margin-top: rhythm(3);
+  }
+  @include breakpoint($from: large) {
+    font-size: rhythm(3);
+    margin-top: 26px;
+  }
+}
+
+.homepage__member-list__instrument {
+  color: $color-band-member-info;
+  font-size: rhythm(2);
+  font-weight: $font-weight-regular;
+
+  @include breakpoint($from: large) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/*
+I added these icon placeholders last and realized they are going to mess up all my margins 
+so I'm commenting them out for the time being :-)
+
+.homepage__member-list-icon {
+  background-color: gray;
+  width: 62px;
+  height: 62px;
+}
+*/
