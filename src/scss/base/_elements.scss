@@ -1,4 +1,7 @@
 // Styles that globally target HTML elements (relatively uncommon) live here.
+* {
+  box-sizing: border-box;
+}
 
 html {
   margin: 0;
@@ -6,17 +9,10 @@ html {
 }
 
 body {
-  border-top: rhythm(1) solid $color-red;
   background: $color-dark-blue;
   color: $color-white;
   font-family: 'Rubik', sans-serif;
   margin: 0;
-
-  @include breakpoint($from: medium) {
-    border-top-color: $color-blue;
-  }
-
-  @include breakpoint($from: large) {
-    border-top-color: $color-yellow;
-  }
+  padding: rhythm(3);
+  -webkit-font-smoothing: antialiased; 
 }
