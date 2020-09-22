@@ -1,5 +1,5 @@
 .header {
-  background-color: $color-mobile-menu-background;
+  background-color: $color-black;
 }
 
 .header__main-nav {
@@ -13,20 +13,23 @@
   padding: 14px rhythm(2);
 
   @include breakpoint($from: medium) {
-    background-color: $color-black;
-    border: none;
+    height: 99px;
+    padding: rhythm(2) 0 rhythm(2) rhythm(7);
     position: sticky;
-    padding: rhythm(2) 0 rhythm(2) rhythm(2); //random temporary numbers until we get the tablet size design
   }
 
   @include breakpoint($from: large) {
-    padding: rhythm(5) 0 rhythm(5) rhythm(1);
+    height: 102px;
+    padding: rhythm(5) 0 rhythm(5) 100px;
   }
 }
 
 .header__logo {
   font-weight: $font-weight-medium;
-  margin-left: rhythm(2);
+  
+  @include breakpoint($from: large) {
+    font-size: 20px;
+  }
 }
 
 .header__button {
@@ -40,30 +43,36 @@
 .header__main-nav-list {
   display: none;
   flex-direction: column;
+  font-size: rhythm(2.5);
+  font-weight: $font-weight-bold;
+  letter-spacing: 2.5px;
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   position: fixed;
-  top: 70px;
+  top: rhythm(6);
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 2;
-  font-weight: $font-weight-bold;
-  font-size: 20px;
   
   @include breakpoint($from: medium) {
-    background-color: transparent;
     display: flex;
     flex-direction: row;
+    font-size: 16px;
+    margin: 0;
     position: static;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 18px;
   }
 }
 
 .header__main-nav-list--expanded {
   @include breakpoint($until: medium) {
     display: flex;
-    background-color: $color-mobile-menu-background;
-    padding: 0 16px;
+    background-color: $color-black;
+    padding: rhythm(3.5) rhythm(2) 0 rhythm(2);
   }
 }
 
@@ -73,7 +82,7 @@
 
   @include breakpoint($from: medium) {
     border: none;
-    margin-left: rhythm(1);
+    margin-left: rhythm(0.5);
   }
 }
 
@@ -83,16 +92,33 @@
   display: block;
   padding: rhythm(8) 115px;
   text-decoration: none;
-  
-  &:visited{
+  &:visited {
     color: $color-white;
   }
 
   @include breakpoint($from: medium) {
-    padding: rhythm(2); //random padding until we get tablet design
+    padding: 40px 16px;
   }
 
   @include breakpoint($from: large) {
-    padding: rhythm(5) rhythm(3.5) rhythm(5) rhythm(3.5); 
+    padding: rhythm(5) rhythm(3.5) rhythm(5) rhythm(3.5);
+  }
+}
+
+/*
+I added a new class for this because the last link behaves a little differently (e.g., no bottom border at mobile size, and different padding at larger sizes).
+Last-of-type worked great to get rid of the border, but not the padding. This is due to fact that all 4 links are technically the last of type/last children.
+But maybe there's a better way to accomplish this?
+*/
+
+.header__main-nav-last-link {
+  border: none;
+
+  @include breakpoint($from: medium) {
+    padding-right: 24px;
+  }
+
+  @include breakpoint($from: large) {
+    padding-right: rhythm(7);
   }
 }
