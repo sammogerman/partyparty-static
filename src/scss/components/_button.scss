@@ -1,13 +1,26 @@
 .button {
-    background-color: $color-button;
-    color: $color-white;
-    border-radius: 6px;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: $font-weight-bold;
-    letter-spacing: 0.25px;
-    line-height: rhythm(3);
-    padding: rhythm(2) rhythm(5);
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
+  background-color: $blue;
+  color: $color-white;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.25px;
+  line-height: rhythm(3);
+  padding: rhythm(2) rhythm(5);
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  &:hover {
+    background-color: $blue-hover;
+  }
+  &:active {
+    background-color: $blue-active;
+  }
+  &:focus {
+    background-color: $color-white;
+    color: $blue;
+    text-decoration: underline;
+    border: 2px solid $blue; //I'm not sure if this border is correct. 
+  }
 }
+
