@@ -27,3 +27,82 @@
     }
   }
 }
+
+//TODO add background color and spacing.
+@mixin title-1 {
+  color: $color-white;
+  font-size: 38px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.5px;
+  line-height: 38px;
+  text-align: center;
+
+  @include breakpoint($from: medium) {
+    font-size: rhythm(7);
+    line-height: rhythm(7);
+  }
+  @include breakpoint($from: large) {
+    font-size: rhythm(8);
+    letter-spacing: 0.75px;
+    line-height: rhythm(8);
+  }
+}
+
+@mixin title-2 {
+  color: $color-white;
+  font-size: 32px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.75px;
+  line-height: 34px;
+  text-align: center;
+
+  @include breakpoint($from: medium) {
+    font-size: 38px;
+    letter-spacing: 0.75px;
+    line-height: 40px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 44px;
+    letter-spacing: 1px;
+    line-height: 46px;
+  }
+}
+
+@mixin title-3 {
+  color: #191717;
+  font-size: 28px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0;
+  line-height: 36px;
+
+  @include breakpoint($from: medium) {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 36px;
+    letter-spacing: -0.25px;
+    line-height: 42px;
+    text-align: center;
+  }
+}
+
+@mixin title-4 {
+  color: #191717;
+  font-size: 24px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0;
+  line-height: 28px;
+
+  @include breakpoint($from: medium) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
