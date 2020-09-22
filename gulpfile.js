@@ -17,6 +17,14 @@ const streamqueue = require('streamqueue');
 sass.compiler = require('node-sass');
 
 /**
+ * Copies the static src/ image assets, such as icons, into the dist/ directory.
+ */
+gulp.task('assets', () =>
+  gulp.src('./src/assets/**/*')
+    .pipe(gulp.dest('./dist/assets/'))
+);
+
+/**
  * Processes the src/ HTML files and drops the results into the dist/ directory.
  *
  * This currently achieves the following:
@@ -107,6 +115,7 @@ gulp.task('serve',
  * Watches for /src file changes and runs the corresponding task(s).
  */
 gulp.task('watch', () => {
+  gulp.watch('./src/assets/**/*', gulp.parallel('assets'));
   gulp.watch('./src/html/**/*.html', gulp.parallel('html'));
   gulp.watch('./src/js/**/*.js', gulp.parallel('scripts'));
   gulp.watch('./src/scss/**/*.scss', gulp.parallel('styles'));
@@ -115,4 +124,4 @@ gulp.task('watch', () => {
 /**
  * Performs a one-time build of all src/ assets into dist/.
  */
-gulp.task('build', gulp.parallel('html', 'scripts', 'styles'));
+gulp.task('build', gulp.parallel('assets', 'html', 'scripts', 'styles'));
