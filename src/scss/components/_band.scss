@@ -1,4 +1,4 @@
-.homepage {
+.band {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -7,19 +7,19 @@
 
 /* This was my attempt at the background color stuff, but it didn't work at all lol probably need some guidance on this.
 
-.homepage:before {
+.band:before {
   background-color: $color-stage-light-blue;
   transform: skew(10deg, 10deg);
 }
 
-.homepage:after {
+.band:after {
   background-color: $color-stage-light-red;
   transform: skew(170deg, 170deg);
 }
 */
 
 
-.homepage__title {
+.band__title {
   align-items: center;
   background-color: $color-title-background;
   display: flex;
@@ -42,7 +42,7 @@
   }
 }
 
-.homepage__member-list {
+.band__member-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -63,7 +63,7 @@
   }
 }
 
-.homepage__member-list__item {
+.band__member-item {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@
   }
 }
 
-.homepage__member-list__image {
+.band__member-image {
   background-color: gray;
   border-radius: 50%;
   height: rhythm(15);
@@ -108,7 +108,7 @@
   }
 }
 
-.homepage__member-list__name {
+.band__member-name {
   color: $color-band-member-info;
   font-weight: $font-weight-bold;
   font-size: 18px;
@@ -124,7 +124,7 @@
   }
 }
 
-.homepage__member-list__instrument {
+.band__member-instrument {
   color: $color-band-member-info;
   font-size: rhythm(2);
   font-weight: $font-weight-regular;
@@ -139,7 +139,7 @@
 I added these icon placeholders last and realized they are going to mess up all my margins 
 so I'm commenting them out for the time being :-)
 
-.homepage__member-list-icon {
+.homepage__member-icon {
   background-color: gray;
   width: 62px;
   height: 62px;
