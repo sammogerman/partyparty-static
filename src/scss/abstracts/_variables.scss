@@ -9,12 +9,13 @@ $breakpoints: (
 ) !default;
 
 // Colors.
-$color-blue: #00008B;
 $color-red: #8B0000;
 $color-yellow: #FC0;
 $color-dark-blue: #1B2D38;
 $color-white: #FFFFFF;
-$color-button: #4850E8;
+$color-blue: #4850E8;
+$color-blue-hover: #242DE8;
+$color-blue-active: #2129CA;
 
 // Fonts.
 $font-family-sans: 'sans-serif';
