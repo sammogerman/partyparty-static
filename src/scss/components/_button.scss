@@ -1,5 +1,5 @@
 .button {
-    background-color: $color-button;
+    background-color: $color-blue;
     color: $color-white;
     border-radius: 6px;
     display: inline-block;
@@ -9,5 +9,4 @@
     line-height: rhythm(3);
     padding: rhythm(2) rhythm(5);
     text-decoration: none;
-    -webkit-font-smoothing: antialiased;
 }
