@@ -14,7 +14,7 @@ body {
   padding: rhythm(3);
 
   @include breakpoint($from: medium) {
-    border-top-color: $blue;
+    border-top-color: $color-blue;
   }
 
   @include breakpoint($from: large) {
