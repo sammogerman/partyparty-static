@@ -46,7 +46,7 @@
 .header__main-nav-list {
   display: none;
   flex-direction: column;
-  font-size: rhythm(2.5);
+  font-size: 20px;
   font-weight: $font-weight-bold;
   letter-spacing: 2.5px;
   list-style-type: none;
@@ -94,7 +94,7 @@
   text-align: center;
   color: $color-white;
   display: block;
-  padding: rhythm(8) 115px;
+  padding: rhythm(6) 0;
   text-decoration: none;
   &:visited {
     color: $color-white;
