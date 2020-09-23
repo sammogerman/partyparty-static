@@ -8,12 +8,13 @@
   font-weight: $font-weight-bold;
   letter-spacing: 0.25px;
   line-height: rhythm(3);
-  padding: rhythm(2) rhythm(5);
+  padding: 13px 37px;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
   
   &:hover {
     background-color: $color-blue-hover;
+    border-color: $color-blue-hover;
   }
   
   &:focus {
@@ -24,6 +25,7 @@
   
   &:active {
     background-color: $color-blue-active;
+    border-color: $color-blue-active;
   }
 }
 
