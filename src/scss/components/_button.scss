@@ -1,7 +1,8 @@
 .button {
-  background-color: $blue;
-  color: $color-white;
+  background-color: $color-blue;
+  border: 3px solid $color-blue;
   border-radius: 6px;
+  color: $color-white;
   display: inline-block;
   font-size: 20px;
   font-weight: $font-weight-bold;
@@ -10,17 +11,19 @@
   padding: rhythm(2) rhythm(5);
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
+  
   &:hover {
     background-color: $blue-hover;
   }
-  &:active {
-    background-color: $blue-active;
-  }
+  
   &:focus {
     background-color: $color-white;
-    color: $blue;
+    color: $color-blue;
     text-decoration: underline;
-    border: 2px solid $blue; //I'm not sure if this border is correct. 
+  }
+  
+  &:active {
+    background-color: $blue-active;
   }
 }
 
