@@ -13,7 +13,7 @@
   -webkit-font-smoothing: antialiased;
   
   &:hover {
-    background-color: $blue-hover;
+    background-color: $color-blue-hover;
   }
   
   &:focus {
@@ -23,7 +23,7 @@
   }
   
   &:active {
-    background-color: $blue-active;
+    background-color: $color-blue-active;
   }
 }
 
