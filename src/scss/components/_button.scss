@@ -26,6 +26,8 @@
   &:active {
     background-color: $color-blue-active;
     border-color: $color-blue-active;
+    color: $color-white;
+    text-decoration: none;
   }
 }
 
