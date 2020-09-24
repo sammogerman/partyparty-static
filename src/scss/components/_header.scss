@@ -1,0 +1,115 @@
+.header {
+  background-color: $color-black;
+}
+
+.header__main-nav {
+  @include container();
+  align-items: center;
+  display: flex;
+  height: rhythm(6);
+  justify-content: space-between;
+  padding: 14px rhythm(2);
+
+  @include breakpoint($from: medium) {
+    height: 99px;
+    padding-bottom: rhythm(2);
+    padding-top: rhythm(2);
+    position: sticky;
+  }
+
+  @include breakpoint($from: large) {
+    height: 102px;
+    padding-bottom: rhythm(5);
+    padding-top: rhythm(5);
+  }
+}
+
+.header__logo {
+  font-weight: $font-weight-medium;
+
+  @include breakpoint($from: medium) {
+    margin-left: rhythm(4);
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 20px;
+    margin-left: rhythm(5);
+  }
+}
+
+.header__button {
+  @include breakpoint($from: medium) {
+    display: none;
+  }
+}
+
+.header__main-nav-list {
+  display: none;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 2.5px;
+  list-style-type: none;
+  margin: 0 auto;
+  position: fixed;
+  top: rhythm(6);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  
+  @include breakpoint($from: medium) {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    margin: 0 rhythm(-2) 0 0;
+    position: static;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 18px;
+    margin-right: rhythm(-3.5);
+  }
+}
+
+.header__main-nav-list--expanded {
+  @include breakpoint($until: medium) {
+    display: flex;
+    background-color: $color-black;
+    padding: rhythm(3.5) rhythm(2) 0 rhythm(2);
+  }
+}
+
+.header__main-nav-item {
+  border-bottom: 1px solid $color-blue-grey;
+  text-transform: uppercase;
+
+  &:last-of-type {
+    border: none;
+  }
+
+  @include breakpoint($from: medium) {
+    border: none;
+    margin-left: rhythm(0.5);
+  }
+}
+
+.header__main-nav-link {
+  text-align: center;
+  color: $color-white;
+  display: block;
+  padding: rhythm(6) 0;
+  text-decoration: none;
+
+  &:visited {
+    color: $color-white;
+  }
+
+  @include breakpoint($from: medium) {
+    padding: 40px 16px;
+  }
+
+  @include breakpoint($from: large) {
+    padding: rhythm(5) rhythm(3.5) rhythm(5) rhythm(3.5);
+  }
+}

@@ -27,3 +27,208 @@
     }
   }
 }
+
+// Adds container styles to a wrapping element.
+//
+// Useful to enforce a maximum width on the element as the page width increases,
+// as well as a standard left/right gutter between the edge of the page and the
+// content at smaller widths. The end goal is that the left and right sides of
+// all major components whose wrapper has this applied will be aligned.
+@mixin container() {
+  padding: 0 rhythm(2);
+
+  @include breakpoint($from: medium) {
+    padding: 0 rhythm(3);
+  }
+
+  @include breakpoint($from: large) {
+    margin: 0 auto;
+    max-width: $width-page-max;
+    padding: 0 rhythm(7);
+  }
+}
+
+@mixin title-1 {
+  background-color: $color-blue-grey;
+  color: $color-white;
+  font-size: 38px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.5px;
+  line-height: 38px;
+  text-align: center;
+
+  @include breakpoint($from: medium) {
+    font-size: 58px;
+    line-height: 56px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 64px;
+    letter-spacing: 0.75px;
+    line-height: 64px;
+  }
+}
+
+@mixin title-2 {
+  background-color: $color-blue-grey;
+  color: $color-white;
+  font-size: 32px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.75px;
+  line-height: 34px;
+  text-align: center;
+
+  @include breakpoint($from: medium) {
+    font-size: 38px;
+    letter-spacing: 0.75px;
+    line-height: 40px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 44px;
+    letter-spacing: 1px;
+    line-height: 46px;
+  }
+}
+
+@mixin title-3 {
+  color: $color-black;
+  font-size: 28px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0;
+  line-height: 36px;
+
+  @include breakpoint($from: medium) {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 36px;
+    letter-spacing: -0.25px;
+    line-height: 42px;
+    text-align: center;
+  }
+}
+
+@mixin title-4 {
+  color: $color-black;
+  font-size: 24px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0;
+  line-height: 28px;
+
+  @include breakpoint($from: medium) {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+@mixin title-5 {
+  color: $color-black;
+  font-size: 20px;
+  font-weight: $font-weight-medium;
+  letter-spacing: 1px;
+  line-height: 26px;
+  text-align: center;
+
+  @include breakpoint($from: medium) {
+    font-size: 24px;
+    letter-spacing: 1.25px;
+    line-height: 28px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+  }
+}
+
+@mixin title-6 {
+  color: $color-black;
+  font-size: 18px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0;
+  line-height: 22px;
+  text-align: center;
+
+  @include breakpoint($from: medium) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@mixin subtitle-1 {
+  color: $color-blue-grey;
+  font-size: 15px;
+  font-weight: $font-weight-medium;
+  letter-spacing: 1.25px;
+  line-height: 18px;
+
+  @include breakpoint($from: medium) {
+    font-size: 16px;
+  }
+}
+
+@mixin body-1 {
+  color: $color-black;
+  font-size: 16px;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+
+  @include breakpoint($from: medium) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@mixin body-2 {
+  color: $color-black;
+  font-size: 16px;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+
+  @include breakpoint($from: medium) {
+    line-height: 26px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@mixin body-3 {
+  color: $color-black;
+  font-size: 18px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.25px;
+  line-height: 26px;
+
+  @include breakpoint($from: medium) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  @include breakpoint($from: large) {
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 34px;
+  }
+}
