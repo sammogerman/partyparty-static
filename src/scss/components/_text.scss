@@ -1,0 +1,43 @@
+.text {
+  margin: 0; 
+}
+
+.text--title-1 {
+  @include title-1;
+}
+
+.text--title-2 {
+  @include title-2;
+}
+
+.text--title-3 {
+  @include title-3;
+}
+
+.text--title-4 {
+  @include title-4;
+}
+
+.text--title-5 {
+  @include title-5;
+}
+
+.text--title-6 {
+  @include title-6;
+}
+
+.text--subtitle-1 {
+  @include subtitle-1;
+}
+
+.text--body-1 {
+  @include body-1;
+}
+
+.text--body-2 {
+  @include body-2;
+}
+
+.text--body-3 {
+  @include body-3;
+}
