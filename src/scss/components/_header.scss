@@ -81,7 +81,7 @@
 }
 
 .header__main-nav-item {
-  border-bottom: 1px solid $color-mobile-menu-border;
+  border-bottom: 1px solid $color-blue-grey;
   text-transform: uppercase;
 
   @include breakpoint($from: medium) {
