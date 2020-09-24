@@ -28,6 +28,26 @@
   }
 }
 
+// Adds container styles to a wrapping element.
+//
+// Useful to enforce a maximum width on the element as the page width increases,
+// as well as a standard left/right gutter between the edge of the page and the
+// content at smaller widths. The end goal is that the left and right sides of
+// all major components whose wrapper has this applied will be aligned.
+@mixin container() {
+  padding: 0 rhythm(2);
+
+  @include breakpoint($from: medium) {
+    padding: 0 rhythm(3);
+  }
+
+  @include breakpoint($from: large) {
+    margin: 0 auto;
+    max-width: $width-page-max;
+    padding: 0 rhythm(7);
+  }
+}
+
 @mixin title-1 {
   background-color: $color-blue-grey;
   color: $color-white;
