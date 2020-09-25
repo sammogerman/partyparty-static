@@ -3,21 +3,29 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-
+  position: relative;
 }
 
-/* This was my attempt at the background color stuff, but it didn't work at all lol probably need some guidance on this.
-
 .band:before {
-  background-color: $color-stage-light-blue;
+  background-color: $color-pink-screen;
   transform: skew(10deg, 10deg);
+  content: '';
+  position: absolute;
+  height: 500px;
+  top: 150px;
+  width: 100%;
+  z-index: -1;
 }
 
 .band:after {
-  background-color: $color-stage-light-red;
+  background-color: $color-turquise-screen;
   transform: skew(170deg, 170deg);
+  content: '';
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  z-index: -1;
 }
-*/
 
 
 .band__title {
