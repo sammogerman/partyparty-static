@@ -5,9 +5,9 @@ let navList = document.querySelector(".header__main-nav-list")
 hamburger.addEventListener("click", function(){
   if (navList.classList.contains("header__main-nav-list--expanded")) {
     navList.classList.remove("header__main-nav-list--expanded");
-    hamburger.textContent="Open";
+    hamburger.innerHTML='<img src="/assets/icons/btn-hamburger.svg" alt="Open">';
   } else {
-    hamburger.textContent="Close";
+    hamburger.innerHTML='<img src="/assets/icons/btn-close.svg" alt="Close">';
     navList.classList.add("header__main-nav-list--expanded");
   }
 });

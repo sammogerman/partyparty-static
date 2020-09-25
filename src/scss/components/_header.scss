@@ -26,6 +26,7 @@
 
 .header__logo {
   font-weight: $font-weight-medium;
+  margin-left: rhythm(2);
 
   @include breakpoint($from: medium) {
     margin-left: rhythm(4);
@@ -38,6 +39,10 @@
 }
 
 .header__button {
+  background-color: $color-black;
+  margin-right: rhythm(2);
+  border: none;
+
   @include breakpoint($from: medium) {
     display: none;
   }
