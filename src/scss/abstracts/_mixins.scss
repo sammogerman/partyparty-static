@@ -53,19 +53,27 @@
   color: $color-white;
   font-size: 38px;
   font-weight: $font-weight-bold;
+  height: 108px;
   letter-spacing: 0.5px;
   line-height: 38px;
+  padding: rhythm(2) rhythm(0.5);
   text-align: center;
+  width: 328px;
 
   @include breakpoint($from: medium) {
     font-size: 58px;
+    height: 148px;
     line-height: 56px;
+    padding: rhythm(2) 0;
+    width: 597px;
   }
 
   @include breakpoint($from: large) {
     font-size: 64px;
+    height: 160px;
     letter-spacing: 0.75px;
     line-height: 64px;
+    width: 725px;
   }
 }
 
@@ -74,20 +82,28 @@
   color: $color-white;
   font-size: 32px;
   font-weight: $font-weight-bold;
+  height: rhythm(8.25);
   letter-spacing: 0.75px;
   line-height: 34px;
+  padding: 16px 0;
   text-align: center;
+  width: 327px;
 
   @include breakpoint($from: medium) {
     font-size: 38px;
+    height: 72px;
     letter-spacing: 0.75px;
     line-height: 40px;
+    padding: 16px 30px;
+    width: 261px;
   }
 
   @include breakpoint($from: large) {
     font-size: 44px;
+    height: 78px;
     letter-spacing: 1px;
     line-height: 46px;
+    width: 293px;
   }
 }
 

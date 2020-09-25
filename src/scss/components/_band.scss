@@ -25,7 +25,7 @@
   display: flex;
   font-size: rhythm(4);
   font-weight: $font-weight-bold;
-  height: 70px;
+  height: rhythm(8.25);
   justify-content: center;
   margin-top: 256px;
   margin-bottom: rhythm(7);
@@ -85,6 +85,7 @@
   @include breakpoint($from: medium) {
     height: 300px;
     width: 208px;
+    
     &:last-child {
       margin-top: 0;
       width: 33%;
