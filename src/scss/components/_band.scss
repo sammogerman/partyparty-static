@@ -1,4 +1,5 @@
 .band {
+  @include container();
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -45,21 +46,18 @@
 .band__member-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   list-style-type: none;
-  margin-left: rhythm(2);
-  margin-right: rhythm(2);
-  padding: 0;
+  padding: 0 26px;
 
   @include breakpoint($from: medium) {
     flex-wrap: nowrap;
-    margin-left: rhythm(5);
-    margin-right: rhythm(5);
+    margin-top: rhythm(10);
+    padding: 0 47px;
   }
 
   @include breakpoint($from: large) {
-    margin-left: 190px;
-    margin-right: 190px;
+    padding: 0 122px;
   }
 }
 
@@ -67,33 +65,28 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 181px;
-  justify-content: center;
-  padding: 0 20px 120px 20px;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0 18px;
   text-align: center;
-  width: 160px;
 
   /*
   This last child selects the last list name to make it centered at small size,
   then back in line at medium size. There's probably a better way to do this...?
   */
   &:last-child {
-    margin-top: 120px;
     width: 100%;
   }
 
   @include breakpoint($from: medium) {
-    height: 300px;
-    width: 208px;
+    padding: 0 30px;
     
     &:last-child {
-      margin-top: 0;
       width: 33%;
     }
   }
   @include breakpoint($from: large) {
-    height: 300px;
-    width: 208px;
+    padding: 0 77px;
   }
 }
 
@@ -103,6 +96,10 @@
   height: rhythm(15);
   width: rhythm(15);
   
+  @include breakpoint($from: medium) {
+    height: 188px;
+    width: 188px;
+  }
   @include breakpoint($from: large) {
     height: 208px;
     width: 208px;
@@ -113,7 +110,7 @@
   color: $color-black;
   font-weight: $font-weight-bold;
   font-size: 18px;
-
+  margin-bottom: rhythm(1);
   margin-top: 20.4px;
   @include breakpoint($from: medium) {
     font-size: rhythm(2.5);
@@ -127,6 +124,7 @@
 
 .band__member-instrument {
   font-size: rhythm(2);
+  color: $color-black;
   font-weight: $font-weight-regular;
 
   @include breakpoint($from: large) {
@@ -134,14 +132,3 @@
     line-height: 30px;
   }
 }
-
-/*
-I added these icon placeholders last and realized they are going to mess up all my margins 
-so I'm commenting them out for the time being :-)
-
-.homepage__member-icon {
-  background-color: gray;
-  width: 62px;
-  height: 62px;
-}
-*/

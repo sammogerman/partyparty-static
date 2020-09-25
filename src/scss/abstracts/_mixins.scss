@@ -56,16 +56,18 @@
   height: 108px;
   letter-spacing: 0.5px;
   line-height: 38px;
+  margin: 0 16px;
   padding: rhythm(2) rhythm(0.5);
   text-align: center;
-  width: 328px;
+  text-transform: uppercase;
+  //width: 328px;
 
   @include breakpoint($from: medium) {
     font-size: 58px;
     height: 148px;
     line-height: 56px;
+    margin: 0 86px;
     padding: rhythm(2) 0;
-    width: 597px;
   }
 
   @include breakpoint($from: large) {
@@ -73,7 +75,7 @@
     height: 160px;
     letter-spacing: 0.75px;
     line-height: 64px;
-    width: 725px;
+    margin: 0 242px;
   }
 }
 
@@ -85,15 +87,18 @@
   height: rhythm(8.25);
   letter-spacing: 0.75px;
   line-height: 34px;
-  padding: 16px 0;
+  //margin: 200px 16px 40px 16px;
+  padding: 16px 32px;
   text-align: center;
-  width: 327px;
+  text-transform: uppercase;
+  width: 450px; //This isn't right. Having trouble getting correct margin and padding info on InVision.
 
   @include breakpoint($from: medium) {
     font-size: 38px;
     height: 72px;
     letter-spacing: 0.75px;
     line-height: 40px;
+    margin: 306px 256px 0 256px;
     padding: 16px 30px;
     width: 261px;
   }
