@@ -8,23 +8,24 @@
 
 .band:before {
   background-color: $color-pink-screen;
-  transform: skew(10deg, 10deg);
+  transform: skewY(-10deg);
   content: '';
   position: absolute;
-  height: 500px;
   mix-blend-mode: screen;
-  top: 150px;
+  top: 50px;
+  bottom: 0px;
   width: 100%;
   z-index: -1;
 }
 
 .band:after {
   background-color: $color-turquise-screen;
-  transform: skew(170deg, 170deg);
+  transform: skewY(15deg);
   content: '';
   mix-blend-mode: screen;
   position: absolute;
-  height: 150px;
+  top: 0px;
+  bottom: -100px;
   width: 100%;
   z-index: -1;
 }
@@ -71,21 +72,11 @@
   margin: 0;
   padding: 0 18px;
   text-align: center;
-
-  /*
-  This last child selects the last list name to make it centered at small size,
-  then back in line at medium size. There's probably a better way to do this...?
-  */
-  &:last-child {
-    width: 100%;
-  }
+  width: 50%;
 
   @include breakpoint($from: medium) {
     padding: 0 30px;
-    
-    &:last-child {
-      width: 33%;
-    }
+    width: 33%;
   }
   @include breakpoint($from: large) {
     padding: 0 77px;
