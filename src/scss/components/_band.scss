@@ -12,6 +12,7 @@
   content: '';
   position: absolute;
   height: 500px;
+  mix-blend-mode: screen;
   top: 150px;
   width: 100%;
   z-index: -1;
@@ -21,12 +22,12 @@
   background-color: $color-turquise-screen;
   transform: skew(170deg, 170deg);
   content: '';
+  mix-blend-mode: screen;
   position: absolute;
   height: 150px;
   width: 100%;
   z-index: -1;
 }
-
 
 .band__title {
   align-items: center;
@@ -42,7 +43,6 @@
   text-transform: uppercase;
   width: 327px;
 
-
   @include breakpoint($from: large) {
     margin-bottom: rhythm(10);
     font-size: rhythm(5.5);
@@ -56,16 +56,10 @@
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
-  padding: 0 26px;
 
   @include breakpoint($from: medium) {
     flex-wrap: nowrap;
     margin-top: rhythm(10);
-    padding: 0 47px;
-  }
-
-  @include breakpoint($from: large) {
-    padding: 0 122px;
   }
 }
 
