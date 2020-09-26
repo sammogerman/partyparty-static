@@ -26,15 +26,9 @@
 
 .header__logo {
   font-weight: $font-weight-medium;
-  margin-left: rhythm(2);
-
-  @include breakpoint($from: medium) {
-    margin-left: rhythm(4);
-  }
 
   @include breakpoint($from: large) {
     font-size: 20px;
-    margin-left: rhythm(5);
   }
 }
 
