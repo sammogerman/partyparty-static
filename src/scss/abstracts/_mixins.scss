@@ -79,7 +79,7 @@
   font-weight: $font-weight-bold;
   letter-spacing: 0.75px;
   line-height: 34px;
-  padding: 16px 32px;
+  padding: rhythm(2) rhythm(4);
   text-align: center;
   text-transform: uppercase;
 
@@ -88,7 +88,7 @@
     height: 72px;
     letter-spacing: 0.75px;
     line-height: 40px;
-    padding: 16px 30px;
+    padding: rhythm(2) 30px;
   }
 
   @include breakpoint($from: large) {
