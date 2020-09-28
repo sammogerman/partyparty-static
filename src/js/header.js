@@ -1,13 +1,20 @@
-let hamburger = document.querySelector(".header__button");
-let navList = document.querySelector(".header__main-nav-list")
+let headerButton = document.querySelector(".header__button");
+let hamburger = document.querySelector(".header__button-icon--open");
+let closeIcon = document.querySelector(".header__button-icon--close");
+let navList = document.querySelector(".header__main-nav-list");
 
 //listens for click on nav button and toggles the nav list to be hidden or visible.
-hamburger.addEventListener("click", function(){
+headerButton.addEventListener("click", function(){
   if (navList.classList.contains("header__main-nav-list--expanded")) {
+    console.log("clicked");
     navList.classList.remove("header__main-nav-list--expanded");
-    hamburger.innerHTML='<img src="/assets/icons/btn-hamburger.svg" alt="Open">';
+    hamburger.style.display = 'block';
+    closeIcon.style.display = 'none';
+
   } else {
-    hamburger.innerHTML='<img src="/assets/icons/btn-close.svg" alt="Close">';
+    console.log("a click");
     navList.classList.add("header__main-nav-list--expanded");
+    hamburger.style.display = 'none';
+    closeIcon.style.display = 'block';
   }
 });

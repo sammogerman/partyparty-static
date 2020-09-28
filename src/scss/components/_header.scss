@@ -34,12 +34,16 @@
 
 .header__button {
   background-color: $color-black;
-  margin-right: rhythm(2);
+  //margin-right: rhythm(2);
   border: none;
 
   @include breakpoint($from: medium) {
     display: none;
   }
+}
+
+.header__button-icon--close {
+  display: none;
 }
 
 .header__main-nav-list {
