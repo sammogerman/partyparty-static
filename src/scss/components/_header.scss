@@ -34,7 +34,6 @@
 
 .header__button {
   background-color: $color-black;
-  //margin-right: rhythm(2);
   border: none;
 
   @include breakpoint($from: medium) {
@@ -42,8 +41,18 @@
   }
 }
 
+.header__button-icon--open {
+  .header__button--opened & {
+    display: none;
+  }
+}
+
 .header__button-icon--close {
   display: none;
+
+  .header__button--opened & {
+    display: inline-block;
+  }
 }
 
 .header__main-nav-list {
