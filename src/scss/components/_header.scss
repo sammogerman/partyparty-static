@@ -35,6 +35,9 @@
 .header__button {
   background-color: $color-black;
   border: none;
+  height: 40px;
+  padding: 0;
+  width: 40px;
 
   @include breakpoint($from: medium) {
     display: none;
