@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
 }
 
 .band:before {
@@ -34,21 +35,22 @@
   align-items: center;
   background-color: $color-blue-grey;
   display: flex;
-  font-size: rhythm(4);
-  font-weight: $font-weight-bold;
-  height: rhythm(8.25);
   justify-content: center;
-  margin-top: 256px;
-  margin-bottom: rhythm(7);
+  margin: rhythm(39) 0 rhythm(7) 0;
+  padding: rhythm(2) 0;
   text-align: center;
   text-transform: uppercase;
-  width: 327px;
+  width: 100%;
+
+  @include breakpoint($from: medium) {
+    margin: rhythm(39) 0 rhythm(10) 0;
+    width: 265px;
+  }
 
   @include breakpoint($from: large) {
-    margin-bottom: rhythm(10);
-    font-size: rhythm(5.5);
-    height: 84px;
-    width: 293px;
+    margin: 296px 0 rhythm(10) 0;
+    font-size: 44px;
+    width: 297px;
   }
 }
 
