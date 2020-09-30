@@ -55,33 +55,63 @@
 }
 
 .band__member-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  border: .5px dashed purple;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 
   @include breakpoint($from: medium) {
-    flex-wrap: nowrap;
-    margin-top: rhythm(10);
+    grid-template-columns: repeat(12, 1fr);
   }
 }
 
 .band__member-item {
+  border: 1px solid blue;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin: 0;
-  padding: 0 18px;
+  padding: 0;
   text-align: center;
-  width: 50%;
+  // width: 50%;
 
   @include breakpoint($from: medium) {
-    padding: 0 30px;
-    width: 33%;
+    // padding: 0 30px;
+    // width: 33%;
   }
   @include breakpoint($from: large) {
     padding: 0 77px;
+  }
+}
+
+.item-1 {
+  grid-column: 1/3; 
+  grid-row: 1/2; 
+
+  @include breakpoint($from: medium) {
+    grid-column: 1/4; 
+    grid-row: 1/2; 
+  }
+}
+.item-2 {
+  grid-column: 3/5; 
+  grid-row: 1/2; 
+
+  @include breakpoint($from: medium) {
+    grid-column: 5/8; 
+    grid-row: 1/2; 
+  }
+}
+.item-3 {
+  grid-column: 2/4;
+  grid-row: 2/3;
+
+  @include breakpoint($from: medium) {
+    grid-column: 9/12; 
+    grid-row: 1/2; 
   }
 }
 
