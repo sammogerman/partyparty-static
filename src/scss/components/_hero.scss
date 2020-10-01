@@ -1,0 +1,33 @@
+.hero__image {
+  height: auto;
+  width: 100%;
+}
+
+.hero__text {
+  @include container();
+}
+
+.hero__title {
+  padding: rhythm(2) rhythm(0.5);
+  position: relative;
+  top: -20px;
+  
+  @include breakpoint($from: medium) {
+    top: -40px;
+  }
+}
+
+.hero__body-1 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.hero__body-2 {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.hero__button {
+  margin-top: rhythm(5);
+  text-align: center;
+}
