@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-
 }
 
 .band:before {
@@ -13,10 +12,18 @@
   content: '';
   position: absolute;
   mix-blend-mode: screen;
-  top: 50px;
+  top: 120px;
   bottom: -300px;
   width: 100%;
   z-index: -1;
+
+  @include breakpoint($from:medium) {
+    top: 200px;
+  }
+
+  @include breakpoint($from:large) {
+    top: 220px;
+  }
 }
 
 .band:after {
@@ -25,10 +32,18 @@
   content: '';
   mix-blend-mode: screen;
   position: absolute;
-  top: 0px;
+  top: 100px;
   bottom: -500px;
   width: 100%;
   z-index: -1;
+
+  @include breakpoint($from:medium) {
+    top: 175px;
+  }
+
+  @include breakpoint($from:large) {
+    top: 200px;
+  }
 }
 
 .band__title {
@@ -36,55 +51,42 @@
   background-color: $color-blue-grey;
   display: flex;
   justify-content: center;
-  margin: rhythm(39) 0 rhythm(7) 0;
+  margin-top: rhythm(39);
   padding: rhythm(2) 0;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
 
   @include breakpoint($from: medium) {
-    margin: rhythm(39) 0 rhythm(10) 0;
     width: 265px;
   }
 
   @include breakpoint($from: large) {
-    margin: 296px 0 rhythm(10) 0;
-    font-size: 44px;
+    margin-top: 296px;
     width: 297px;
   }
 }
 
 .band__member-list {
-  border: .5px dashed purple;
+  column-gap: 16px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   list-style-type: none;
-  margin: 0;
+  margin-top: rhythm(5);
   padding: 0;
+  row-gap: 43px;
 
   @include breakpoint($from: medium) {
+    column-gap: rhythm(7.5);
     grid-template-columns: repeat(12, 1fr);
+    margin-top: rhythm(10);
   }
 }
 
 .band__member-item {
-  border: 1px solid blue;
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  // width: 50%;
-
-  @include breakpoint($from: medium) {
-    // padding: 0 30px;
-    // width: 33%;
-  }
-  @include breakpoint($from: large) {
-    padding: 0 77px;
-  }
 }
 
 .item-1 {
@@ -132,18 +134,16 @@
 }
 
 .band__member-name {
-  color: $color-black;
-  font-weight: $font-weight-bold;
-  font-size: 18px;
   margin-bottom: rhythm(1);
-  margin-top: 20.4px;
+  margin-top: rhythm(2);
+
   @include breakpoint($from: medium) {
-    font-size: rhythm(2.5);
     margin-top: rhythm(3);
+    width: 200px; //hacky attempt to keep the names all on one line regardless of screen size.
   }
+
   @include breakpoint($from: large) {
-    font-size: rhythm(3);
-    margin-top: 26px;
+    margin-top: 24px;
   }
 }
 
@@ -151,7 +151,22 @@
   font-size: rhythm(2);
   color: $color-black;
   font-weight: $font-weight-regular;
+  margin-bottom: rhythm(2);
 
+  //Since the drums icon is a little bit smaller than the others, the margin here is different.
+  //I think you said nesting is against BEM rules. Is there a better way to target this?
+  //I tried &:nth-of-type(2) but that wasn't working for me.
+  &-drums {
+    margin-bottom: rhythm(3);
+  }
+
+  @include breakpoint($from:medium) {
+    margin-bottom: rhythm(3);
+    
+    &-drums {
+      margin-bottom: rhythm(4);
+    }
+  }
   @include breakpoint($from: large) {
     font-size: 20px;
     line-height: 30px;
