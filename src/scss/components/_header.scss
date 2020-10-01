@@ -29,19 +29,34 @@
 .header__logo {
   font-weight: $font-weight-medium;
 
-  @include breakpoint($from: medium) {
-    margin-left: rhythm(4);
-  }
-
   @include breakpoint($from: large) {
     font-size: 20px;
-    margin-left: rhythm(5);
   }
 }
 
 .header__button {
+  background-color: $color-black;
+  border: none;
+  height: 40px;
+  padding: 0;
+  width: 40px;
+
   @include breakpoint($from: medium) {
     display: none;
+  }
+}
+
+.header__button-icon--open {
+  .header__button--opened & {
+    display: none;
+  }
+}
+
+.header__button-icon--close {
+  display: none;
+
+  .header__button--opened & {
+    display: inline-block;
   }
 }
 
