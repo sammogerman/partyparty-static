@@ -1,9 +1,12 @@
 .footer {
-  @include container();
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
 }
 
 .footer__text {
   margin-top: rhythm(10);
+  margin-bottom: rhythm(4);
   text-align: center;
 }
 
@@ -11,21 +14,23 @@
   display: flex;
   justify-content: center;
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 rhythm(12.5) 0;
   padding: 0;
 }
 
 .footer__list-icon {
-  height: rhythm(9);
-  width: rhythm(9);
   background-color: $color-blue;
   border-radius: 50%;
+  height: rhythm(9);
+  margin: 0 20px;
+  padding: 10px;
+  width: rhythm(9);
 }
 
 .footer__copyright {
   background-color: $color-black;
-  text-align: center;
+  bottom: 0;
   position: absolute;
-  bottom: -100px;
+  text-align: center;
   width: 100%;
 }
