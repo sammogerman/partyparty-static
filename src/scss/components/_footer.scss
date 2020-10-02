@@ -18,19 +18,9 @@
   padding: 0;
 }
 
-.footer__text-list-icon {
-  align-items: center;
-  background-color: $color-blue;
-  border-radius: 50%;
-  display: flex;
-  height: rhythm(9);
-  justify-content: center;
-  margin: 0 20px;
-  width: rhythm(9);
-}
-
 .footer__copyright {
   background-color: $color-black;
   text-align: center;
+  padding: rhythm(2) 0;
   width: 100%;
 }

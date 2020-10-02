@@ -30,3 +30,13 @@
   }
 }
 
+.button--round {
+  align-items: center;
+  background-color: $color-blue;
+  border-radius: 50%;
+  display: flex;
+  height: rhythm(9);
+  justify-content: center;
+  margin: 0 20px;
+  width: rhythm(9);
+}
