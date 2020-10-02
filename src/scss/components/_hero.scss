@@ -9,21 +9,25 @@
 
 .hero__title {
   position: relative;
-  top: -20px;
+  top: rhythm(-2);
   
   @include breakpoint($from: medium) {
-    top: -40px;
+    top: rhythm(-5);
   }
 }
 
 .hero__body-1 {
-  margin-top: 40px;
+  margin-top: rhythm(5);
   text-align: center;
 }
 
 .hero__body-2 {
-  margin-top: 32px;
+  margin-top: rhythm(4);
   text-align: center;
+
+  @include breakpoint($from: medium) {
+    margin-top: rhythm(3);
+  }
 }
 
 .hero__button {
