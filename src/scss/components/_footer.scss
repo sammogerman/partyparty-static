@@ -1,11 +1,12 @@
 .footer {
-  bottom: 0px;
-  position: absolute;
   width: 100%;
 }
 
+.footer__text {
+  padding: rhythm(10) 0 rhythm(12.5) 0;
+}
+
 .footer__text-title {
-  margin-top: rhythm(10);
   margin-bottom: rhythm(4);
   text-align: center;
 }
@@ -14,7 +15,6 @@
   display: flex;
   justify-content: center;
   list-style-type: none;
-  margin: 0 0 rhythm(12.5) 0;
   padding: 0;
 }
 
@@ -31,8 +31,6 @@
 
 .footer__copyright {
   background-color: $color-black;
-  bottom: 0;
-  position: absolute;
   text-align: center;
   width: 100%;
 }
