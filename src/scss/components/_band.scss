@@ -1,8 +1,4 @@
 .band {
-  @include container();
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   position: relative;
 }
 
@@ -44,6 +40,13 @@
   @include breakpoint($from:large) {
     top: 200px;
   }
+}
+
+.band__inner {
+  @include container();
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .band__title {
