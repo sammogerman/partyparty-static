@@ -1,45 +1,36 @@
 .band {
+  padding-bottom: 150px;
   position: relative;
+
+  @include breakpoint($from: medium) {
+    padding-bottom: 250px;
+  }
 }
 
 .band:before {
   background-color: $color-pink-screen;
-  transform: skewY(-10deg);
+  transform: perspective(500px) rotateY(-9deg);
   content: '';
-  position: absolute;
   mix-blend-mode: screen;
+  position: absolute;
   top: 120px;
-  bottom: -300px;
-  width: 100%;
+  bottom: 120px;
+  left: -200px;
+  right: -200px;
   z-index: -1;
-
-  @include breakpoint($from:medium) {
-    top: 200px;
-  }
-
-  @include breakpoint($from:large) {
-    top: 220px;
-  }
 }
 
 .band:after {
   background-color: $color-turquise-screen;
-  transform: skewY(15deg);
+  transform: perspective(500px) rotateY(9deg);
   content: '';
   mix-blend-mode: screen;
   position: absolute;
-  top: 100px;
-  bottom: -500px;
-  width: 100%;
+  top: 120px;
+  bottom: 35px;
+  left: -200px;
+  right: -200px;
   z-index: -1;
-
-  @include breakpoint($from:medium) {
-    top: 175px;
-  }
-
-  @include breakpoint($from:large) {
-    top: 200px;
-  }
 }
 
 .band__inner {
@@ -54,19 +45,15 @@
   background-color: $color-blue-grey;
   display: flex;
   justify-content: center;
-  margin-top: rhythm(39);
+  margin-top: rhythm(26);
   padding: rhythm(2) 0;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
 
   @include breakpoint($from: medium) {
-    width: 265px;
-  }
-
-  @include breakpoint($from: large) {
-    margin-top: 296px;
-    width: 297px;
+    margin-top: rhythm(35);
+    width: auto;
   }
 }
 
