@@ -41,7 +41,7 @@
   width: rhythm(9);
 }
 
-.button--blue {
+.button__icon--focus {
   display: none;
 
   .button:focus & {
@@ -49,10 +49,9 @@
   }
 }
 
-.button--white {
-  
+.button__icon--default {
+
   .button:focus & {
     display: none;
   }
 }
-

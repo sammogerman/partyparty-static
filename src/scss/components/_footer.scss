@@ -3,8 +3,7 @@
 }
 
 .footer__text {
-  margin-bottom: rhythm(10);
-  padding-top: rhythm(10);
+  padding: rhythm(10) 0;
 }
 
 .footer__text-title {
@@ -32,6 +31,7 @@
   font-weight: $font-weight-medium;
   letter-spacing: 0.5px;
   line-height: 17px;
+  margin: 0;
   text-align: center;
 
   @include breakpoint($from: medium) {
