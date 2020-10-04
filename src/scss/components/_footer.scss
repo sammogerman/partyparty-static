@@ -33,4 +33,10 @@
   letter-spacing: 0.5px;
   line-height: 17px;
   text-align: center;
+
+  @include breakpoint($from: medium) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
 }
