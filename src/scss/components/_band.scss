@@ -46,7 +46,6 @@
   display: flex;
   justify-content: center;
   margin-top: rhythm(26);
-  padding: rhythm(2) 0;
   text-align: center;
   text-transform: uppercase;
   width: 100%;
@@ -113,36 +112,25 @@
 
   @include breakpoint($from: medium) {
     margin-top: rhythm(3);
-    width: 200px; //hacky attempt to keep the names all on one line regardless of screen size.
-  }
-
-  @include breakpoint($from: large) {
-    margin-top: 24px;
-  }
+    }
 }
 
 .band__member-instrument {
-  font-size: rhythm(2);
-  color: $color-black;
-  font-weight: $font-weight-regular;
   margin-bottom: rhythm(2);
-
-  //Since the drums icon is a little bit smaller than the others, the margin here is different.
-  //I think you said nesting is against BEM rules. Is there a better way to target this?
-  //I tried &:nth-of-type(2) but that wasn't working for me.
-  &-drums {
-    margin-bottom: rhythm(3);
-  }
 
   @include breakpoint($from:medium) {
     margin-bottom: rhythm(3);
-    
-    &-drums {
-      margin-bottom: rhythm(4);
-    }
   }
   @include breakpoint($from: large) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.band__member-instrument--drums {
+  margin-bottom: rhythm(3);
+
+  @include breakpoint($from:medium) {
+    margin-bottom: rhythm(4);
   }
 }
