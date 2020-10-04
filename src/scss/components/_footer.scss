@@ -3,7 +3,8 @@
 }
 
 .footer__text {
-  padding: rhythm(10) 0 rhythm(12.5) 0;
+  margin-bottom: rhythm(10);
+  padding-top: rhythm(10);
 }
 
 .footer__text-title {
@@ -11,16 +12,26 @@
   text-align: center;
 }
 
-.footer__text-list {
+.footer__social-list {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
 .footer__copyright {
   background-color: $color-black;
-  text-align: center;
   padding: rhythm(2) 0;
+  text-align: center;
   width: 100%;
+}
+
+.footer__copyright-text {
+  font-size: 14px;
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.5px;
+  line-height: 17px;
+  margin: 0;
+  text-align: center;
 }

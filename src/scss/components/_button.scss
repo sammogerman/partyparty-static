@@ -40,3 +40,19 @@
   margin: 0 20px;
   width: rhythm(9);
 }
+
+.button--blue {
+  display: none;
+
+  .button:focus & {
+    display: block;
+  }
+}
+
+.button--white {
+  
+  .button:focus & {
+    display: none;
+  }
+}
+
