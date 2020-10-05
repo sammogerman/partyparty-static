@@ -1,0 +1,42 @@
+.footer {
+  width: 100%;
+}
+
+.footer__text {
+  padding: rhythm(10) 0;
+}
+
+.footer__text-title {
+  margin-bottom: rhythm(4);
+  text-align: center;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__copyright {
+  background-color: $color-black;
+  padding: rhythm(2) 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__copyright-text {
+  font-size: 14px;
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.5px;
+  line-height: 17px;
+  margin: 0;
+  text-align: center;
+
+  @include breakpoint($from: medium) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+}
