@@ -137,12 +137,12 @@
 }
 
 @mixin title-5 {
-  color: $color-black;
   font-size: 20px;
   font-weight: $font-weight-medium;
   letter-spacing: 1px;
   line-height: 26px;
   text-align: center;
+  text-transform: uppercase;
 
   @include breakpoint($from: medium) {
     font-size: 24px;
