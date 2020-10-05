@@ -1,0 +1,136 @@
+.band {
+  padding-bottom: 150px;
+  position: relative;
+
+  @include breakpoint($from: medium) {
+    padding-bottom: 250px;
+  }
+}
+
+.band:before {
+  background-color: $color-pink-screen;
+  transform: perspective(500px) rotateY(-9deg);
+  content: '';
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 120px;
+  bottom: 120px;
+  left: -200px;
+  right: -200px;
+  z-index: -1;
+}
+
+.band:after {
+  background-color: $color-turquise-screen;
+  transform: perspective(500px) rotateY(9deg);
+  content: '';
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 120px;
+  bottom: 35px;
+  left: -200px;
+  right: -200px;
+  z-index: -1;
+}
+
+.band__inner {
+  @include container();
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.band__title {
+  align-items: center;
+  background-color: $color-blue-grey;
+  display: flex;
+  justify-content: center;
+  margin-top: rhythm(26);
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+
+  @include breakpoint($from: medium) {
+    margin-top: rhythm(35);
+    width: auto;
+  }
+}
+
+.band__member-list {
+  column-gap: rhythm(2);
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  list-style-type: none;
+  margin-top: rhythm(5);
+  padding: 0;
+  row-gap: rhythm(5);
+  width: 100%;
+
+  @include breakpoint($from: medium) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: rhythm(10);
+  }
+
+  @include breakpoint($from: large) {
+    column-gap: rhythm(3);
+  }
+}
+
+.band__member-item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  // Centers the 3rd member on mobile.
+  @include breakpoint($until: medium) {
+    &:nth-child(3) {
+      grid-column: 1/-1;
+    }
+  }
+}
+
+.band__member-image {
+  background-color: gray;
+  border-radius: 50%;
+  height: rhythm(15);
+  width: rhythm(15);
+
+  @include breakpoint($from: medium) {
+    height: 188px;
+    width: 188px;
+  }
+  @include breakpoint($from: large) {
+    height: 208px;
+    width: 208px;
+  }
+}
+
+.band__member-name {
+  margin-bottom: rhythm(1);
+  margin-top: rhythm(2);
+
+  @include breakpoint($from: medium) {
+    margin-top: rhythm(3);
+    }
+}
+
+.band__member-instrument {
+  margin-bottom: rhythm(2);
+
+  @include breakpoint($from:medium) {
+    margin-bottom: rhythm(3);
+  }
+  @include breakpoint($from: large) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.band__member-instrument--drums {
+  margin-bottom: rhythm(3);
+
+  @include breakpoint($from:medium) {
+    margin-bottom: rhythm(4);
+  }
+}
