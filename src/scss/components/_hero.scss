@@ -7,19 +7,39 @@
 
 .hero__text {
   @include container();
+
+  @include breakpoint ($from: medium) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    }
 }
 
 .hero__title {
   margin-top: rhythm(-2);
-  
+  text-align: center;
+
   @include breakpoint($from: medium) {
+    grid-column: 2/12;
     margin-top: rhythm(-5);
+  }
+
+  @include breakpoint($from: large) {
+    grid-column: 3/11;
   }
 }
 
 .hero__body-1 {
+  grid-column: 2/12;
   margin-top: rhythm(5);
   text-align: center;
+
+  @include breakpoint($from: medium) {
+    grid-column: 2/12;
+  }
+
+  @include breakpoint($from: large) {
+    grid-column: 3/11;
+  }
 }
 
 .hero__body-2 {
@@ -27,11 +47,20 @@
   text-align: center;
 
   @include breakpoint($from: medium) {
+    grid-column: 2/12;
     margin-top: rhythm(3);
+  }
+
+  @include breakpoint($from: large) {
+    grid-column: 3/11;
   }
 }
 
 .hero__button {
   margin-top: rhythm(5);
   text-align: center;
+
+  @include breakpoint ($from: medium) {
+    grid-column: 5/9;
+  }
 }
