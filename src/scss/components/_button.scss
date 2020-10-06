@@ -30,3 +30,28 @@
   }
 }
 
+.button--round {
+  align-items: center;
+  background-color: $color-blue;
+  border-radius: 50%;
+  display: flex;
+  height: rhythm(9);
+  justify-content: center;
+  margin: 0 20px;
+  width: rhythm(9);
+}
+
+.button__icon--focus {
+  display: none;
+
+  .button:focus & {
+    display: block;
+  }
+}
+
+.button__icon--default {
+
+  .button:focus & {
+    display: none;
+  }
+}

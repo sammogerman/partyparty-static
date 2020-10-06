@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="32px" viewBox="0 0 19 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>social-facebook</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop_Home" transform="translate(-477.000000, -4079.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Social-section" transform="translate(0.000000, 3917.000000)">
+                <g id="social-facebook" transform="translate(451.000000, 142.000000)">
+                    <g id="social-facebook" transform="translate(26.000000, 20.000000)">
+                        <path d="M18.2083333,5.6 L13.3,5.6 C12.6666667,5.6 12.0333333,6.4 12.0333333,7.52 L12.0333333,11.2 L18.2083333,11.2 L18.2083333,16.48 L12.0333333,16.48 L12.0333333,32 L6.175,32 L6.175,16.32 L0.791666667,16.32 L0.791666667,11.04 L6.175,11.04 L6.175,8 C6.175,3.52 9.18333333,0 13.3,0 L18.2083333,0 L18.2083333,5.6" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
