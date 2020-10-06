@@ -1,26 +1,20 @@
 .support-us {
   @include container();
-  padding-top: rhythm(31);
+  padding-top: 174px;
+  padding-bottom: rhythm(10);
 
   @include breakpoint ($from:medium) {
-    padding-top: rhythm(44);
+    padding-bottom: rhythm(14);
+    padding-top: 285px;
   }
 
   @include breakpoint ($from:large) {
-    padding-top: rhythm(48);
+    padding-top: rhythm(37.5);
   }
 }
 
 .support-us-title{
   margin-bottom: rhythm(3);
-
-  // @include breakpoint ($from:medium) {
-  //   margin-top: rhythm(44);
-  // }
-
-  // @include breakpoint ($from:large) {
-  //   margin-top: rhythm(48);
-  // }
 }
 
 .support-us-body {
@@ -32,8 +26,8 @@
   flex-direction: column;
   align-items: center;
   list-style-type: none;
-  padding: rhythm(5) 0 rhythm(10) 0;
-  margin: 0;
+  margin-top: rhythm(5);
+  padding: 0;
 
   @include breakpoint ($from: medium) {
     flex-direction: row;
@@ -44,13 +38,17 @@
 .support-us-list-item {
 
   @include breakpoint ($until: medium) {
-    &:nth-of-type(1) {
+    &:not(:last-child) {
       margin-bottom: rhythm(2);
     }
   }
+
+  @include breakpoint ($from: medium) {
+    margin: 0 12px;
+  }
 }
 
-// .footer:before {
+// .support-us:before {
 //   background-color: $color-pink-screen;
 //   transform: perspective(500px) rotateY(-9deg);
 //   content: '';
@@ -63,7 +61,7 @@
 //   z-index: -1;
 // }
 
-// .footer:after {
+// .support-us:after {
 //   background-color: $color-turquise-screen;
 //   transform: perspective(500px) rotateY(9deg);
 //   content: '';
