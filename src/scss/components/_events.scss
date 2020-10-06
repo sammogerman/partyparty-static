@@ -1,0 +1,63 @@
+.events {
+  @include container();
+  margin-top: rhythm(15);
+}
+
+.events__title {
+  margin-bottom: rhythm(5);
+
+  @include breakpoint ($from: medium) {
+    margin-bottom: rhythm(10);
+  }
+}
+
+.events__list {
+  list-style-type: none;
+}
+
+.events__list-image {
+  display: none;
+
+  @include breakpoint ($from: medium) {
+    display: block;
+  }
+}
+
+.events__list-time {
+  margin-bottom: rhythm(1);
+
+  & .text--subtitle-1--turquise {
+    color: $color-turquise;
+  }
+}
+
+.events__list-title {
+  margin-bottom: rhythm(1);
+
+  & .text--title-4--white {
+    color: $color-white;
+  }
+}
+
+.events__list-body {
+  margin-bottom: rhythm(5);
+
+  & .text--body-2--white {
+    color: $color-white;
+  }
+}
+
+.events__image {
+  height: 340px;
+  width: 326px;
+  background-color: gray;
+  margin-top: rhythm(5);
+}
+
+.events__buttons-list {
+  list-style-type: none;
+}
+
+.events__buttons-item {
+  margin-bottom: rhythm(2);
+}
