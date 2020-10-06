@@ -1,7 +1,8 @@
 .support-us {
-  @include container();
+  margin-top: 84px;
   padding-top: 174px;
   padding-bottom: rhythm(10);
+  position: relative;
 
   @include breakpoint ($from:medium) {
     padding-bottom: rhythm(14);
@@ -11,6 +12,36 @@
   @include breakpoint ($from:large) {
     padding-top: rhythm(37.5);
   }
+}
+
+.support-us:before {
+  background-color: $color-pink-screen;
+  transform: perspective(500px) rotateY(9deg);
+  content: '';
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 80px;
+  bottom: -100px;
+  left: -200px;
+  right: -250px;
+  z-index: -1;
+}
+
+.support-us:after {
+  background-color: $color-turquise-screen;
+  transform: perspective(500px) rotateY(-17deg);
+  content: '';
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 100px;
+  bottom: -150px;
+  left: -450px;
+  right: -200px;
+  z-index: -1;
+}
+
+.support-us__inner {
+  @include container();
 }
 
 .support-us-title{
@@ -47,29 +78,3 @@
     margin: 0 12px;
   }
 }
-
-// .support-us:before {
-//   background-color: $color-pink-screen;
-//   transform: perspective(500px) rotateY(-9deg);
-//   content: '';
-//   mix-blend-mode: screen;
-//   position: absolute;
-//   top: 520px;
-//   bottom: 120px;
-//   left: -200px;
-//   right: -200px;
-//   z-index: -1;
-// }
-
-// .support-us:after {
-//   background-color: $color-turquise-screen;
-//   transform: perspective(500px) rotateY(9deg);
-//   content: '';
-//   mix-blend-mode: screen;
-//   position: absolute;
-//   top: 120px;
-//   bottom: 35px;
-//   left: -200px;
-//   right: -200px;
-//   z-index: -1;
-// }
