@@ -9,9 +9,13 @@
   @include container();
 
   @include breakpoint ($from: medium) {
-    column-gap: rhythm(3);
+    column-gap: rhythm(2);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
     }
 }
 
