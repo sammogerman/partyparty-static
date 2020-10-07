@@ -1,15 +1,19 @@
 .support-us {
-  margin-top: 84px;
+  overflow: hidden;
   padding-top: 174px;
   padding-bottom: rhythm(10);
   position: relative;
 
   @include breakpoint ($from:medium) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: rhythm(2);
     padding-bottom: rhythm(14);
     padding-top: 285px;
   }
 
   @include breakpoint ($from:large) {
+    column-gap: rhythm(2);
     padding-top: rhythm(37.5);
   }
 }
@@ -20,7 +24,7 @@
   content: '';
   mix-blend-mode: screen;
   position: absolute;
-  top: 80px;
+  top: 164px;
   bottom: -100px;
   left: -200px;
   right: -250px;
@@ -33,7 +37,7 @@
   content: '';
   mix-blend-mode: screen;
   position: absolute;
-  top: 100px;
+  top: 184px;
   bottom: -150px;
   left: -450px;
   right: -200px;
@@ -42,17 +46,29 @@
 
 .support-us__inner {
   @include container();
+  grid-column: 2/12;
+
+  @include breakpoint($from: large) {
+    grid-column: 3/11;
+  }
 }
 
-.support-us-title{
+.support-us__title{
   margin-bottom: rhythm(3);
+
+  //I just added this because it looked kinda smooshed after adding to the top-values 
+  //of the background shapes. Idk if it's necessary and we'll probably change it when we
+  //add the events component to the mix.
+  @include breakpoint($until: medium) {
+    padding-top: 100px; 
+  }
 }
 
-.support-us-body {
+.support-us__body {
   text-align: center;
 }
 
-.support-us-list {
+.support-us__list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,7 +82,7 @@
   }
 }
 
-.support-us-list-item {
+.support-us__list-item {
 
   @include breakpoint ($until: medium) {
     &:not(:last-child) {
