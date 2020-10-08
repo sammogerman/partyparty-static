@@ -1,7 +1,9 @@
 .events {
   @include container();
   margin-top: rhythm(15);
+}
 
+.events__inner {
   @include breakpoint ($from: medium) {
     display: grid;
     column-gap: 12px;
@@ -13,9 +15,9 @@
   margin-bottom: rhythm(5);
 
   @include breakpoint ($from: medium) {
-    margin-bottom: rhythm(10);
     grid-column: 3/11;
     justify-self: center;
+    margin-bottom: rhythm(10);
   }
 }
 
@@ -26,12 +28,17 @@
   @include breakpoint ($from: medium) {
     grid-column: 1/8;
     grid-row: 2/3;
+    margin-top: 0;
+  }
+
+  @include breakpoint ($from: large) {
+    padding-top: 19px;
   }
 }
 
 .events__list-item {
-  display: flex;
   align-items: flex-start;
+  display: flex;
 }
 
 .events__list-icon {
@@ -65,18 +72,26 @@
 
 .events__list-body {
   margin-bottom: rhythm(5);
-
 }
 
 .events__image {
   background-color: gray;
   height: 340px;
+  margin-bottom: 137px;
   margin-top: rhythm(5);
 
   @include breakpoint ($from: medium) {
     grid-column: 8/13;
     grid-row: 2/3;
+    height: 303px;
+    margin-top: 58px;
   }
+
+  @include breakpoint ($from: large) {
+    height: 458px;
+    margin-top: 0;
+    margin-bottom: rhythm(10);
+  } 
 }
 
 .events__buttons-list {
