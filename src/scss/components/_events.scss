@@ -33,6 +33,7 @@
 
   @include breakpoint ($from: large) {
     padding-top: 19px;
+    padding-left: 24px;
   }
 }
 
@@ -47,6 +48,10 @@
   @include breakpoint ($from: medium) {
     display: block;
     margin-right: 12px;
+  }
+
+  @include breakpoint ($from: medium) {
+    margin-right: rhythm(3);
   }
 }
 
