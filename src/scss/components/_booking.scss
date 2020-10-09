@@ -1,4 +1,6 @@
 .booking {
+  overflow: hidden;
+  position: relative;
   @include breakpoint ($from: medium) {
     column-gap: rhythm(2);
     display: grid;
@@ -10,30 +12,28 @@
   }
 }
 
-//Background shapes aren't right but I'm going to hold off on messing with them until 
-//I get a little closer with other parts of this page.
 .booking:before {
   background-color: $color-pink-screen;
-  transform: perspective(500px) rotateY(-9deg);
+  transform: rotate(9deg);
   content: '';
   mix-blend-mode: screen;
   position: absolute;
-  top: 120px;
-  bottom: 120px;
-  left: -200px;
-  right: -200px;
+  top: -250px;
+  bottom: 100px;
+  left: -50px;
+  right: -350px;
   z-index: -1;
 }
 
 .booking:after {
   background-color: $color-turquise-screen;
-  transform: perspective(500px) rotateY(9deg);
+  transform: rotate(-10deg);
   content: '';
   mix-blend-mode: screen;
   position: absolute;
-  top: 120px;
-  bottom: 35px;
-  left: -200px;
+  top: -250px;
+  bottom: 80px;
+  left: -700px;
   right: -200px;
   z-index: -1;
 }
@@ -55,6 +55,9 @@
   @include breakpoint ($from: medium) {
     margin-top: rhythm(14);
   }
+}
+.booking__text {
+  margin-bottom: 216px;
 }
 
 .booking__text-1 {
