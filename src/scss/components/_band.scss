@@ -1,9 +1,11 @@
 .band {
   padding-bottom: 150px;
+  padding-top: rhythm(26);
   position: relative;
 
   @include breakpoint($from: medium) {
     padding-bottom: 250px;
+    padding-top: rhythm(35);
   }
 }
 
@@ -45,13 +47,11 @@
   background-color: $color-blue-grey;
   display: flex;
   justify-content: center;
-  margin-top: rhythm(26);
   text-align: center;
   text-transform: uppercase;
   width: 100%;
 
   @include breakpoint($from: medium) {
-    margin-top: rhythm(35);
     width: auto;
   }
 }
