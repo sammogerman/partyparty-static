@@ -40,16 +40,23 @@
   @include breakpoint ($from: large) {
     grid-column: 1/8;
     padding-top: 19px;
-    padding-left: 24px;
   }
 }
 
 .events__list-item {
-  align-items: flex-start;
-  display: flex;
 
   &:not(:last-child) {
     margin-bottom: rhythm(5);
+  }
+
+  @include breakpoint ($from: medium) {
+    column-gap: rhythm(2);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
   }
 }
 
@@ -58,14 +65,16 @@
 
   @include breakpoint ($from: medium) {
     display: block;
-    margin-right: rhythm(2);
-  }
-
-  @include breakpoint ($from: medium) {
-    margin-right: rhythm(3);
+    grid-column: 1/2;
+    justify-self: end;
   }
 }
 
+.events__list-info {
+  @include breakpoint($from: medium) {
+    grid-column: 2/-1
+  }
+}
 .events__list-time {
   margin-bottom: rhythm(1);
 }
