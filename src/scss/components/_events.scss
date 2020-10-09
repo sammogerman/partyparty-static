@@ -6,8 +6,12 @@
 .events__inner {
   @include breakpoint ($from: medium) {
     display: grid;
-    column-gap: 12px;
+    column-gap: rhythm(2);
     grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
   }
 }
 
@@ -23,15 +27,18 @@
 
 .events__list {
   list-style-type: none;
+  margin-bottom: rhythm(5);
   padding: 0;
 
   @include breakpoint ($from: medium) {
     grid-column: 1/8;
     grid-row: 2/3;
     margin-top: 0;
+    margin-bottom: rhythm(10);
   }
 
   @include breakpoint ($from: large) {
+    grid-column: 1/8;
     padding-top: 19px;
     padding-left: 24px;
   }
@@ -40,6 +47,10 @@
 .events__list-item {
   align-items: flex-start;
   display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: rhythm(5);
+  }
 }
 
 .events__list-icon {
@@ -47,7 +58,7 @@
 
   @include breakpoint ($from: medium) {
     display: block;
-    margin-right: 12px;
+    margin-right: rhythm(2);
   }
 
   @include breakpoint ($from: medium) {
@@ -55,28 +66,12 @@
   }
 }
 
-.events__list-info {
-  @include breakpoint($from: medium) {
-    //One column-gap of space between this and the image on the design.
-    margin-right: 12px;
-  }
-
-  @include breakpoint($from: large) {
-    //Approximated this space by adding 2 gutters plus the width 
-    //of a grid column to get this number.
-    margin-right: 60px; 
-  }
-}
 .events__list-time {
   margin-bottom: rhythm(1);
 }
 
 .events__list-title {
   margin-bottom: rhythm(2);
-}
-
-.events__list-body {
-  margin-bottom: rhythm(5);
 }
 
 .events__image {
@@ -94,8 +89,8 @@
 
   @include breakpoint ($from: large) {
     height: 458px;
-    margin-top: 0;
     margin-bottom: rhythm(10);
+    margin-top: 0;
   } 
 }
 
@@ -111,7 +106,7 @@
 
   @include breakpoint($from: medium) {
     flex-direction: row;
-    grid-column: 3/11;
+    grid-column: 1/-1;
   }
 }
 
