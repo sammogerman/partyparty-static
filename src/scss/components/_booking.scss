@@ -1,8 +1,19 @@
 .booking {
   @include container();
+
+  @include breakpoint ($from: medium) {
+    column-gap: rhythm(2);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(4);
+  }
 }
 
-
+//Background shapes aren't right but I'm going to hold off on messing with them until 
+//I get a little closer with other parts of this page.
 .booking:before {
   background-color: $color-pink-screen;
   transform: perspective(500px) rotateY(-9deg);
@@ -29,6 +40,28 @@
   z-index: -1;
 }
 
+.booking__inner {
+  @include breakpoint ($from: medium) {
+    grid-column: 2/12;
+  }
+  @include breakpoint ($from: large) {
+    grid-column: 3/11;
+  }
+}
+
 .booking__title {
-  margin-top: 56px;
+  margin-bottom: rhythm(5);
+  margin-top: rhythm(7);
+
+  @include breakpoint ($from: medium) {
+    margin-top: rhythm(14);
+  }
+}
+
+.booking__text-1 {
+  margin-bottom: rhythm(4);
+
+  @include breakpoint ($from: medium) {
+    margin-bottom: rhythm(3);
+  }
 }
