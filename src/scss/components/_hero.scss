@@ -1,0 +1,58 @@
+.hero__image {
+  height: auto;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+.hero__text {
+  @include container();
+
+  @include breakpoint ($from: medium) {
+    column-gap: rhythm(2);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
+    }
+}
+
+.hero__text-inner {
+
+  @include breakpoint($from: medium) {
+    grid-column: 2/12;
+  }
+
+  @include breakpoint($from: large) {
+    grid-column: 3/11;
+  }
+}
+.hero__title {
+  margin-top: rhythm(-2);
+  text-align: center;
+
+  @include breakpoint($from: medium) {
+    margin-top: rhythm(-5);
+  }
+}
+
+.hero__body-1 {
+  margin-top: rhythm(5);
+  text-align: center;
+}
+
+.hero__body-2 {
+  margin-top: rhythm(4);
+  text-align: center;
+
+  @include breakpoint($from: medium) {
+    margin-top: rhythm(3);
+  }
+}
+
+.hero__button {
+  margin-top: rhythm(5);
+  text-align: center;
+}

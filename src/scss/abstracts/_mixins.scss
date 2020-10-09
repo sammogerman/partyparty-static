@@ -63,7 +63,7 @@
   @include breakpoint($from: medium) {
     font-size: 58px;
     line-height: 56px;
-    padding: rhythm(2) 0;
+    padding: rhythm(2) rhythm(1);
   }
 
   @include breakpoint($from: large) {
@@ -105,6 +105,7 @@
   font-weight: $font-weight-bold;
   letter-spacing: 0;
   line-height: 36px;
+  text-align: center;
 
   @include breakpoint($from: medium) {
     font-size: 30px;
@@ -115,7 +116,6 @@
     font-size: 36px;
     letter-spacing: -0.25px;
     line-height: 42px;
-    text-align: center;
   }
 }
 
@@ -191,7 +191,6 @@
 }
 
 @mixin body-1 {
-  color: $color-black;
   font-size: 16px;
   letter-spacing: 0.25px;
   line-height: 24px;
@@ -208,8 +207,8 @@
 }
 
 @mixin body-2 {
-  color: $color-black;
   font-size: 16px;
+  font-weight: $font-weight-regular;
   letter-spacing: 0.25px;
   line-height: 24px;
 
@@ -224,7 +223,6 @@
 }
 
 @mixin body-3 {
-  color: $color-black;
   font-size: 18px;
   font-weight: $font-weight-bold;
   letter-spacing: 0.25px;
