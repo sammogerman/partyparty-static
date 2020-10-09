@@ -104,6 +104,7 @@
   font-weight: $font-weight-bold;
   letter-spacing: 0;
   line-height: 36px;
+  text-align: center;
 
   @include breakpoint($from: medium) {
     font-size: 30px;
@@ -114,7 +115,6 @@
     font-size: 36px;
     letter-spacing: -0.25px;
     line-height: 42px;
-    text-align: center;
   }
 }
 
@@ -208,6 +208,7 @@
 @mixin body-2 {
   color: $color-black;
   font-size: 16px;
+  font-weight: $font-weight-regular;
   letter-spacing: 0.25px;
   line-height: 24px;
 
