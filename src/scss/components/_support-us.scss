@@ -1,0 +1,106 @@
+.support-us {
+  overflow: hidden;
+  padding-top: 174px;
+  padding-bottom: rhythm(10);
+  position: relative;
+
+  @include breakpoint ($from:medium) {
+    padding-bottom: rhythm(14);
+    padding-top: 285px;
+  }
+
+  @include breakpoint ($from:large) {
+    padding-top: rhythm(37.5);
+  }
+}
+
+.support-us:before {
+  background-color: $color-pink-screen;
+  transform: perspective(500px) rotateY(9deg);
+  content: '';
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 164px;
+  bottom: -100px;
+  left: -200px;
+  right: -250px;
+  z-index: -1;
+}
+
+.support-us:after {
+  background-color: $color-turquise-screen;
+  transform: perspective(500px) rotateY(-17deg);
+  content: '';
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 184px;
+  bottom: -150px;
+  left: -450px;
+  right: -200px;
+  z-index: -1;
+}
+
+.support-us__inner {
+  @include container();
+
+  @include breakpoint($from: medium) {
+    column-gap: rhythm(2);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include breakpoint($from: large) {
+    column-gap: rhythm(3);
+  }
+}
+
+.support-us__inner-layout {
+  @include breakpoint($from: medium) {
+    grid-column: 2/12;
+  }
+
+  @include breakpoint($from: large) {
+    grid-column: 3/11;
+  }
+}
+
+.support-us__title{
+  margin-bottom: rhythm(3);
+
+  //I just added this because it looked kinda smooshed after adding to the top-values 
+  //of the background shapes. Idk if it's necessary and we'll probably change it when we
+  //add the events component to the mix.
+  @include breakpoint($until: medium) {
+    padding-top: 100px; 
+  }
+}
+
+.support-us__body {
+  text-align: center;
+}
+
+.support-us__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin-top: rhythm(5);
+  padding: 0;
+
+  @include breakpoint ($from: medium) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.support-us__list-item {
+  @include breakpoint ($until: medium) {
+    &:not(:last-child) {
+      margin-bottom: rhythm(2);
+    }
+  }
+
+  @include breakpoint ($from: medium) {
+    margin: 0 12px;
+  }
+}
