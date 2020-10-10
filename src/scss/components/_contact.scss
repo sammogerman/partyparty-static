@@ -1,0 +1,70 @@
+.contact {
+  @include container();
+
+  @include breakpoint ($from: medium) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: rhythm(2);
+  }
+  @include breakpoint ($from: large) {
+    grid-gap: rhythm(3);
+  }
+}
+
+.contact__inner {
+  @include breakpoint ($from: medium) {
+    grid-column: 1/13;
+  }
+  @include breakpoint ($from: large) {
+    grid-column: 3/11;
+  }
+}
+
+.contact__title {
+  margin-top: rhythm(10); //temporary value
+  margin-bottom: rhythm(3);
+
+  @include breakpoint ($from: medium) {
+    margin-bottom: rhythm(5);
+  }
+}
+
+.contact__text {
+  text-align: center;
+  margin-bottom: rhythm(5);
+
+  @include breakpoint ($from: medium) {
+    margin-bottom: rhythm(10);
+  }
+}
+
+.contact__form:nth-last-child(2) {
+  margin-bottom: rhythm(5);
+}
+
+.contact__form-item {
+  margin-bottom: rhythm(3);
+
+  &:nth-last-of-type(2) {
+    margin-bottom: rhythm(5);
+  }
+
+  @include breakpoint ($from: medium) {
+    margin-bottom: rhythm(4);
+  }
+}
+
+.contact__form--label {
+  margin-bottom: rhythm(1);
+  display: block;
+}
+
+.contact__form--input {
+  border: 1px solid #BCC3C9;
+  height: 56px;
+  width: 100%;
+}
+
+.contact__form-item--submit {
+  text-align: center;
+}
