@@ -41,3 +41,7 @@
 .text--body-3 {
   @include body-3;
 }
+
+.text--pink {
+  color: $color-pink;
+}
