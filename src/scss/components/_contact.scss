@@ -3,38 +3,56 @@
 
   @include breakpoint ($from: medium) {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
     grid-gap: rhythm(2);
+    grid-template-columns: repeat(12, 1fr);
   }
+
   @include breakpoint ($from: large) {
     grid-gap: rhythm(3);
   }
 }
 
-.contact__inner {
+.contact__title {
+  margin-bottom: rhythm(3);
+  margin-top: rhythm(10); //temporary value
+
+  @include breakpoint ($from: medium) {
+    grid-column: 4/10;
+    margin-bottom: rhythm(5);
+  }
+
+  @include breakpoint ($from: large) {
+    //this value looks like it's more like 5/9 at large size in the design but it 
+    //scrunches up kinda funny. is it okay that I leave this at 4/10?
+    grid-column: 4/10; 
+  }
+}
+
+.contact__text {
+  margin-bottom: rhythm(5);
+  text-align: center;
+
   @include breakpoint ($from: medium) {
     grid-column: 1/13;
+    margin-bottom: rhythm(10);
   }
+
   @include breakpoint ($from: large) {
     grid-column: 3/11;
   }
 }
 
-.contact__title {
-  margin-top: rhythm(10); //temporary value
-  margin-bottom: rhythm(3);
-
+.contact__form {
   @include breakpoint ($from: medium) {
-    margin-bottom: rhythm(5);
+    display: grid;
+    grid-column: 1/13;
+    grid-gap: rhythm(2);
+    grid-template-columns: repeat(12, 1fr);
   }
-}
 
-.contact__text {
-  text-align: center;
-  margin-bottom: rhythm(5);
-
-  @include breakpoint ($from: medium) {
-    margin-bottom: rhythm(10);
+  @include breakpoint ($from: large) {
+    grid-column: 3/11;
+    grid-gap: rhythm(3);
   }
 }
 
@@ -46,13 +64,26 @@
   }
 
   @include breakpoint ($from: medium) {
+    grid-column: 1/13;
     margin-bottom: rhythm(4);
   }
 }
 
+.contact__form-item--half-1 {
+  @include breakpoint ($from: medium) {
+    grid-column: 1/7;
+  }
+}
+
+.contact__form-item--half-2 {
+  @include breakpoint ($from: medium) {
+    grid-column: 7/13;
+  }
+}
+
 .contact__form--label {
-  margin-bottom: rhythm(1);
   display: block;
+  margin-bottom: rhythm(1);
 }
 
 .contact__form--input {
