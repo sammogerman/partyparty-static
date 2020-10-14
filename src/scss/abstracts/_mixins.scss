@@ -206,7 +206,6 @@
 }
 
 @mixin body-2 {
-  color: $color-black;
   font-size: 16px;
   font-weight: $font-weight-regular;
   letter-spacing: 0.25px;
@@ -223,7 +222,6 @@
 }
 
 @mixin body-3 {
-  color: $color-black;
   font-size: 18px;
   font-weight: $font-weight-bold;
   letter-spacing: 0.25px;
