@@ -2,10 +2,11 @@
   overflow: hidden;
   position: relative;
   padding-top: rhythm(7);
-  padding-bottom: 216px;
+  padding-bottom: 316px;
 
   @include breakpoint($from: medium) {
     padding-top: rhythm(14);
+    padding-bottom: 370px;
   }
 }
 
@@ -16,7 +17,7 @@
   mix-blend-mode: screen;
   position: absolute;
   top: -250px;
-  bottom: 100px;
+  bottom: 200px;
   left: -50px;
   right: -350px;
   z-index: -1;
@@ -29,7 +30,7 @@
   mix-blend-mode: screen;
   position: absolute;
   top: -250px;
-  bottom: 80px;
+  bottom: 180px;
   left: -700px;
   right: -200px;
   z-index: -1;
