@@ -22,8 +22,6 @@
   }
 
   @include breakpoint ($from: large) {
-    //this value looks like it's more like 5/9 at large size in the design but it 
-    //scrunches up kinda funny. is it okay that I leave this at 4/10?
     grid-column: 4/10; 
   }
 }
@@ -56,15 +54,33 @@
   }
 }
 
-.contact__form--label {
+.contact__form-label {
   display: block;
   margin-bottom: rhythm(1);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 28px;
 }
 
-.contact__form--input {
+.contact__form-label--required:after {
+  color: $color-pink;
+  content: '*';
+}
+
+.contact__form-input {
   border: 1px solid #BCC3C9;
+  color: #191717;
+  font-family: Rubik;
+  font-size: 20px;
   height: 56px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
   width: 100%;
+}
+
+.contact__form-input:focus {
+  border: 1px solid #BCC3C9;
 }
 
 .contact__form-item {
