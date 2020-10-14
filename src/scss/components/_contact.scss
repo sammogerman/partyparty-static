@@ -3,12 +3,12 @@
 
   @include breakpoint ($from: medium) {
     display: grid;
-    grid-gap: rhythm(2);
+    column-gap: rhythm(2);
     grid-template-columns: repeat(12, 1fr);
   }
 
   @include breakpoint ($from: large) {
-    grid-gap: rhythm(3);
+    column-gap: rhythm(3);
   }
 }
 
@@ -19,10 +19,6 @@
   @include breakpoint ($from: medium) {
     grid-column: 4/10;
     margin-bottom: rhythm(5);
-  }
-
-  @include breakpoint ($from: large) {
-    grid-column: 4/10; 
   }
 }
 
@@ -44,13 +40,13 @@
   @include breakpoint ($from: medium) {
     display: grid;
     grid-column: 1/13;
-    grid-gap: rhythm(2);
-    grid-template-columns: repeat(12, 1fr);
+    column-gap: rhythm(2);
+    grid-template-columns: repeat(8, 1fr);
   }
 
   @include breakpoint ($from: large) {
     grid-column: 3/11;
-    grid-gap: rhythm(3);
+    column-gap: rhythm(3);
   }
 }
 
@@ -91,7 +87,7 @@
   }
 
   @include breakpoint ($from: medium) {
-    grid-column: 1/13;
+    grid-column: 1/9;
     margin-bottom: rhythm(4);
   }
 }
@@ -100,14 +96,18 @@
 //inputs on the same row at tablet/desktop sizes
 .contact__form-item--half-1 {
   @include breakpoint ($from: medium) {
-    grid-column: 1/7;
+    grid-column: 1/5;
   }
 }
 
 .contact__form-item--half-2 {
   @include breakpoint ($from: medium) {
-    grid-column: 7/13;
+    grid-column: 5/9;
   }
+}
+
+.contact__form-input--textarea {
+  height: rhythm(15); //approx 
 }
 
 .contact__form-item--submit {
