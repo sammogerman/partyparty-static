@@ -8,7 +8,7 @@
   }
 
   @include breakpoint ($from: large) {
-    column-gap: rhythm(4);
+    column-gap: rhythm(3);
   }
 }
 
@@ -57,7 +57,7 @@
   }
 }
 .booking__text {
-  margin-bottom: 216px;
+  padding-bottom: 216px;
 }
 
 .booking__text-1 {
