@@ -1,9 +1,15 @@
-.booking {
+.page-title {
   overflow: hidden;
   position: relative;
+  padding-top: rhythm(7);
+  padding-bottom: 216px;
+
+  @include breakpoint($from: medium) {
+    padding-top: rhythm(14);
+  }
 }
 
-.booking:before {
+.page-title:before {
   background-color: $color-pink-screen;
   transform: rotate(9deg);
   content: '';
@@ -16,7 +22,7 @@
   z-index: -1;
 }
 
-.booking:after {
+.page-title:after {
   background-color: $color-turquise-screen;
   transform: rotate(-10deg);
   content: '';
@@ -29,7 +35,7 @@
   z-index: -1;
 }
 
-.booking__inner {
+.page-title__inner {
   @include container();
   @include breakpoint ($from: medium) {
     column-gap: rhythm(2);
@@ -42,7 +48,7 @@
   }
 }
 
-.booking__inner-layout {
+.page-title__inner-layout {
   @include breakpoint ($from: medium) {
     grid-column: 2/12;
   }
@@ -51,19 +57,11 @@
   }
 }
 
-.booking__title {
+.page-title__title {
   margin-bottom: rhythm(5);
-  margin-top: rhythm(7);
-
-  @include breakpoint ($from: medium) {
-    margin-top: rhythm(14);
-  }
-}
-.booking__text {
-  padding-bottom: 216px;
 }
 
-.booking__text-1 {
+.page-title__text-1 {
   margin-bottom: rhythm(4);
   text-align: center;
 
@@ -72,6 +70,6 @@
   }
 }
 
-.booking__text-2 {
+.page-title__text-2 {
   text-align: center;
 }
