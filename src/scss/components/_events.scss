@@ -1,0 +1,129 @@
+.events {
+  @include container();
+  margin-top: rhythm(15);
+}
+
+.events__inner {
+  @include breakpoint ($from: medium) {
+    display: grid;
+    column-gap: rhythm(2);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
+  }
+}
+
+.events__title {
+  margin-bottom: rhythm(5);
+
+  @include breakpoint ($from: medium) {
+    grid-column: 3/11;
+    justify-self: center;
+    margin-bottom: rhythm(10);
+  }
+}
+
+.events__list {
+  list-style-type: none;
+  margin-bottom: rhythm(5);
+  padding: 0;
+
+  @include breakpoint ($from: medium) {
+    grid-column: 1/8;
+    grid-row: 2/3;
+    margin-top: 0;
+    margin-bottom: rhythm(10);
+  }
+
+  @include breakpoint ($from: large) {
+    grid-column: 1/8;
+    padding-top: 19px;
+  }
+}
+
+.events__list-item {
+
+  &:not(:last-child) {
+    margin-bottom: rhythm(5);
+  }
+
+  @include breakpoint ($from: medium) {
+    column-gap: rhythm(2);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
+  }
+}
+
+.events__list-icon {
+  display: none;
+
+  @include breakpoint ($from: medium) {
+    display: block;
+    grid-column: 1/2;
+    justify-self: end;
+  }
+}
+
+.events__list-info {
+  @include breakpoint($from: medium) {
+    grid-column: 2/-1
+  }
+}
+.events__list-time {
+  margin-bottom: rhythm(1);
+}
+
+.events__list-title {
+  margin-bottom: rhythm(2);
+}
+
+.events__image {
+  background-color: gray;
+  height: 340px;
+  margin-bottom: 137px;
+  margin-top: rhythm(5);
+
+  @include breakpoint ($from: medium) {
+    grid-column: 8/13;
+    grid-row: 2/3;
+    height: 303px;
+    margin-top: 58px;
+  }
+
+  @include breakpoint ($from: large) {
+    height: 458px;
+    margin-bottom: rhythm(10);
+    margin-top: 0;
+  } 
+}
+
+.events__buttons-list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/5;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint($from: medium) {
+    flex-direction: row;
+    grid-column: 1/-1;
+  }
+}
+
+.events__buttons-item {
+  margin-bottom: rhythm(2); 
+  
+  @include breakpoint($from: medium) {
+    margin-left: rhythm(1.5);
+    margin-right: rhythm(1.5);
+  }
+}
