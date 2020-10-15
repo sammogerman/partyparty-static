@@ -42,7 +42,8 @@
   }
 
   @include breakpoint($from: large) {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: $width-page-max;
     padding: 0 rhythm(7);
   }
@@ -225,6 +226,7 @@
 }
 
 @mixin body-2 {
+  color: $color-black;
   font-size: 16px;
   font-weight: $font-weight-regular;
   letter-spacing: 0.25px;
