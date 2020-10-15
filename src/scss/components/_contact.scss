@@ -1,0 +1,102 @@
+.contact {
+  @include container();
+
+  @include breakpoint ($from: medium) {
+    display: grid;
+    column-gap: rhythm(2);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
+  }
+}
+
+.contact__title {
+  margin-bottom: rhythm(3);
+
+  @include breakpoint ($from: medium) {
+    grid-column: 4/10;
+    margin-bottom: rhythm(5);
+  }
+}
+
+.contact__text {
+  margin-bottom: rhythm(5);
+  text-align: center;
+
+  @include breakpoint ($from: medium) {
+    grid-column: 1/13;
+    margin-bottom: rhythm(10);
+  }
+
+  @include breakpoint ($from: large) {
+    grid-column: 3/11;
+  }
+}
+
+.contact__form {
+  @include breakpoint ($from: medium) {
+    display: grid;
+    grid-column: 1/13;
+    column-gap: rhythm(2);
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @include breakpoint ($from: large) {
+    grid-column: 3/11;
+    column-gap: rhythm(3);
+  }
+}
+
+.contact__form-label {
+  @include form-label;
+}
+
+.contact__form-label--required:after {
+  color: $color-pink;
+  content: '*';
+}
+
+.contact__form-input {
+  @include form-input;
+}
+
+.contact__form-input:focus {
+  border: 1px solid #BCC3C9;
+}
+
+.contact__form-item {
+  margin-bottom: rhythm(3);
+
+  &:nth-last-of-type(2) {
+    margin-bottom: rhythm(5);
+  }
+
+  @include breakpoint ($from: medium) {
+    grid-column: 1/9;
+    margin-bottom: rhythm(4);
+  }
+}
+
+//These '--half' class modifiers are to get the date and time 
+//inputs on the same row at tablet/desktop sizes
+.contact__form-item--half-1 {
+  @include breakpoint ($from: medium) {
+    grid-column: 1/5;
+  }
+}
+
+.contact__form-item--half-2 {
+  @include breakpoint ($from: medium) {
+    grid-column: 5/9;
+  }
+}
+
+.contact__form-input--textarea {
+  height: rhythm(15);
+}
+
+.contact__form-item--submit {
+  text-align: center;
+}
