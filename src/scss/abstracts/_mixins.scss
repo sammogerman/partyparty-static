@@ -48,6 +48,25 @@
   }
 }
 
+@mixin form-label {
+  display: block;
+  margin-bottom: rhythm(1);
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 22px;
+
+  @include breakpoint ($from: medium) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @include breakpoint ($from: large) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
 @mixin title-1 {
   background-color: $color-blue-grey;
   color: $color-white;

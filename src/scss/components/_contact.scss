@@ -51,12 +51,7 @@
 }
 
 .contact__form-label {
-  display: block;
-  margin-bottom: rhythm(1);
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 28px;
+  @include form-label;
 }
 
 .contact__form-label--required:after {
@@ -66,12 +61,13 @@
 
 .contact__form-input {
   border: 1px solid #BCC3C9;
-  color: #191717;
-  font-family: Rubik;
+  color: $color-black;
+  font-family: $font-family-sans;
   font-size: 20px;
   height: 56px;
   line-height: 30px;
   letter-spacing: 0.25px;
+  padding: 13px 16px;
   width: 100%;
 }
 
@@ -107,7 +103,7 @@
 }
 
 .contact__form-input--textarea {
-  height: rhythm(15); //approx 
+  height: rhythm(15);
 }
 
 .contact__form-item--submit {
