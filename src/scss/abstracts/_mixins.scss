@@ -68,6 +68,18 @@
   }
 }
 
+@mixin form-input {
+  border: 1px solid #BCC3C9;
+  color: $color-black;
+  font-family: $font-family-sans;
+  font-size: 20px;
+  height: 56px;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  padding: 13px 16px;
+  width: 100%;
+}
+
 @mixin title-1 {
   background-color: $color-blue-grey;
   color: $color-white;
