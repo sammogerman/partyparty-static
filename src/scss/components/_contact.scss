@@ -14,7 +14,6 @@
 
 .contact__title {
   margin-bottom: rhythm(3);
-  margin-top: rhythm(10); //temporary value
 
   @include breakpoint ($from: medium) {
     grid-column: 4/10;
