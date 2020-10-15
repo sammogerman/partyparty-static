@@ -1,0 +1,76 @@
+.page-title {
+  overflow: hidden;
+  position: relative;
+  padding-top: rhythm(7);
+  padding-bottom: 316px;
+
+  @include breakpoint($from: medium) {
+    padding-top: rhythm(14);
+    padding-bottom: 370px;
+  }
+}
+
+.page-title:before {
+  background-color: $color-pink-screen;
+  transform: rotate(9deg);
+  content: '';
+  mix-blend-mode: screen;
+  position: absolute;
+  top: -250px;
+  bottom: 200px;
+  left: -50px;
+  right: -350px;
+  z-index: -1;
+}
+
+.page-title:after {
+  background-color: $color-turquise-screen;
+  transform: rotate(-10deg);
+  content: '';
+  mix-blend-mode: screen;
+  position: absolute;
+  top: -250px;
+  bottom: 180px;
+  left: -700px;
+  right: -200px;
+  z-index: -1;
+}
+
+.page-title__inner {
+  @include container();
+  @include breakpoint ($from: medium) {
+    column-gap: rhythm(2);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
+  }
+}
+
+.page-title__inner-layout {
+  @include breakpoint ($from: medium) {
+    grid-column: 2/12;
+  }
+  @include breakpoint ($from: large) {
+    grid-column: 3/11;
+  }
+}
+
+.page-title__title {
+  margin-bottom: rhythm(5);
+}
+
+.page-title__text-1 {
+  margin-bottom: rhythm(4);
+  text-align: center;
+
+  @include breakpoint ($from: medium) {
+    margin-bottom: rhythm(3);
+  }
+}
+
+.page-title__text-2 {
+  text-align: center;
+}
