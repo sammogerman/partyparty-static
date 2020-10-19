@@ -3,6 +3,13 @@
 
   @include breakpoint ($from: medium) {
       @include container();
+      display: grid;
+      column-gap: rhythm(2);
+      grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
   }
 }
 
@@ -15,6 +22,7 @@
   }
 
   @include breakpoint ($from: medium) {
+    grid-column: 3/11;
     margin-bottom: rhythm(10);
   }
 }
@@ -24,6 +32,7 @@
   padding: rhythm(2) rhythm(2) rhythm(5) rhythm(2);
 
   @include breakpoint ($from: medium) {
+    grid-column: 1/13;
     display: flex;
     flex-direction: row;
   }
@@ -41,7 +50,6 @@
 }
 
 .schedule__featured-event-info {
-
   @include breakpoint ($from: medium) {
     margin-left: 38px; 
   }
@@ -74,6 +82,17 @@
     @include container(); 
   }
 
+  @include breakpoint ($from: medium){
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: rhythm(2);
+    grid-column: 1/13;
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
+
+  }
 }
 
 .schedule__event-list {
@@ -81,7 +100,12 @@
   padding: rhythm(5) 0 0 0;
 
   @include breakpoint ($from: medium) {
+    grid-column: 1/13;
     padding-top: rhythm(10);
+  }
+
+  @include breakpoint ($from: large) {
+    grid-column: 2/12;
   }
 }
 
@@ -97,11 +121,18 @@
   }
 
   @include breakpoint ($from: medium) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: rhythm(2);
     padding-bottom: rhythm(5);
 
     &:not(:first-of-type) {
       padding-top: rhythm(5);
     }
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
   }
 }
 
@@ -109,7 +140,28 @@
   display: none;
 
   @include breakpoint ($from: medium) {
-    display: inline-block;
+    align-items: center;
+    background-color: $color-white;
+    border-radius: 50%;
+    display: flex;
+    grid-column: 2/4;
+    height: 98px;
+    justify-content: center;
+    width: 98px;
+  }
+
+  @include breakpoint ($from: large) {
+    grid-column: 3/5;
+  }
+}
+
+.schedule__event-info {
+  @include breakpoint ($from: medium) {
+    grid-column: 4/10;
+  }
+
+  @include breakpoint ($from: large) {
+    grid-column: 5/11;
   }
 }
 
