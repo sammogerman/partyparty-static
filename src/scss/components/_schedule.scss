@@ -1,0 +1,119 @@
+.schedule {
+  // @include container();
+
+  padding-top: rhythm(5); //temporary
+}
+
+// .schedule__inner {
+//   padding: 0;
+// }
+
+.schedule__title {
+  @include container();
+
+  margin-bottom: rhythm(7);
+
+  @include breakpoint ($from: medium) {
+    margin-bottom: rhythm(10);
+  }
+}
+
+.schedule__featured-event {
+  background: $color-blue-grey;
+  display: flex;
+  flex-direction: column;
+  padding: rhythm(2) rhythm(2) rhythm(5) rhythm(2);
+
+  @include breakpoint ($from: medium) {
+    flex-direction: row;
+  }
+}
+
+.schedule__featured-event-image {
+  background-color: grey;
+  height: 251px;
+  margin-bottom: rhythm(3);
+  width: 100%;
+
+  @include breakpoint ($from: medium) {
+    margin: 64px 0 64px 16px;
+  }
+}
+
+.schedule__featured-event-info {
+
+  @include breakpoint ($from: medium) {
+    margin-left: 38px; 
+  }
+
+  @include breakpoint ($from: large) {
+    margin-left: 44px; 
+  }
+}
+
+.schedule__featured-event-date {
+  margin-bottom: rhythm(1);
+}
+
+.schedule__featured-event-title {
+  margin-bottom: rhythm(1);
+}
+
+.schedule__featured-event-location {
+  margin-bottom: rhythm(3);
+
+  @include breakpoint ($from: large) {
+    margin-bottom: rhythm(4);
+  }
+}
+
+.schedule__inner {
+  @include container();
+
+  padding-top: rhythm(5);
+
+  @include breakpoint ($from: medium) {
+    padding-top: rhythm(10);
+  }
+}
+
+.schedule__event-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.schedule__event-item {
+  padding-bottom: rhythm(3);
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $color-blue-grey;
+  }
+
+  &:not(:first-of-type) {
+    padding-top: rhythm(3);
+  }
+
+  @include breakpoint ($from: medium) {
+    padding-bottom: rhythm(5);
+
+    &:not(:first-of-type) {
+      padding-top: rhythm(5);
+    }
+  }
+}
+
+.schedule__event-short-date {
+  display: none;
+
+  @include breakpoint ($from: medium) {
+    display: inline-block;
+  }
+}
+
+.schedule__event-date {
+  margin-bottom: rhythm(1);
+}
+
+.schedule__event-title {
+  margin-bottom: rhythm(1);
+}
