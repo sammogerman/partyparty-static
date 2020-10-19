@@ -46,7 +46,7 @@
   width: 100%;
 
   @include breakpoint ($from: medium) {
-    margin: rhythm(8) 0 rhythm(8) rhythm(2;)
+    margin: rhythm(8) 0 rhythm(8) rhythm(2);
   }
 }
 
@@ -144,15 +144,42 @@
 
   @include breakpoint ($from: medium) {
     align-items: center;
-    background-color: $color-white;
-    border-radius: 50%;
     display: flex;
     grid-column: 2/4;
     height: 98px;
     justify-content: center;
     justify-self: center;
+    position: relative;
+    text-transform: uppercase;
     width: 98px;
   }
+}
+
+.schedule__event-short-date:before {
+  background-color: $color-pink-screen;
+  border-radius: 50%;
+  transform: translate(5px, 5px); 
+  content: '';
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.schedule__event-short-date:after {
+  background-color: $color-turquise-screen;
+  border-radius: 50%;
+  transform: translate(-5px, -5px); 
+  content: '';
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .schedule__event-info {
