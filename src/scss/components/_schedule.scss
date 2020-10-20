@@ -15,7 +15,7 @@
 }
 
 .schedule__title {
-  margin-bottom: rhythm(7);
+  margin-bottom: rhythm(5);
 
   @include breakpoint ($until: medium) {
     margin-left: rhythm(2);
@@ -94,14 +94,14 @@
 
 .schedule__event-list {
   list-style-type: none;
-  padding: rhythm(5) 0 0 0;
+  padding: rhythm(2) 0 0 0;
 
   @include breakpoint ($from: medium) {
     column-gap: rhythm(2);
     display: grid;
     grid-column: 1/13;
     grid-template-columns: repeat(12, 1fr);
-    padding-top: rhythm(10);
+    padding-top: rhythm(7);
   }
 
   @include breakpoint ($from: large) {
@@ -111,13 +111,10 @@
 
 .schedule__event-item {
   padding-bottom: rhythm(3);
+  padding-top: rhythm(3);
 
   &:not(:last-of-type) {
     border-bottom: 1px solid $color-blue-grey;
-  }
-
-  &:not(:first-of-type) {
-    padding-top: rhythm(3);
   }
 
   @include breakpoint ($from: medium) {
@@ -126,10 +123,7 @@
     grid-column: 1/13;
     grid-template-columns: repeat(12, 1fr);
     padding-bottom: rhythm(5);
-
-    &:not(:first-of-type) {
-      padding-top: rhythm(5);
-    }
+    padding-top: rhythm(5);
   }
 
   @include breakpoint ($from: large) {
@@ -146,12 +140,17 @@
     align-items: center;
     display: flex;
     grid-column: 2/4;
-    height: 98px;
+    height: rhythm(11);
     justify-content: center;
     justify-self: center;
     position: relative;
     text-transform: uppercase;
-    width: 98px;
+    width: rhythm(11);
+  }
+
+  @include breakpoint ($from: large) {
+    height: rhythm(12);
+    width: rhythm(12);
   }
 }
 
