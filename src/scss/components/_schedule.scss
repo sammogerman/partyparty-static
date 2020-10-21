@@ -17,11 +17,6 @@
 .schedule__title {
   margin-bottom: rhythm(5);
 
-  @include breakpoint ($until: medium) {
-    margin-left: rhythm(2);
-    margin-right: rhythm(2);
-  }
-
   @include breakpoint ($from: medium) {
     grid-column: 3/11;
     margin-bottom: rhythm(10);
@@ -35,47 +30,45 @@
   padding: rhythm(2) rhythm(2) rhythm(5) rhythm(2);
 
   @include breakpoint ($from: medium) {
+    align-items: center;
+    // justify-items: center;
     column-gap: rhythm(2);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column: 1/13;
     flex-direction: row;
     margin: 0;
-    padding: rhythm(5) rhythm(2) rhythm(5) rhythm(2);
+    padding: rhythm(5) 0;
   }
 
   @include breakpoint ($from: large) {
     column-gap: rhythm(3);
-    padding: rhythm(2);
+    padding: rhythm(2) 0;
   }
 }
 
 .schedule__featured-event-image {
+  justify-self: center;
   background-color: grey;
   height: 251px;
   margin-bottom: rhythm(3);
   width: 100%;
 
   @include breakpoint ($from: medium) {
-    justify-self: center;
     grid-column: 1/6;
     height: 198px;
-    margin: rhythm(3) 0;
+    margin: 0;
+    width: 90%;
   }
 
   @include breakpoint ($from: large) {
     height: 380px;
-    margin: 0;
   }
 }
 
 .schedule__featured-event-info {
   @include breakpoint ($from: medium) {
     grid-column: 6/12;
-  }
-
-  @include breakpoint ($from: large) {
-    margin-top: 68px;
   }
 }
 
