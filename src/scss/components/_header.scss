@@ -132,14 +132,9 @@
   }
 }
 
-.header__main-nav-link--active {
-  //I set padding-bottom to 0 to get this underline to sit right below the link. 
-  //This sacrifices some area of clickability, but I'm guessing that's okay, 
-  //since you wouldn't necessarily click the link of the page you are already on.
-  @include breakpoint($from: medium) {
-    padding-bottom: 0;
-    border-bottom: 4px solid $color-turquise;
-  }
+//class to add underline to current page's nav-link
+.header__link-text--active {
+  border-bottom: 4px solid $color-turquise;
 }
 
 .header__logo-link {
