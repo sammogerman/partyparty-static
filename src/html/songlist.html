@@ -1,6 +1,53 @@
 <section class="songlist">
-  <label for="" class="songlist__form-label">
-    Search by artist or song name:
-  </label>
-  <input type="search" class="songlist__form-input">
+  <div class="songlist__body">
+    <label for="" class="songlist__form-label">
+      Search by artist or song name:
+    </label>
+    <input type="search" class="songlist__form-input">
+    <div class="songlist__text">
+      <p class="text text--body-1">Not sure which song to choose?</p>
+    </div>
+    <div class="songlist__link">
+      <a href="" class="songlist__link-text">Pick a song for me</a>
+    </div>  
+  </div>
+  <table class="songlist__table">
+    <thead class="songlist__table-head">
+      <tr class="songlist__head-row">
+        <th class="songlist__head-item">
+          <div class="songlist__head-text">Artist</div>
+          <div class="songlist__head-icon">
+            <img class="songlist-icon--unselected" src="/assets/sl-icons/icon-reorder-unselected.svg" alt="Up and Down arrows for reordering the list">
+            <!-- <img class="songlist-icon--sorted" src="/assets/sl-icons/icon-reorder-AZ.svg" alt="Up and Down arrows for reordering the list"> -->
+            <!-- <img class="songlist-icon--reverse" src="/assets/sl-icons/icon-reorder-ZA.svg" alt="Up and Down arrows for reordering the list"> -->
+          </div>
+        </th>
+        <th class="songlist__head-item">
+          <div class="songlist__head-text">Song</div>
+          <div class="songlist__head-icon">
+            <img class="songlist-icon--unselected" src="/assets/sl-icons/icon-reorder-unselected.svg" alt="Up and Down arrows for reordering the list">
+            <!-- <img class="songlist-icon--sorted" src="/assets/sl-icons/icon-reorder-AZ.svg" alt="Up and Down arrows for reordering the list"> -->
+            <!-- <img class="songlist-icon--reverse" src="/assets/sl-icons/icon-reorder-ZA.svg" alt="Up and Down arrows for reordering the list"> -->
+          </div>
+        </th>
+        <!-- <th class="songlist__head-link"></th> -->
+      </tr>
+    </thead>
+    <tbody class="songlist__table-body">
+      <tr class="songlist__body-row">
+        <td class="songlist__body-artist">Tool</td>
+        <td class="songlist__body-song text--black">Tool Song</td>
+        <td class="songlist__body-link"> 
+          <a href="">
+            <img src="/assets/sl-icons/btn-youtube.svg" alt="youtube icon">
+          </a>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+  <div class="songlist__table-bottom-text">
+    <p class="text text--body-2 text--silver">Showing # of # songs</p>
+  </div>
+  
 </section>

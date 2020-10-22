@@ -1,9 +1,124 @@
+.songlist {
+  @include container();
+  
+  @include breakpoint ($from: medium) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: rhythm(2);
+  }
+    @include breakpoint ($from: large) {
+      column-gap: rhythm(3);
+  }
+}
+
+.songlist__body {
+  text-align: center;
+  margin-bottom: rhythm(6);
+
+  @include breakpoint ($from: medium) {
+    grid-column: 2/12;
+    margin-bottom: rhythm(6);
+    text-align: center;
+  }
+
+  @include breakpoint ($from: large) {
+    grid-column: 4/10;
+    margin-bottom: rhythm(7);
+  }
+}
+
 .songlist__form-label {
   @include form-label;
-
-  text-align: center;
 }
 
 .songlist__form-input {
-  @include form-input;
+  border: none;
+  border-radius: 28px;
+  height: 56px;
+  width: 100%;
+
+  @include breakpoint ($from: medium) {
+    width: 90%; //to match how it fits in design grid
+  }
+
+  @include breakpoint ($from: large) {
+    width: 100%; //to match design grid
+  }
+}
+
+.songlist__text {
+  margin-bottom: rhythm(1);
+  margin-top: rhythm(4);
+}
+
+.songlist__link-text {
+  color: $color-white;
+  font-size: 20px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+}
+
+.songlist__table {
+  background-color: grey;
+  grid-column: 1/13;
+  display: block;
+  height: 150px;
+
+  @include breakpoint ($from: large) {
+    grid-column: 2/12;
+  }
+}
+
+.songlist__table-head {
+  background-color: $color-blue-active;
+  font-size: 20px;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+}
+
+.songlist__head-item {
+  padding: rhythm(2);
+  width: 50%;
+
+  @include breakpoint ($from: medium) {
+    width: 45%;
+  }
+}
+
+// .songlist__head-link {
+//   display: none;
+
+//   @include breakpoint($from: medium) {
+//     display: block;
+//     padding: rhythm(2);
+//     width: 10%;
+//   }
+// }
+
+.songlist__body-artist {
+  color: $color-black;
+  font-size: 20px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.25px;
+  line-height: 30px;
+  padding: rhythm(1.5) rhythm(2);
+}
+
+.songlist__body-song {
+  @include body-1;
+
+  @include breakpoint($from: medium) {
+    padding: 14px rhythm(2);
+  }
+}
+
+.songlist__table-bottom-text {
+  text-align: center;
+  grid-column: 1/13;
+  margin-top: rhythm(2);
+
+  @include breakpoint ($from: large) {
+    margin-top: rhythm(3);
+  }
 }
