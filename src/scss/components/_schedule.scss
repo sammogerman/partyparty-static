@@ -1,12 +1,10 @@
 .schedule {
   @include container();
-  padding-top: rhythm(5); //temporary
 
   @include breakpoint ($from: medium) {
     column-gap: rhythm(2);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    padding-top: rhythm(5); //temporary
   }
 
   @include breakpoint ($from: large) {
@@ -31,7 +29,6 @@
 
   @include breakpoint ($from: medium) {
     align-items: center;
-    // justify-items: center;
     column-gap: rhythm(2);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
