@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // loop through URLs of each navLink and see if it contains currentURL
   for (let i = 0; i < navLinks.length; i++) {
     let currentHref = navLinks[i].getAttribute('href');
-  // check to see if URL matches current page URL
+    // check to see if URL matches current page URL
     if (currentPage.includes(currentHref)) {
       //if so, add class 'active'
       navLinks[i].classList.add("header__main-nav-link--active");
