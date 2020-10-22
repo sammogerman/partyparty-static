@@ -132,10 +132,13 @@
   }
 }
 
-//class to add underline to current page's nav-link
-.header__link-text--active {
-  border-bottom: 4px solid $color-turquise;
+//Adds active class to nav link, which applies the underline to current page
+.header__main-nav-link--active {
+  .header__link-text {
+    border-bottom: 4px solid $color-turquise;
+  }
 }
+
 
 .header__logo-link {
   text-align: center;
