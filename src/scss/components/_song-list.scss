@@ -1,0 +1,9 @@
+.songlist__form-label {
+  @include form-label;
+
+  text-align: center;
+}
+
+.songlist__form-input {
+  @include form-input;
+}
