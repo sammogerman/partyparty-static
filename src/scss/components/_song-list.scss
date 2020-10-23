@@ -60,7 +60,7 @@
 }
 
 .songlist__table {
-  background-color: grey;
+  background-color: $color-table-grey;
   grid-column: 1/13;
   display: block;
   margin: 0 rhythm(-2);
@@ -112,20 +112,63 @@
   }
 }
 
+.songlist__table-body {
+  display: block;
+}
+
+.songlist__body-row {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: rhythm(1) rhythm(2);
+
+  @include breakpoint ($from: medium) {
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 12px 31px 12px 16px;
+  }
+}
+
 .songlist__body-artist {
   color: $color-black;
   font-size: 20px;
   font-weight: $font-weight-bold;
   letter-spacing: 0.25px;
   line-height: 30px;
-  // padding: rhythm(1.5) rhythm(2);
+  margin-bottom: -30px;
+  order: 1;
+
+  @include breakpoint ($from: medium) {
+    margin: 0;
+    width: 45%;
+  }
 }
 
 .songlist__body-song {
   @include body-1;
+  order: 3;
 
   @include breakpoint($from: medium) {
-    padding: 14px rhythm(2);
+    order: 2;
+    width: 45%;
+  }
+}
+
+.songlist__body-link {
+  align-self: flex-end;
+  display: block;
+  height: 24px;
+  margin-bottom: -10px;
+  margin-top: 15px;
+  order: 2;
+  width: 34.01px;
+
+  @include breakpoint($from: medium) {
+    align-self: center;
+    order: 3;
+    height: 32px;
+    margin: 0;
+    width: 45.34px;
   }
 }
 
