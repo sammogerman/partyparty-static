@@ -1,4 +1,4 @@
-.contact {
+.page-form {
   @include container();
 
   @include breakpoint ($from: medium) {
@@ -12,7 +12,7 @@
   }
 }
 
-.contact__title {
+.page-form__title {
   margin-bottom: rhythm(3);
 
   @include breakpoint ($from: medium) {
@@ -21,7 +21,7 @@
   }
 }
 
-.contact__text {
+.page-form__text {
   margin-bottom: rhythm(5);
   text-align: center;
 
@@ -35,7 +35,7 @@
   }
 }
 
-.contact__form {
+.page-form__form {
   @include breakpoint ($from: medium) {
     display: grid;
     grid-column: 1/13;
@@ -49,24 +49,24 @@
   }
 }
 
-.contact__form-label {
+.page-form__form-label {
   @include form-label;
 }
 
-.contact__form-label--required:after {
+.page-form__form-label--required:after {
   color: $color-pink;
   content: '*';
 }
 
-.contact__form-input {
+.page-form__form-input {
   @include form-input;
 }
 
-.contact__form-input:focus {
+.page-form__form-input:focus {
   border: 1px solid #BCC3C9;
 }
 
-.contact__form-item {
+.page-form__form-item {
   margin-bottom: rhythm(3);
 
   &:nth-last-of-type(2) {
@@ -81,22 +81,22 @@
 
 //These '--half' class modifiers are to get the date and time 
 //inputs on the same row at tablet/desktop sizes
-.contact__form-item--half-1 {
+.page-form__form-item--half-1 {
   @include breakpoint ($from: medium) {
     grid-column: 1/5;
   }
 }
 
-.contact__form-item--half-2 {
+.page-form__form-item--half-2 {
   @include breakpoint ($from: medium) {
     grid-column: 5/9;
   }
 }
 
-.contact__form-input--textarea {
+.page-form__form-input--textarea {
   height: rhythm(15);
 }
 
-.contact__form-item--submit {
+.page-form__form-item--submit {
   text-align: center;
 }
