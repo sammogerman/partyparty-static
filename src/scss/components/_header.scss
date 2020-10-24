@@ -80,6 +80,7 @@
     flex-direction: row;
     font-size: 16px;
     margin: 0 rhythm(-2) 0 0;
+    padding: 0;
     position: static;
   }
 
@@ -130,6 +131,14 @@
     padding: rhythm(5) rhythm(3.5) rhythm(5) rhythm(3.5);
   }
 }
+
+//Adds active class to nav link, which applies the underline to current page
+.header__main-nav-link--active {
+  .header__link-text {
+    border-bottom: 4px solid $color-turquise;
+  }
+}
+
 
 .header__logo-link {
   text-align: center;

@@ -17,3 +17,19 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased; 
 }
+
+a {
+  color: $color-blue;
+
+  &:visited {
+    color: $color-blue;
+  }
+
+  &:hover {
+    color: $color-blue-hover;
+  }
+
+  &:active {
+    color: $color-blue-active;
+  } 
+}
