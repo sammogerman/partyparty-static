@@ -1,0 +1,33 @@
+.accordion {
+  @include container();
+}
+
+.accordion__item {
+  border-top: 1px solid $color-blue-grey;
+  display: flex;
+  padding: rhythm(3) 0;
+
+  @include breakpoint ($from: medium) {
+    padding: rhythm(4) 0;
+  }
+}
+
+.accordion__item-icon--expand {
+  display: none;
+}
+
+.accordion__item-icon--collapse {
+  display: inline-block;
+}
+
+.accordion__item-info {
+  margin-left: 18px;
+}
+
+.accordion__item-question {
+  margin-bottom: 14px;
+
+  @include breakpoint ($from: medium) {
+    margin-bottom: rhythm(4);
+  }
+}
