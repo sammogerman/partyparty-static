@@ -14,6 +14,9 @@
 
 .accordion__item-icon--expand {
   display: none;
+  .accordion__item-icon--expanded & {
+    display: inline-block;
+  }
 }
 
 .accordion__item-icon--collapse {
