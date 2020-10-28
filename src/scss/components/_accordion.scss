@@ -16,6 +16,10 @@
   border-top: 1px solid $color-blue-grey;
   display: flex;
   padding: rhythm(3) rhythm(2.5) rhythm(3) 0; //it's not explicit but looks like there might be a bit of right-side padding on the designs. I could be wrong though!
+  
+  &:last-of-type {
+    border-bottom: 1px solid $color-blue-grey;
+  }
 
   @include breakpoint ($from: medium) {
     column-gap: rhythm(2);
