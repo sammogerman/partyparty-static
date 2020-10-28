@@ -1,36 +1,91 @@
 .accordion {
   @include container();
+
+  @include breakpoint ($from: medium) {
+    column-gap: rhythm(2);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
+  }
 }
 
 .accordion__item {
   border-top: 1px solid $color-blue-grey;
   display: flex;
-  padding: rhythm(3) 0;
+  padding: rhythm(3) rhythm(2.5) rhythm(3) 0; //it's not explicit but looks like there might be a bit of right-side padding on the designs. I could be wrong though!
 
   @include breakpoint ($from: medium) {
+    column-gap: rhythm(2);
+    display: grid;
+    grid-column: 2/12;
+    grid-template-columns: repeat(10, 1fr);
     padding: rhythm(4) 0;
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
+    grid-column: 3/11;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.accordion__item-icon {
+  margin-right: 18px;
+
+  @include breakpoint ($from: medium) {
+    grid-column: 1/2;
+    justify-self: center;
+    margin: 0;
   }
 }
 
 .accordion__item-icon--expand {
-  display: none;
-  .accordion__item-icon--expanded & {
-    display: inline-block;
+  margin-top: 1.5px; //to help line icon up with the text
+
+  .accordion__item--expanded & {
+    display: none;
+  }
+
+  @include breakpoint ($from: medium) {
+    margin-top: 4px;
   }
 }
 
 .accordion__item-icon--collapse {
-  display: inline-block;
+  display: none;
+  margin-top: 8px; //to help line icon up with the text
+
+  .accordion__item--expanded & {
+    display: inline-block;
+  }
+
+  @include breakpoint ($from: medium) {
+    margin-top: 10px;
+  }
 }
 
 .accordion__item-info {
-  margin-left: 18px;
+  @include breakpoint($from: medium) {
+    grid-column: 2/10;
+  }
+
+  @include breakpoint($from: large) {
+    grid-column: 2/8;
+  }
 }
 
-.accordion__item-question {
-  margin-bottom: 14px;
+.accordion__item-answer {
+  display: none;
+  margin-top: 14px;
+
+  .accordion__item--expanded & {
+    display: block;
+  }
 
   @include breakpoint ($from: medium) {
-    margin-bottom: rhythm(4);
-  }
+        margin-top: rhythm(4);
+      }
 }
