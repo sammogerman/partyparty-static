@@ -1,13 +1,15 @@
-const faqItems = document.querySelectorAll(".accordion__item");
+const faqs = document.querySelectorAll(".accordion__item-title");
+const accordionItems = document.querySelectorAll(".accordion__item");
 
-for (let i = 0; i < faqItems.length; i++) {
-  faqItems[i].addEventListener("click", function(){
-    faqItems[i].classList.toggle("accordion__item--expanded");
+for (let i = 0; i < faqs.length; i++) {
+  faqs[i].addEventListener("click", function(){
+    accordionItems[i].classList.toggle("accordion__item--expanded");
   });  
 }
 
-//I know event delegation would be a better way to do this but I need to work on it still:
-// faqItem.addEventListener("click", function(event){
-//   event.target.classList.toggle("accordion__item--expanded");
+// WIP Version 2 for practice/funsies using Event delegation.
+// const accordion = document.querySelector(".accordion");
+// accordion.addEventListener("click", function(event){
+//   event.currentTarget.classList.toggle("accordion__item--expanded");
 // });
 
