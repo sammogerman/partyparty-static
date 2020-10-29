@@ -1,9 +1,25 @@
 const songList = {
-  "A Perfect Cirle": "Judith",
-  "Alanis Morissette": "You Oughta Know",
-  "Amy Winehouse": "Rehab",
-  "Aretha Franklin": "Respect",
-  Audioslave: "Like a Stone",
+
+  "Judith": {
+    Artist: "A Perfect Cirle", 
+    Link: "https://www.youtube.com/watch?v=xTgKRCXybSM&ab_channel=APerfectCircleVEVO"
+  },
+  "You Oughta Know": {
+    Artist: "Alanis Morissette",
+    Link: "https://www.youtube.com/watch?v=NPcyTyilmYY&ab_channel=AlanisMorissette"
+  },
+  "Rehab": {
+    Artist: "Amy Winehouse",
+    Link: "https://www.youtube.com/watch?v=KUmZp8pR1uc&ab_channel=AmyWinehouseVEVO"
+  },
+  "Respect": {
+    Artist: "Aretha Franklin",
+    Link: "https://www.youtube.com/watch?v=6FOUqQt3Kg0&ab_channel=TatanBrown"
+  },
+  "Like a Stone": {
+    Artist: "Audioslave",
+    Link: "https://www.youtube.com/watch?v=7QU1nvuxaMA&ab_channel=AudioslaveVEVO"
+  } 
 }
 
 // We need:
@@ -15,18 +31,18 @@ const songList = {
 // to wire up the "pick a song" functionality. The end result 
 // should just show that one song in the table. I have a couple of 
 // ideas on how we could make this work, but you should give it the first shot.
-const bands = Object.keys(songList);
-const numOfBands = bands.length;
-const randomSong = document.querySelector(".songlist__link-text");
+const songs = Object.keys(songList);
+const numOfSongs = songs.length;
+const randomSong = document.querySelector(".songlist__text"); //need to change this query selector back to .songlist__link-text
 
 function getRandomIntInclusive(max) {
   return Math.floor(Math.random() * (max)); //The maximum is inclusive and the minimum is inclusive 
 }
 
 randomSong.addEventListener("click", function(){
-  let randomSong = getRandomIntInclusive(numOfBands);
-  let band = (bands[randomSong]);
-  console.log(band);
+  let randomSong = getRandomIntInclusive(numOfSongs);
+  let song = (songs[randomSong]);
+  console.log(song);
 });
 
 //For artists with multiple songs, need to loop through array of 

@@ -1,5 +1,7 @@
 .songlist {
   @include container();
+
+  margin-bottom: rhythm(15);
   
   @include breakpoint ($from: medium) {
     display: grid;
@@ -8,6 +10,7 @@
   }
     @include breakpoint ($from: large) {
       column-gap: rhythm(3);
+      margin-bottom: rhythm(20);
   }
 }
 
@@ -104,6 +107,9 @@
   display: flex;
   justify-content: space-between;
   padding: rhythm(2);
+}
+
+.songlist__head-item--artist {
   width: 50%;
 
   @include breakpoint ($from: medium) {
@@ -111,11 +117,16 @@
   }
 }
 
-.songlist__head-item--border {
+.songlist__head-item--song {
   border-left: 1px solid $color-silver;
+  width: 50%;
+
+  @include breakpoint ($from: medium) {
+    width: 45%;
+  }
 }
 
-.songlist__head-link {
+.songlist__head-item--link {
   display: none;
 
   @include breakpoint($from: medium) {
