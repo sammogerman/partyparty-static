@@ -32,9 +32,15 @@
 }
 
 .songlist__form-input {
+  @include form-input;
+
+  background-image: url("/assets/sl-icons/Shape.svg");
+  background-position: left rhythm(2) center;
+  background-repeat: no-repeat;
   border: none;
   border-radius: 28px;
   height: 56px;
+  padding-left: rhythm(7); //Made up a number up so that the input text would clear the background image. Seem okay?
   width: 100%;
 
   @include breakpoint ($from: medium) {
@@ -43,6 +49,14 @@
 
   @include breakpoint ($from: large) {
     width: 100%; //to match design grid
+  }
+}
+
+.songlist__link-text {
+  color: $color-white;
+
+  &:visited {
+    color: $color-white;
   }
 }
 
@@ -76,7 +90,7 @@
 
 .songlist__table-head {
   display: block;
-  background-color: $color-blue-active;
+  background-color: $color-blue;
   font-size: 20px;
   letter-spacing: 0.25px;
   line-height: 24px;
@@ -90,7 +104,7 @@
   display: flex;
   justify-content: space-between;
   padding: rhythm(2);
-  width: 100%;
+  width: 50%;
 
   @include breakpoint ($from: medium) {
     width: 45%;
