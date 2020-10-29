@@ -14,8 +14,7 @@
 
 .accordion__item {
   border-top: 1px solid $color-blue-grey;
-  display: flex;
-  padding: rhythm(3) rhythm(2.5) rhythm(3) 0; //it's not explicit but looks like there might be a bit of right-side padding on the designs. I could be wrong though!
+  padding: rhythm(3) 0; 
   
   &:last-of-type {
     border-bottom: 1px solid $color-blue-grey;
@@ -36,7 +35,25 @@
   }
 }
 
-.accordion__item-icon {
+.accordion__item-title {
+  display: flex;
+
+  @include breakpoint ($from: medium) {
+    column-gap: rhythm(2);
+    grid-template-columns: repeat(10, 1fr);
+    display: grid;
+    grid-column: 1/11;
+    margin: 0;
+  }
+
+  @include breakpoint ($from: large) {
+    column-gap: rhythm(3);
+    grid-column: 1/9;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.accordion__item-title-icon {
   margin-right: 18px;
 
   @include breakpoint ($from: medium) {
@@ -46,32 +63,40 @@
   }
 }
 
-.accordion__item-icon--expand {
-  margin-top: 1.5px; //to help line icon up with the text
+.accordion__icon--expand {
+  height: 11px;
+  margin-top: 5px; //to help line icon up with the text
+  width: 11px;
 
   .accordion__item--expanded & {
     display: none;
   }
 
   @include breakpoint ($from: medium) {
+    height: 17px;
     margin-top: 4px;
+    width: 17px;
   }
 }
 
-.accordion__item-icon--collapse {
+.accordion__icon--collapse {
+  height: 3px;
   display: none;
-  margin-top: 8px; //to help line icon up with the text
+  margin-top: 9px; //to help line icon up with the text
+  width: 11px; //slightly smaller than in the designs, but this helps prevent text title from jumping after it expands
 
   .accordion__item--expanded & {
     display: inline-block;
   }
 
   @include breakpoint ($from: medium) {
+    height: 5px;
     margin-top: 10px;
+    width: 20px;
   }
 }
 
-.accordion__item-info {
+.accordion__item-title-faq {
   @include breakpoint($from: medium) {
     grid-column: 2/10;
   }
@@ -81,15 +106,22 @@
   }
 }
 
-.accordion__item-answer {
+.accordion__item-content {
   display: none;
-  margin-top: 14px;
+  margin-left: 30px; //not sure on this one. Just trying to line the content up with the title. Maybe there's a better way?
+  margin-top: rhythm(2);
 
   .accordion__item--expanded & {
     display: block;
   }
 
   @include breakpoint ($from: medium) {
-        margin-top: rhythm(4);
-      }
+    grid-column: 2/10;
+    margin-left: 0;
+    margin-top: rhythm(4);
+  }
+
+  @include breakpoint($from: large) {
+    grid-column: 2/8;
+  }
 }

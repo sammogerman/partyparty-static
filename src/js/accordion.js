@@ -1,4 +1,4 @@
-let faqItems = document.querySelectorAll(".accordion__item");
+const faqItems = document.querySelectorAll(".accordion__item");
 
 for (let i = 0; i < faqItems.length; i++) {
   faqItems[i].addEventListener("click", function(){
