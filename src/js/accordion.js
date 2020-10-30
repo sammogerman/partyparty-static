@@ -3,7 +3,7 @@ const accordionItems = document.querySelectorAll(".accordion__item");
 
 for (let i = 0; i < faqs.length; i++) {
   faqs[i].addEventListener("click", function(){
-    accordionItems[i].classList.toggle("accordion__item--expanded");
+    faqs[i].parentNode.classList.toggle("accordion__item--expanded");
   });  
 }
 

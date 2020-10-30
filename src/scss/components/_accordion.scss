@@ -109,7 +109,7 @@
 
 .accordion__item-content {
   display: none;
-  margin-left: 30px; //not sure on this one. Just trying to line the content up with the title. Maybe there's a better way?
+  margin-left: 30px;
   margin-top: rhythm(2);
 
   .accordion__item--expanded & {
