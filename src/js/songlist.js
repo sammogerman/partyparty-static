@@ -23,6 +23,11 @@ const songList = [
     artist: "Audioslave",
     title: "Like a Stone",
     link: "https://www.youtube.com/watch?v=7QU1nvuxaMA&ab_channel=AudioslaveVEVO"
+  },
+  {
+    artist: "The Smashing Pumpkins",
+    title: "1979",
+    link: "https://www.youtube.com/watch?v=4aeETEoNfOg"
   }
 
 ]
@@ -36,17 +41,16 @@ const songList = [
 // to wire up the "pick a song" functionality. The end result 
 // should just show that one song in the table. I have a couple of 
 // ideas on how we could make this work, but you should give it the first shot.
-const songs = Object.keys(songList);
-const numOfSongs = songs.length;
+const numOfSongs = songList.length;
 const randomSong = document.querySelector(".songlist__text"); //need to change this query selector back to .songlist__link-text
 
 function getRandomIntInclusive(max) {
-  return Math.floor(Math.random() * (max)); //The maximum is inclusive and the minimum is inclusive 
+  return Math.floor(Math.random() * (max)); //The maximum is inclusive
 }
 
 randomSong.addEventListener("click", function(){
-  let randomSong = getRandomIntInclusive(numOfSongs);
-  let song = (songs[randomSong]);
+  let randomNum = getRandomIntInclusive(numOfSongs);
+  let song = (songList[randomNum].title);
   console.log(song);
 });
 
@@ -63,6 +67,11 @@ randomSong.addEventListener("click", function(){
 // update this by hand, so it should count all of the songs on page 
 // load and display that as the total. Then keep updating the 
 // current count as the user searches, etc.
+ 
+let currentListLength = document.querySelector(".songlist__text-current-list");
+
+const totalListLength = document.querySelector(".songlist__text-total-list");
+totalListLength.textContent = numOfSongs;
 
 // Hint: Instead of populating the table with all of the songs on 
 // page load, it might be easiest to have a JS object that contains 
