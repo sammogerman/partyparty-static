@@ -32,11 +32,41 @@ const songList = [
 
 ]
 
+//array of just the song titles:
+const songListSongs = songList.map(function(song){
+  return song.title;
+});
+
+//array of just the artists:
+const songListArtists = songList.map(function(artist){
+  return artist.artist;
+});
+
+
 // We need:
 
 // to wire up the search functionality. Instead of requiring 
 // that the user "submit" what they're searching, it'd be cool to 
 // filter the list as they type.
+const search = document.querySelector(".songlist__form-input");
+
+for (let i = 0; i < numOfSongs; i++){
+  let song = songList[i].title;
+  console.log(song);
+  if(song === search.textContent){
+    console.log(song);
+  }
+} 
+
+// }
+// search.addEventListener("keyup", function(){
+//   let searchSong = search.textContent;
+//   console.log(searchSong);
+  // songList.filter()
+  // search.textContent
+
+// })
+
 
 // to wire up the "pick a song" functionality. The end result 
 // should just show that one song in the table. I have a couple of 
