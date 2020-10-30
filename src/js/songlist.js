@@ -1,26 +1,31 @@
-const songList = {
+const songList = [
+  {
+    artist: "A Perfect Circle",
+    title: "Judith",
+    link: "https://www.youtube.com/watch?v=xTgKRCXybSM&ab_channel=APerfectCircleVEVO"
+  },
+  {
+    artist: "Alanis Morissette",
+    title: "You Oughta Know",
+    link: "https://www.youtube.com/watch?v=NPcyTyilmYY&ab_channel=AlanisMorissette"
+  },
+  {
+    artist: "Amy Winehouse",
+    title: "Rehab",
+    link: "https://www.youtube.com/watch?v=KUmZp8pR1uc&ab_channel=AmyWinehouseVEVO"
+  },
+  {
+    artist: "Aretha Franklin",
+    title: "Respect",
+    link: "https://www.youtube.com/watch?v=6FOUqQt3Kg0&ab_channel=TatanBrown"
+  },
+  {
+    artist: "Audioslave",
+    title: "Like a Stone",
+    link: "https://www.youtube.com/watch?v=7QU1nvuxaMA&ab_channel=AudioslaveVEVO"
+  }
 
-  "Judith": {
-    Artist: "A Perfect Cirle", 
-    Link: "https://www.youtube.com/watch?v=xTgKRCXybSM&ab_channel=APerfectCircleVEVO"
-  },
-  "You Oughta Know": {
-    Artist: "Alanis Morissette",
-    Link: "https://www.youtube.com/watch?v=NPcyTyilmYY&ab_channel=AlanisMorissette"
-  },
-  "Rehab": {
-    Artist: "Amy Winehouse",
-    Link: "https://www.youtube.com/watch?v=KUmZp8pR1uc&ab_channel=AmyWinehouseVEVO"
-  },
-  "Respect": {
-    Artist: "Aretha Franklin",
-    Link: "https://www.youtube.com/watch?v=6FOUqQt3Kg0&ab_channel=TatanBrown"
-  },
-  "Like a Stone": {
-    Artist: "Audioslave",
-    Link: "https://www.youtube.com/watch?v=7QU1nvuxaMA&ab_channel=AudioslaveVEVO"
-  } 
-}
+]
 
 // We need:
 
