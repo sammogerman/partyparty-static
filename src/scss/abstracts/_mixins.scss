@@ -195,7 +195,6 @@
   font-weight: $font-weight-bold;
   letter-spacing: 0;
   line-height: 22px;
-  text-align: center;
 
   @include breakpoint($from: medium) {
     font-size: 20px;
