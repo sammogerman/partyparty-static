@@ -45,7 +45,7 @@
   border: none;
   border-radius: 28px;
   height: 56px;
-  padding-left: rhythm(7); //Made up a number up so that the input text would clear the background image. Seem okay?
+  padding-left: rhythm(7);
   width: 100%;
 
   @include breakpoint ($from: medium) {
@@ -80,10 +80,8 @@
 
 .songlist__table {
   border: none;
-  background-color: $color-silver-30;
-  grid-column: 1/13;
+  background-color: $color-white;
   margin: 0 rhythm(-2);
-  // display: block;
   padding: 0;
 
   @include breakpoint ($until: medium) {
@@ -91,6 +89,8 @@
   }
 
   @include breakpoint ($from: medium) {
+    border-collapse: collapse;
+    grid-column: 1/13;
     margin: 0;
   }
 
@@ -159,6 +159,10 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: rhythm(1) rhythm(2);
+
+  &:nth-child(even) {
+    background-color: $color-silver-30;
+  }
   
   @include breakpoint ($from: medium) {
     grid-template-columns: 45% 45% 1fr;
@@ -212,7 +216,7 @@
 
 .songlist__link-image {
   height: 24px;
-  width: 34.01px;
+  width: 34px;
 
   @include breakpoint($from: medium) {
     height: 32px;
