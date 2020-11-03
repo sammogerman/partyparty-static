@@ -38,8 +38,8 @@ const songListSongs = songList.map(function(song){
 });
 
 //array of just the artists:
-const songListArtists = songList.map(function(artist){
-  return artist.artist;
+const songListArtists = songList.map(function(name){
+  return name.artist;
 });
 
 
@@ -49,16 +49,12 @@ const songListArtists = songList.map(function(artist){
 // that the user "submit" what they're searching, it'd be cool to 
 // filter the list as they type.
 const search = document.querySelector(".songlist__form-input");
+let userSearch = "Rehab"; //need to figure out how to capture the text from user input to store in this variable
+let userPick = songList.filter(el => el.title.toLowerCase().includes(userSearch.toLowerCase()));
 
-for (let i = 0; i < numOfSongs; i++){
-  let song = songList[i].title;
-  console.log(song);
-  if(song === search.textContent){
-    console.log(song);
-  }
-} 
+//descructured version of code above:
+//userPick = songList.filter(({ title }) => title.includes(userSearch));
 
-// }
 // search.addEventListener("keyup", function(){
 //   let searchSong = search.textContent;
 //   console.log(searchSong);
@@ -111,3 +107,36 @@ totalListLength.textContent = numOfSongs;
 // have to build really tedious table HTML, and reading information from it 
 // when filtering/sorting would suck even more. It'll also make it easier 
 // to maintain as y'all learn more songs.
+
+const tableBody = document.querySelector(".songlist__table-body");
+
+for (let i = 0; i < songList.length; i++) {
+  const row = document.createElement("tr");
+  row.classList.add("songlist__body-row");
+
+  const band = document.createElement('td');
+  band.classList.add("songlist__body-item", "songlist__body-item--artist");
+  band.textContent = songList[i].artist;
+
+  const song = document.createElement("td");
+  song.classList.add("songlist__body-item", "songlist__body-item--song", "text--black");
+  song.textContent = songList[i].title;
+
+  const linkDiv = document.createElement("td");
+  linkDiv.classList.add("songlist__body-item", "songlist__body-item--link");
+
+  const songLink = document.createElement("a");
+  songLink.setAttribute("href", songList[i].link);
+
+  const icon = document.createElement("img");
+  icon.classList.add("songlist__link-image")
+  icon.setAttribute("src", "/assets/icons/btn-youtube.svg");
+
+
+  tableBody.appendChild(row);
+  row.appendChild(band);
+  row.appendChild(song);
+  row.appendChild(linkDiv);
+  linkDiv.appendChild(songLink);
+  songLink.appendChild(icon);
+}
