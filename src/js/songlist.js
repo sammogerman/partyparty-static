@@ -81,6 +81,11 @@ search.addEventListener("input", function(e){
   console.log(search.value);
 let userPick = songList.filter(({ title }) => title.includes(userSearch));  
 console.log(userPick);
+tableBody.innerHTML = '';
+populateTable(userPick);
+//TODOs
+//be able to search for song title OR artist name
+//make it case insensitive
 })
 
 
