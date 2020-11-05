@@ -99,7 +99,6 @@ randomSong.addEventListener("click", function(e){
   e.preventDefault();
   let randomNum = getRandomIntInclusive(numOfSongs);
   let song = [(songList[randomNum])];
-  console.log(song);
   tableBody.innerHTML = '';
   populateTable(song);
 });
