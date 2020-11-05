@@ -88,16 +88,20 @@ console.log(userPick);
 // should just show that one song in the table. I have a couple of 
 // ideas on how we could make this work, but you should give it the first shot.
 const numOfSongs = songList.length;
-const randomSong = document.querySelector(".songlist__text"); //need to change this query selector back to .songlist__link-text
+const randomSong = document.querySelector(".songlist__link");
 
 function getRandomIntInclusive(max) {
   return Math.floor(Math.random() * (max)); //The maximum is inclusive
 }
 
-randomSong.addEventListener("click", function(){
+randomSong.addEventListener("click", function(e){
+  //preventDefault prevents the link from reloading the page
+  e.preventDefault();
   let randomNum = getRandomIntInclusive(numOfSongs);
-  let song = (songList[randomNum].title);
+  let song = [(songList[randomNum])];
   console.log(song);
+  tableBody.innerHTML = '';
+  populateTable(song);
 });
 
 //For artists with multiple songs, need to loop through array of 
