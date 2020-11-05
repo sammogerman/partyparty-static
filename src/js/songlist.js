@@ -71,7 +71,6 @@ const songListArtists = songList.map(function(name){
 // that the user "submit" what they're searching, it'd be cool to 
 // filter the list as they type.
 const search = document.querySelector(".songlist__form-input");
-// let userSearch = ""; //need to figure out how to capture the text from user input to store in this variable
 // let userPick = songList.filter(el => el.title.toLowerCase().includes(userSearch.toLowerCase()));
 
 //descructured version of code above:
@@ -129,8 +128,9 @@ const tableRow = document.querySelector(".songlist__body-row");
 // Remove all inner HTML from the table body (to remove the sample row / outdated info).
 tableBody.innerHTML = "";
 
+const populateTable = (arr) => {
 // For each song in the song list...
-for (let song of songList) {
+for (let song of arr) {
   // Clone the first row variable (https://gomakethings.com/how-to-copy-or-clone-an-element-with-vanilla-js/).
   const rowClone = tableRow.cloneNode(true);
 
@@ -147,6 +147,9 @@ for (let song of songList) {
   tableBody.appendChild(rowClone);
 // End for
 }
+}
+
+populateTable(songList);
 
 
 
