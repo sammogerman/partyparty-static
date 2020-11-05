@@ -1,3 +1,5 @@
+// const e = require("express");
+
 const songList = [
   {
     artist: "A Perfect Circle",
@@ -28,7 +30,27 @@ const songList = [
     artist: "The Smashing Pumpkins",
     title: "1979",
     link: "https://www.youtube.com/watch?v=4aeETEoNfOg"
-  }
+  }, 
+  {
+    artist: "Tool",
+    title: "Forty Six & 2",
+    link: "https://www.youtube.com/watch?v=GIuZUCpm9hc"
+  },
+  {
+    artist: "Tool",
+    title: "Sober",
+    link: "youtube.com/watch?v=nspxAG12Cpc&ab_channel=TOOLVEVO"
+  },
+  {
+    artist: "Aladdin",
+    title: "A Whole New World`",
+    link: "https://www.youtube.com/watch?v=MJLOCAWkRoc&ab_channel=DisneyLyrics18"
+  },
+  {
+    artist: "Motorhead",
+    title: "Ace of Spades",
+    link: "https://www.youtube.com/watch?v=3mbvWn1EY6g&ab_channel=Mot%C3%B6rheadOfficial"
+  },
 
 ]
 
@@ -49,19 +71,18 @@ const songListArtists = songList.map(function(name){
 // that the user "submit" what they're searching, it'd be cool to 
 // filter the list as they type.
 const search = document.querySelector(".songlist__form-input");
-let userSearch = "Rehab"; //need to figure out how to capture the text from user input to store in this variable
-let userPick = songList.filter(el => el.title.toLowerCase().includes(userSearch.toLowerCase()));
+// let userSearch = ""; //need to figure out how to capture the text from user input to store in this variable
+// let userPick = songList.filter(el => el.title.toLowerCase().includes(userSearch.toLowerCase()));
 
 //descructured version of code above:
 //userPick = songList.filter(({ title }) => title.includes(userSearch));
 
-// search.addEventListener("keyup", function(){
-//   let searchSong = search.textContent;
-//   console.log(searchSong);
-  // songList.filter()
-  // search.textContent
-
-// })
+search.addEventListener("input", function(e){
+  const userSearch = search.value;
+  console.log(search.value);
+let userPick = songList.filter(({ title }) => title.includes(userSearch));  
+console.log(userPick);
+})
 
 
 // to wire up the "pick a song" functionality. The end result 
@@ -99,44 +120,64 @@ let currentListLength = document.querySelector(".songlist__text-current-list");
 const totalListLength = document.querySelector(".songlist__text-total-list");
 totalListLength.textContent = numOfSongs;
 
-// Hint: Instead of populating the table with all of the songs on 
-// page load, it might be easiest to have a JS object that contains 
-// that information and then generate the table from it. Then when sorting, 
-// filtering, etc., you can work off of that object and regenerate the table 
-// based on whatever changes you've made to copies of it. Otherwise you'd 
-// have to build really tedious table HTML, and reading information from it 
-// when filtering/sorting would suck even more. It'll also make it easier 
-// to maintain as y'all learn more songs.
-
+//Populating table with JS array:
+// Create a variable for the table body (you're already doing this).
 const tableBody = document.querySelector(".songlist__table-body");
+// Create a variable for the first row of your table body variable.
+const tableRow = document.querySelector(".songlist__body-row");
 
-for (let i = 0; i < songList.length; i++) {
-  const row = document.createElement("tr");
-  row.classList.add("songlist__body-row");
+// Remove all inner HTML from the table body (to remove the sample row / outdated info).
+tableBody.innerHTML = "";
 
-  const band = document.createElement('td');
-  band.classList.add("songlist__body-item", "songlist__body-item--artist");
-  band.textContent = songList[i].artist;
+// For each song in the song list...
+for (let song of songList) {
+  // Clone the first row variable (https://gomakethings.com/how-to-copy-or-clone-an-element-with-vanilla-js/).
+  const rowClone = tableRow.cloneNode(true);
 
-  const song = document.createElement("td");
-  song.classList.add("songlist__body-item", "songlist__body-item--song", "text--black");
-  song.textContent = songList[i].title;
+  // Change the text of the cloned row's first column to i's artist.
+  rowClone.cells[0].textContent = song.artist;
 
-  const linkDiv = document.createElement("td");
-  linkDiv.classList.add("songlist__body-item", "songlist__body-item--link");
+  // Change the text of the cloned row's second column to i's title.
+  rowClone.cells[1].textContent = song.title;
 
-  const songLink = document.createElement("a");
-  songLink.setAttribute("href", songList[i].link);
+  // Change the href of the cloned row's third column's link to i's link value.
+  rowClone.cells[2].setAttribute("href", song.link);
 
-  const icon = document.createElement("img");
-  icon.classList.add("songlist__link-image")
-  icon.setAttribute("src", "/assets/icons/btn-youtube.svg");
-
-
-  tableBody.appendChild(row);
-  row.appendChild(band);
-  row.appendChild(song);
-  row.appendChild(linkDiv);
-  linkDiv.appendChild(songLink);
-  songLink.appendChild(icon);
+  // Append the cloned/new row to the table body.
+  tableBody.appendChild(rowClone);
+// End for
 }
+
+
+
+//OLD
+// for (let i = 0; i < songList.length; i++) {
+//   const row = document.createElement("tr");
+//   row.classList.add("songlist__body-row");
+
+//   const band = document.createElement('td');
+//   band.classList.add("songlist__body-item", "songlist__body-item--artist");
+//   band.textContent = songList[i].artist;
+
+//   const song = document.createElement("td");
+//   song.classList.add("songlist__body-item", "songlist__body-item--song", "text--black");
+//   song.textContent = songList[i].title;
+
+//   const linkDiv = document.createElement("td");
+//   linkDiv.classList.add("songlist__body-item", "songlist__body-item--link");
+
+//   const songLink = document.createElement("a");
+//   songLink.setAttribute("href", songList[i].link);
+
+//   const icon = document.createElement("img");
+//   icon.classList.add("songlist__link-image")
+//   icon.setAttribute("src", "/assets/icons/btn-youtube.svg");
+
+
+//   tableBody.appendChild(row);
+//   row.appendChild(band);
+//   row.appendChild(song);
+//   row.appendChild(linkDiv);
+//   linkDiv.appendChild(songLink);
+//   songLink.appendChild(icon);
+// }
