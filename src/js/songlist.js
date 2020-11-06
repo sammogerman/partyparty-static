@@ -85,8 +85,7 @@ search.addEventListener("input", function(e){
 
 
 // to wire up the "pick a song" functionality. The end result 
-// should just show that one song in the table. I have a couple of 
-// ideas on how we could make this work, but you should give it the first shot.
+// should just show that one song in the table.
 const numOfSongs = songList.length;
 const randomSong = document.querySelector(".songlist__link-text");
 
@@ -140,13 +139,13 @@ const populateTable = (arr) => {
     const rowClone = tableRow.cloneNode(true);
 
     // Change the text of the cloned row's first column to i's artist.
-    rowClone.cells[0].textContent = song.artist;
+    rowClone.children[0].textContent = song.artist;
 
     // Change the text of the cloned row's second column to i's title.
-    rowClone.cells[1].textContent = song.title;
+    rowClone.children[1].textContent = song.title;
 
     // Change the href of the cloned row's third column's link to i's link value.
-    rowClone.cells[2].setAttribute("href", song.link);
+    rowClone.children[2].setAttribute("href", song.link);
 
     // Append the cloned/new row to the table body.
     tableBody.appendChild(rowClone);
