@@ -71,21 +71,16 @@ const songListArtists = songList.map(function(name){
 // that the user "submit" what they're searching, it'd be cool to 
 // filter the list as they type.
 const search = document.querySelector(".songlist__form-input");
-// let userPick = songList.filter(el => el.title.toLowerCase().includes(userSearch.toLowerCase()));
-
-//descructured version of code above:
-//userPick = songList.filter(({ title }) => title.includes(userSearch));
 
 search.addEventListener("input", function(e){
   const userSearch = search.value;
-  console.log(search.value);
-let userPick = songList.filter(({ title }) => title.includes(userSearch));  
-console.log(userPick);
-tableBody.innerHTML = '';
-populateTable(userPick);
-//TODOs
-//be able to search for song title OR artist name
-//make it case insensitive
+  const userPick = songList.filter((el) => {
+    if (el.title.toLowerCase().includes(userSearch.toLowerCase()) || el.artist.toLowerCase().includes(userSearch.toLowerCase())) {
+      return el;
+    }
+  })
+  tableBody.innerHTML = '';
+  populateTable(userPick);
 })
 
 
@@ -93,16 +88,16 @@ populateTable(userPick);
 // should just show that one song in the table. I have a couple of 
 // ideas on how we could make this work, but you should give it the first shot.
 const numOfSongs = songList.length;
-const randomSong = document.querySelector(".songlist__link");
+const randomSong = document.querySelector(".songlist__link-text");
 
-function getRandomIntInclusive(max) {
-  return Math.floor(Math.random() * (max)); //The maximum is inclusive
+const getRandomInt = (num) => {
+  return Math.floor(Math.random() * (num));
 }
 
 randomSong.addEventListener("click", function(e){
   //preventDefault prevents the link from reloading the page
   e.preventDefault();
-  let randomNum = getRandomIntInclusive(numOfSongs);
+  let randomNum = getRandomInt(numOfSongs);
   let song = [(songList[randomNum])];
   tableBody.innerHTML = '';
   populateTable(song);
@@ -123,6 +118,8 @@ randomSong.addEventListener("click", function(e){
 // current count as the user searches, etc.
  
 let currentListLength = document.querySelector(".songlist__text-current-list");
+currentListLength.textContent = numOfSongs;
+let currentListNum = 0;
 
 const totalListLength = document.querySelector(".songlist__text-total-list");
 totalListLength.textContent = numOfSongs;
@@ -137,24 +134,28 @@ const tableRow = document.querySelector(".songlist__body-row");
 tableBody.innerHTML = "";
 
 const populateTable = (arr) => {
-// For each song in the song list...
-for (let song of arr) {
-  // Clone the first row variable (https://gomakethings.com/how-to-copy-or-clone-an-element-with-vanilla-js/).
-  const rowClone = tableRow.cloneNode(true);
+  // For each song in the song list...
+  for (let song of arr) {
+    // Clone the first row variable (https://gomakethings.com/how-to-copy-or-clone-an-element-with-vanilla-js/).
+    const rowClone = tableRow.cloneNode(true);
 
-  // Change the text of the cloned row's first column to i's artist.
-  rowClone.cells[0].textContent = song.artist;
+    // Change the text of the cloned row's first column to i's artist.
+    rowClone.cells[0].textContent = song.artist;
 
-  // Change the text of the cloned row's second column to i's title.
-  rowClone.cells[1].textContent = song.title;
+    // Change the text of the cloned row's second column to i's title.
+    rowClone.cells[1].textContent = song.title;
 
-  // Change the href of the cloned row's third column's link to i's link value.
-  rowClone.cells[2].setAttribute("href", song.link);
+    // Change the href of the cloned row's third column's link to i's link value.
+    rowClone.cells[2].setAttribute("href", song.link);
 
-  // Append the cloned/new row to the table body.
-  tableBody.appendChild(rowClone);
-// End for
-}
+    // Append the cloned/new row to the table body.
+    tableBody.appendChild(rowClone);
+  // End for
+    currentListNum += 1;
+    currentListLength.textContent = currentListNum.toString();
+  } 
+  //reset current list
+  currentListNum = 0;
 }
 
 populateTable(songList);

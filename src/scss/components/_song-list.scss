@@ -148,6 +148,22 @@
   }
 }
 
+// .songlist__icon--unselected {
+
+//   .songlist__head-icon--selected &{
+//     display: none;
+//   }
+// }
+
+
+.songlist__icon--sorted {
+  display: none;
+}
+
+.songlist__icon--reverse {
+  display: none;
+}
+
 .songlist__table-body {
   @include breakpoint ($until: medium) {
     display: block; 
