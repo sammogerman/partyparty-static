@@ -148,20 +148,37 @@
   }
 }
 
-// .songlist__icon--unselected {
+.songlist__icon--unselected {
 
-//   .songlist__head-icon--selected &{
-//     display: none;
-//   }
-// }
+  .songlist__head-icon--sorted,
+  .songlist__head-icon--reversed & {
+    display: none;
+  }
+
+}
 
 
-.songlist__icon--sorted {
+.songlist__icon--sort {
   display: none;
+
+  .songlist__head-icon--sorted &{
+    display: inline-block;
+  }
+  .songlist__head-icon--reversed & {
+    display: none;
+  }
 }
 
 .songlist__icon--reverse {
   display: none;
+
+  .songlist__head-icon--reversed & {
+    display: inline-block;
+  }
+
+  .songlist__head-icon--sorted &{
+    display: none;
+  }
 }
 
 .songlist__table-body {

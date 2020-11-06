@@ -54,15 +54,26 @@ const songList = [
 
 ]
 
-//array of just the song titles:
+//array of song titles:
 const songListSongs = songList.map(function(song){
   return song.title;
 });
+
+//alphabetized array of song titles:
+const songsInOrder = songListSongs.sort();
+//song titles reversed:
+let songsInBackwardsOrder = songsInOrder.slice().reverse();
 
 //array of just the artists:
 const songListArtists = songList.map(function(name){
   return name.artist;
 });
+
+//alphabetized array of artists:
+const artistsInOrder = songListArtists.sort();
+
+//artists reversed: 
+const artistsInBackwardsOrder = artistsInOrder.slice().reverse();
 
 
 // We need:
@@ -110,6 +121,8 @@ randomSong.addEventListener("click", function(e){
 // but clicking/tapping that header should reverse the search. If 
 // they click/tap on the Song header, it should sort those A-Z, or 
 // Z-A if they click/tap again. The icon changes so that the blue arrow shows the current direction. The currently sorted header is also reflected by color.
+
+// const alphabetizeList = songList.sort(songList.artist.value);
 
 // to wire up the current/total song counts. You won't want to ever 
 // update this by hand, so it should count all of the songs on page 
@@ -192,3 +205,12 @@ populateTable(songList);
 //   linkDiv.appendChild(songLink);
 //   songLink.appendChild(icon);
 // }
+
+const artistHeader = document.querySelector(".songlist__head-item--artist");
+const songHeader = document.querySelector(".songlist__head-item--song");
+
+// artistHeader.addEventListener("click", function(){
+  //when clicked, add class to change icons
+
+  //sort list according to icon
+// })
