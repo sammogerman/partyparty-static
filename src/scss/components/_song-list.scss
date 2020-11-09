@@ -150,7 +150,7 @@
 
 .songlist__icon--unselected {
 
-  .songlist__head-icon--sorted,
+  .songlist__head-icon--sorted &, 
   .songlist__head-icon--reversed & {
     display: none;
   }

@@ -54,28 +54,6 @@ const songList = [
 
 ]
 
-//array of song titles:
-const songListSongs = songList.map(function(song){
-  return song.title;
-});
-
-//alphabetized array of song titles:
-const songsInOrder = songListSongs.sort();
-//song titles reversed:
-let songsInBackwardsOrder = songsInOrder.slice().reverse();
-
-//array of just the artists:
-const songListArtists = songList.map(function(name){
-  return name.artist;
-});
-
-//alphabetized array of artists:
-const artistsInOrder = songListArtists.sort();
-
-//artists reversed: 
-const artistsInBackwardsOrder = artistsInOrder.slice().reverse();
-
-
 // We need:
 
 // to wire up the search functionality. Instead of requiring 
@@ -121,8 +99,139 @@ randomSong.addEventListener("click", function(e){
 // but clicking/tapping that header should reverse the search. If 
 // they click/tap on the Song header, it should sort those A-Z, or 
 // Z-A if they click/tap again. The icon changes so that the blue arrow shows the current direction. The currently sorted header is also reflected by color.
+const artistHeader = document.querySelector(".songlist__head-item--artist");
+const songHeader = document.querySelector(".songlist__head-item--song");
+const orderIcon = document.querySelectorAll(".songlist__head-icon ");
+const iconClasses = ["songlist__icon--unselected", "songlist__head-icon--sorted", "songlist__head-icon--reversed"];
 
-// const alphabetizeList = songList.sort(songList.artist.value);
+
+//function to alphabetize song list by artist
+const sortByArtist = (arr) => {
+  arr.sort((a, b) => {
+    if (a.artist > b.artist) {
+      return 1;
+    } else {
+      return -1;
+    }
+  })
+}
+
+//function to reverse order of artists
+const reverseSortByArtist = (arr) => {
+  arr.sort((a, b) => {
+    if (a.artist < b.artist) {
+      return 1;
+    } else {
+      return -1;
+    }
+  })
+}
+
+//function to order song list alphabetically by song title
+const sortBySong = (arr) => {
+  arr.sort((a, b) => {
+    if (a.title > b.title) {
+      return 1;
+    } else {
+      return -1;
+    }
+  })
+}
+
+//function to reverse order list by song title
+const reverseSortBySong = (arr) => {
+  arr.sort((a, b) => {
+    if (a.title < b.title) {
+      return 1;
+    } else {
+      return -1;
+    }
+  })
+}
+
+//default state has artists alphabetized
+sortByArtist(songList);
+
+//click listener on artist header to sort list by artist name and toggle sort icons
+artistHeader.addEventListener("click", function(){
+  //when artist icon clicked, remove classes from song icon
+  orderIcon[1].classList.remove(...iconClasses);
+  //Add unsorted class to song icon
+  orderIcon[1].classList.add("songlist__head-icon--unsorted");
+  //if artist icon is the unsorted icon
+  if(orderIcon[0].classList.contains("songlist__head-icon--unsorted")){
+    //remove unsorted icon
+    orderIcon[0].classList.remove("songlist__head-icon--unsorted");
+    //add sorted class
+    orderIcon[0].classList.add("songlist__head-icon--sorted");
+    //run function to alphabetize song list by artist
+    sortByArtist(songList);
+    tableBody.innerHTML = "";
+    populateTable(songList);
+
+    //if artist icon is sorted icon
+  } else if (orderIcon[0].classList.contains("songlist__head-icon--sorted")){
+    //remove sorted icon, add reverse sort icon
+    orderIcon[0].classList.remove("songlist__head-icon--sorted");
+    orderIcon[0].classList.add("songlist__head-icon--reversed");
+    //TODO function to reverse artist order --need to debug
+    reverseSortByArtist(songList);
+    tableBody.innerHTML = "";
+    populateTable(songList);
+
+    //if artist icon is currently the reverse icon
+  } else if (orderIcon[0].classList.contains("songlist__head-icon--reversed")) {
+    //remove reverse icon, add sorted icon
+    orderIcon[0].classList.remove("songlist__head-icon--reversed");
+    orderIcon[0].classList.add("songlist__head-icon--sorted");
+    //TODO alphabetize list by artist
+    sortByArtist(songList);
+    tableBody.innerHTML = "";
+    populateTable(songList);
+  }
+
+})
+
+//click listener on song header to sort list by song title and toggle sort icons
+songHeader.addEventListener("click", function(){
+  //when song icon clicked, remove classes from artist icon, and set it to the unsorted icon
+  orderIcon[0].classList.remove(...iconClasses);
+  orderIcon[0].classList.add("songlist__head-icon--unsorted");
+
+  if (orderIcon[1].classList.contains("songlist__head-icon--unsorted")){
+    //remove unsorted class/icon, add sorted class
+    orderIcon[1].classList.remove("songlist__head-icon--unsorted");
+    orderIcon[1].classList.add("songlist__head-icon--sorted");
+    //run function to sort by song title
+    sortBySong(songList);
+    tableBody.innerHTML = "";
+    populateTable(songList);
+
+
+  } else if (orderIcon[1].classList.contains("songlist__head-icon--sorted")){
+    orderIcon[1].classList.remove("songlist__head-icon--sorted");
+    orderIcon[1].classList.add("songlist__head-icon--reversed");
+    //run function to reverse sort by song title
+    reverseSortBySong(songList);
+    tableBody.innerHTML = "";
+    populateTable(songList);
+
+  } else if (orderIcon[1].classList.contains("songlist__head-icon--reversed")){
+    orderIcon[1].classList.remove("songlist__head-icon--reversed");
+    orderIcon[1].classList.add("songlist__head-icon--sorted");
+    //function to sort by song title
+    sortBySong(songList);
+    //empty out the table, populate with the new sort direction
+    tableBody.innerHTML = "";
+    populateTable(songList);
+  }
+
+
+
+  // sort list according to icon
+})
+
+
 
 // to wire up the current/total song counts. You won't want to ever 
 // update this by hand, so it should count all of the songs on page 
@@ -205,12 +314,3 @@ populateTable(songList);
 //   linkDiv.appendChild(songLink);
 //   songLink.appendChild(icon);
 // }
-
-const artistHeader = document.querySelector(".songlist__head-item--artist");
-const songHeader = document.querySelector(".songlist__head-item--song");
-
-// artistHeader.addEventListener("click", function(){
-  //when clicked, add class to change icons
-
-  //sort list according to icon
-// })
