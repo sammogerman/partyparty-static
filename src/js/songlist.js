@@ -154,10 +154,14 @@ sortByArtist(songList);
 
 //click listener on artist header to sort list by artist name and toggle sort icons
 artistHeader.addEventListener("click", function(){
+
   //when artist icon clicked, remove classes from song icon
   orderIcon[1].classList.remove(...iconClasses);
   //Add unsorted class to song icon
   orderIcon[1].classList.add("songlist__head-icon--unsorted");
+  //empty the table
+  tableBody.innerHTML = "";
+
   //if artist icon is the unsorted icon
   if(orderIcon[0].classList.contains("songlist__head-icon--unsorted")){
     //remove unsorted icon
@@ -166,30 +170,25 @@ artistHeader.addEventListener("click", function(){
     orderIcon[0].classList.add("songlist__head-icon--sorted");
     //run function to alphabetize song list by artist
     sortByArtist(songList);
-    tableBody.innerHTML = "";
-    populateTable(songList);
 
     //if artist icon is sorted icon
   } else if (orderIcon[0].classList.contains("songlist__head-icon--sorted")){
     //remove sorted icon, add reverse sort icon
     orderIcon[0].classList.remove("songlist__head-icon--sorted");
     orderIcon[0].classList.add("songlist__head-icon--reversed");
-    //TODO function to reverse artist order --need to debug
+    //run function to reverse artist order
     reverseSortByArtist(songList);
-    tableBody.innerHTML = "";
-    populateTable(songList);
 
     //if artist icon is currently the reverse icon
   } else if (orderIcon[0].classList.contains("songlist__head-icon--reversed")) {
     //remove reverse icon, add sorted icon
     orderIcon[0].classList.remove("songlist__head-icon--reversed");
     orderIcon[0].classList.add("songlist__head-icon--sorted");
-    //TODO alphabetize list by artist
+    //alphabetize list by artist
     sortByArtist(songList);
-    tableBody.innerHTML = "";
-    populateTable(songList);
   }
-
+  //repopulate table in new order
+  populateTable(songList);
 })
 
 //click listener on song header to sort list by song title and toggle sort icons
@@ -197,6 +196,7 @@ songHeader.addEventListener("click", function(){
   //when song icon clicked, remove classes from artist icon, and set it to the unsorted icon
   orderIcon[0].classList.remove(...iconClasses);
   orderIcon[0].classList.add("songlist__head-icon--unsorted");
+  tableBody.innerHTML = "";
 
   if (orderIcon[1].classList.contains("songlist__head-icon--unsorted")){
     //remove unsorted class/icon, add sorted class
@@ -204,31 +204,20 @@ songHeader.addEventListener("click", function(){
     orderIcon[1].classList.add("songlist__head-icon--sorted");
     //run function to sort by song title
     sortBySong(songList);
-    tableBody.innerHTML = "";
-    populateTable(songList);
-
 
   } else if (orderIcon[1].classList.contains("songlist__head-icon--sorted")){
     orderIcon[1].classList.remove("songlist__head-icon--sorted");
     orderIcon[1].classList.add("songlist__head-icon--reversed");
     //run function to reverse sort by song title
     reverseSortBySong(songList);
-    tableBody.innerHTML = "";
-    populateTable(songList);
 
   } else if (orderIcon[1].classList.contains("songlist__head-icon--reversed")){
     orderIcon[1].classList.remove("songlist__head-icon--reversed");
     orderIcon[1].classList.add("songlist__head-icon--sorted");
     //function to sort by song title
     sortBySong(songList);
-    //empty out the table, populate with the new sort direction
-    tableBody.innerHTML = "";
-    populateTable(songList);
-  }
-
-
-
-  // sort list according to icon
+  } 
+  populateTable(songList);
 })
 
 
