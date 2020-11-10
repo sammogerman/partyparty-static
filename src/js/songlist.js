@@ -43,7 +43,7 @@ const songList = [
   },
   {
     artist: "Aladdin",
-    title: "A Whole New World`",
+    title: "A Whole New World",
     link: "https://www.youtube.com/watch?v=MJLOCAWkRoc&ab_channel=DisneyLyrics18"
   },
   {
@@ -64,7 +64,7 @@ const search = document.querySelector(".songlist__form-input");
 search.addEventListener("input", function(e){
   const userSearch = search.value;
   const userPick = songList.filter((el) => {
-    if (el.title.toLowerCase().includes(userSearch.toLowerCase()) || el.artist.toLowerCase().includes(userSearch.toLowerCase())) {
+    if (el.title.toLowerCase().includes(userSearch.toLowerCase().trim()) || el.artist.toLowerCase().includes(userSearch.toLowerCase().trim())) {
       return el;
     }
   })
@@ -234,8 +234,11 @@ let currentListNum = 0;
 const totalListLength = document.querySelector(".songlist__text-total-list");
 totalListLength.textContent = numOfSongs;
 
+const tableBottomText = document.querySelector(".songlist__table-bottom-text");
+const noMatch = document.querySelector(".songlist__text-song-unavailable");
+
 //Populating table with JS array:
-// Create a variable for the table body (you're already doing this).
+// Create a variable for the table body.
 const tableBody = document.querySelector(".songlist__table-body");
 // Create a variable for the first row of your table body variable.
 const tableRow = document.querySelector(".songlist__body-row");
@@ -264,42 +267,15 @@ const populateTable = (arr) => {
     currentListNum += 1;
     currentListLength.textContent = currentListNum.toString();
   } 
+  //if no songs found, set current songs displayed to 0, and display text
+  if (arr.length === 0) {
+    currentListLength.textContent = 0;
+    tableBottomText.classList.add("songlist__text-song-unavailable--shown");
+  } else {
+    tableBottomText.classList.remove("songlist__text-song-unavailable--shown");
+  }
   //reset current list
   currentListNum = 0;
 }
 
 populateTable(songList);
-
-
-
-//OLD
-// for (let i = 0; i < songList.length; i++) {
-//   const row = document.createElement("tr");
-//   row.classList.add("songlist__body-row");
-
-//   const band = document.createElement('td');
-//   band.classList.add("songlist__body-item", "songlist__body-item--artist");
-//   band.textContent = songList[i].artist;
-
-//   const song = document.createElement("td");
-//   song.classList.add("songlist__body-item", "songlist__body-item--song", "text--black");
-//   song.textContent = songList[i].title;
-
-//   const linkDiv = document.createElement("td");
-//   linkDiv.classList.add("songlist__body-item", "songlist__body-item--link");
-
-//   const songLink = document.createElement("a");
-//   songLink.setAttribute("href", songList[i].link);
-
-//   const icon = document.createElement("img");
-//   icon.classList.add("songlist__link-image")
-//   icon.setAttribute("src", "/assets/icons/btn-youtube.svg");
-
-
-//   tableBody.appendChild(row);
-//   row.appendChild(band);
-//   row.appendChild(song);
-//   row.appendChild(linkDiv);
-//   linkDiv.appendChild(songLink);
-//   songLink.appendChild(icon);
-// }

@@ -267,3 +267,18 @@
     margin-top: rhythm(3);
   }
 }
+.songlist__text-song-unavailable {
+  display: none;
+  text-align: center;
+  grid-column: 1/13;
+  margin-top: rhythm(2);
+
+  .songlist__text-song-unavailable--shown & {
+    display: inline-block;
+  }
+
+  @include breakpoint ($from: large) {
+    margin-top: rhythm(3);
+  }
+  
+}
