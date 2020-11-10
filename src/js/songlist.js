@@ -72,7 +72,6 @@ search.addEventListener("input", function(e){
   populateTable(userPick);
 })
 
-
 // to wire up the "pick a song" functionality. The end result 
 // should just show that one song in the table.
 const numOfSongs = songList.length;
@@ -89,13 +88,15 @@ randomSong.addEventListener("click", function(e){
   let song = [(songList[randomNum])];
   tableBody.innerHTML = '';
   populateTable(song);
+  //show random song in the input
+  search.value = songList[randomNum].title;
 });
 
-//For artists with multiple songs, need to loop through array of 
-//songs and pick a random one
+//manually trigger search input after random song is selected.
+const e = new Event("change"); //I know you said this should be on "input" not "change" but it doesn't work for some reason. with input I'm getting error: "Uncaught TypeError: Cannot set property 'innerHTML' of undefined at line 71
+search.dispatchEvent(e);
 
-
-// to wire up the sorting. Artist should be sorted A-Z by default, 
+// SORTING: Artists should be sorted A-Z by default, 
 // but clicking/tapping that header should reverse the search. If 
 // they click/tap on the Song header, it should sort those A-Z, or 
 // Z-A if they click/tap again. The icon changes so that the blue arrow shows the current direction. The currently sorted header is also reflected by color.
