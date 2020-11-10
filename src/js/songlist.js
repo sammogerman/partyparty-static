@@ -104,7 +104,7 @@ const artistHeader = document.querySelector(".songlist__head-item--artist");
 const songHeader = document.querySelector(".songlist__head-item--song");
 const orderIcon = document.querySelectorAll(".songlist__head-icon ");
 const iconClasses = ["songlist__icon--unselected", "songlist__head-icon--sorted", "songlist__head-icon--reversed"];
-
+const headRow = document.querySelector(".songlist__head-row");
 
 //function to alphabetize song list by artist
 const sortByArtist = (arr) => {
@@ -162,6 +162,8 @@ artistHeader.addEventListener("click", function(){
   orderIcon[1].classList.add("songlist__head-icon--unsorted");
   //empty the table
   tableBody.innerHTML = "";
+  //add class to table head row to change background color
+  headRow.classList.add("songlist__head-row--artist-clicked");
 
   //if artist icon is the unsorted icon
   if(orderIcon[0].classList.contains("songlist__head-icon--unsorted")){
@@ -198,6 +200,8 @@ songHeader.addEventListener("click", function(){
   orderIcon[0].classList.remove(...iconClasses);
   orderIcon[0].classList.add("songlist__head-icon--unsorted");
   tableBody.innerHTML = "";
+  //remove class to change background color
+  headRow.classList.remove("songlist__head-row--artist-clicked");
 
   if (orderIcon[1].classList.contains("songlist__head-icon--unsorted")){
     //remove unsorted class/icon, add sorted class

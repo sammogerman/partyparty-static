@@ -123,14 +123,23 @@
 .songlist__head-item--artist {
   width: 50%;
 
+  .songlist__head-row--artist-clicked & {
+    background-color: $color-blue-active;
+  }
+
   @include breakpoint ($from: medium) {
     width: 45%;
   }
 }
 
 .songlist__head-item--song {
+  background-color: $color-blue-active;
   border-left: 1px solid $color-silver;
   width: 50%;
+
+  .songlist__head-row--artist-clicked & {
+    background-color: $color-blue;
+  }
 
   @include breakpoint ($from: medium) {
     width: 45%;
@@ -154,9 +163,7 @@
   .songlist__head-icon--reversed & {
     display: none;
   }
-
 }
-
 
 .songlist__icon--sort {
   display: none;
