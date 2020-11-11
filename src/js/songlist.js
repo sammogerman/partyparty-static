@@ -259,10 +259,6 @@ randomSong.addEventListener("click", function(e){
   search.value = songList[randomNum].title;
 });
 
-//manually trigger search input after random song is selected.
-const e = new Event("change"); //I know you said this should be on "input" not "change" but it doesn't work for some reason. with input I'm getting error: "Uncaught TypeError: Cannot set property 'innerHTML' of undefined at line 71
-search.dispatchEvent(e);
-
 // SORTING: Artists should be sorted A-Z by default, 
 // but clicking/tapping that header should reverse the search. If 
 // they click/tap on the Song header, it should sort those A-Z, or 
