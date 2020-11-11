@@ -51,10 +51,177 @@ const songList = [
     title: "Ace of Spades",
     link: "https://www.youtube.com/watch?v=3mbvWn1EY6g&ab_channel=Mot%C3%B6rheadOfficial"
   },
-
+  {
+    artist: "Toto",
+    title: "Africa",
+    link: "https://www.youtube.com/watch?v=FTQbiNvZqaY&ab_channel=TotoVEVO"
+  },
+  {
+    artist: "Green Day",
+    title: "American Idiot",
+    link: "https://www.youtube.com/watch?v=Ee_uujKuJMI&ab_channel=GreenDay"
+  },
+  {
+    artist: "American Pie",
+    title: "Don Mclean",
+    link: "https://www.youtube.com/watch?v=iX_TFkut1PM&ab_channel=DonMcLean-Topic"
+  },
+  {
+    artist: "Amish Paradise",
+    title: "Weird Al Yankovic",
+    link: "https://www.youtube.com/watch?v=lOfZLb33uCg"
+  },
+  {
+    artist: "Jet",
+    title: "Are You Gonna Be My Girl",
+    link: "Jet - Are You Gonna Be My Girl"
+  },
+  {
+    artist: "Sir Mix-A-Lot",
+    title: "Baby Got Back",
+    link: "https://www.youtube.com/watch?v=X53ZSxkQ3Ho"
+  },
+  {
+    artist: "Dean Martin",
+    title: "Baby, It's Cold Outside",
+    link: "https://www.youtube.com/watch?v=crFQpOCDfEc&ab_channel=Oda"
+  },
+  {
+    artist: "Britney Spears",
+    title: "...Baby One More Time",
+    link: "https://www.youtube.com/watch?v=C-u5WLJ9Yk4"
+  },
+  {
+    artist: "Bloodhound Gang",
+    title: "The Bad Touch",
+    link: "https://www.youtube.com/watch?v=xat1GVnl8-k"
+  },
+  {
+    artist: "Sweet",
+    title: "Ballroom Blitz",
+    link: "https://www.youtube.com/watch?v=z_jdiU47bFA"
+  },  
+  {
+    artist: "Green Day",
+    title: "Basket Case",
+    link: "https://www.youtube.com/watch?v=mDbSFyReulk&ab_channel=GreenDay"
+  },  
+  {
+    artist: "Deftones",
+    title: "Be Quiet And Drive",
+    link: "https://www.youtube.com/watch?v=KvknOXGPzCQ"
+  },  
+  {
+    artist: "Afroman",
+    title: "Because I Got High",
+    link: "https://www.youtube.com/watch?v=WeYsTmIzjkw"
+  },  
+  {
+    artist: "Reel Big Fish",
+    title: "Beer",
+    link: "https://www.youtube.com/watch?v=gql9220Qon8&ab_channel=ReelBigFishTv"
+  }, 
+  {
+    artist: "Carrie Underwood",
+    title: "Before He Cheats",
+    link: "https://www.youtube.com/watch?v=WaSy8yy-mr8"
+  }, 
+  {
+    artist: "Elton John",
+    title: "Benny And The Jets",
+    link: "https://www.youtube.com/watch?v=p5rQHoaQpTw&ab_channel=RewindMusicGroup"
+  }, 
+  {
+    artist: "KT Tunstall",
+    title: "Big Black Horse and the Cherry Tree",
+    link: "https://www.youtube.com/watch?v=PQmDUEv939A"
+  }, 
+  {
+    artist: "Billy Joel",
+    title: "Big Shot",
+    link: "https://www.youtube.com/watch?v=bEea624OBzM"
+  },
+  {
+    artist: "Michael Jackson",
+    title: "Billie Jean",
+    link: "https://www.youtube.com/watch?v=Zi_XLOBDo_Y"
+  },
+  {
+    artist: "Ram Jam",
+    title: "Black Betty",
+    link: "https://www.youtube.com/watch?v=I_2D8Eo15wE"
+  },
+  {
+    artist: "Soundgarden",
+    title: "Black Hole Sun",
+    link: "https://www.youtube.com/watch?v=3mbBbFH9fAg"
+  },
+  {
+    artist: "Alannah Myles",
+    title: "Black Velvet",
+    link: "https://www.youtube.com/watch?v=tT4d1LQy4es"
+  }, 
+  {
+    artist: "Violent Femmes",
+    title: "Blister in the Sun",
+    link: "https://www.youtube.com/watch?v=hYZkoI1ggEw&ab_channel=armytype77"
+  }, 
+  {
+    artist: "The Ramones",
+    title: "Blitzkrieg Bop",
+    link: "https://www.youtube.com/watch?v=268C3N2dDYk"
+  }, 
+  {
+    artist: "Queen",
+    title: "Bohemian Rhapsody",
+    link: "https://www.youtube.com/watch?v=fJ9rUzIMcZQ"
+  },
+  {
+    artist: "Bruce Springsteen",
+    title: "Born To Run",
+    link: "https://www.youtube.com/watch?v=IxuThNgl3YA"
+  },
+  {
+    artist: "Melanie",
+    title: "Brand New Key",
+    link: "https://www.youtube.com/watch?v=lKcpodt0YCU"
+  },
+  {
+    artist: "Evanescence",
+    title: "Bring Me To Life",
+    link: "https://www.youtube.com/watch?v=3YxaaGgTQYM"
+  },
+  {
+    artist: "Van Morrison",
+    title: "Brown Eyed Girl",
+    link: "https://www.youtube.com/watch?v=UfmkgQRmmeE"
+  },
+  {
+    artist: "Weezer",
+    title: "Buddy Holly",
+    link: "https://www.youtube.com/watch?v=kemivUKb4f4"
+  },
+  {
+    artist: "The Foundations",
+    title: "Build Me Up Buttercup",
+    link: "https://www.youtube.com/watch?v=FvluBVhfGcw&ab_channel=TheFoundations-Topic"
+  },
+  {
+    artist: "Smashing Pumpkins",
+    title: "Bullet With Butterfly Wings",
+    link: "https://www.youtube.com/watch?v=8-r-V0uK4u0"
+  },
+  {
+    artist: "Rage Against The Machine",
+    title: "Bulls On Parade",
+    link: "https://www.youtube.com/watch?v=3L4YrGaR8E4&ab_channel=RATMVEVO"
+  },
+  {
+    artist: "Elvis Presley",
+    title: "Can't Help Falling In Love",
+    link: "https://www.youtube.com/watch?v=vGJTaP6anOU"
+  },
 ]
-
-// We need:
 
 // to wire up the search functionality. Instead of requiring 
 // that the user "submit" what they're searching, it'd be cool to 
@@ -227,8 +394,7 @@ songHeader.addEventListener("click", function(){
 
 
 
-// to wire up the current/total song counts. You won't want to ever 
-// update this by hand, so it should count all of the songs on page 
+// Updating the current/total song counts. Count all of the songs on page 
 // load and display that as the total. Then keep updating the 
 // current count as the user searches, etc.
  
