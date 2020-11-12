@@ -117,7 +117,18 @@
 }
 
 .songlist__head-item {
+  position: sticky;
+  top: 50px;
+  z-index: 0;
   padding: rhythm(2);
+
+  @include breakpoint ($from: medium) {
+    top: 99px;
+  }
+
+  @include breakpoint ($from: large) {
+    top: 102px;
+  }
 }
 
 .songlist__head-item--artist {
@@ -147,6 +158,8 @@
 }
 
 .songlist__head-item--link {
+  background-color: $color-blue;
+
   @include breakpoint ($until: medium) {
     display: none;
   }
@@ -250,7 +263,6 @@
 }
 
 .songlist__body-item--link {
-
   @include breakpoint ($until: medium) {
     align-self: center;
     grid-column: 4/5;

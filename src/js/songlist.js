@@ -802,8 +802,553 @@ const songList = [
     link: ""
   },
   {
-    artist: "",
-    title: "",
+    artist: "Danzig",
+    title: "Mother",
+    link: ""
+  },
+  {
+    artist: "Billy Joel",
+    title: "Movin' Out (Anthony's Song)",
+    link: ""
+  },
+  {
+    artist: "The Killers",
+    title: "Mr. Brightside",
+    link: ""
+  },
+  {
+    artist: "Red Hot Chili Peppers",
+    title: "My Friends",
+    link: ""
+  },
+  {
+    artist: "The Temptations",
+    title: "My Girl",
+    link: ""
+  },
+  {
+    artist: "Celine Dion",
+    title: "My Heart Will Go On",
+    link: ""
+  },
+  {
+    artist: "Billy Joel",
+    title: "My Life",
+    link: ""
+  },
+  {
+    artist: "Lit",
+    title: "My Own Worst Enemy",
+    link: ""
+  },
+  {
+    artist: "Frank Sinatra",
+    title: "New York, New York",
+    link: ""
+  },
+  {
+    artist: "Queens Of The Stone Age",
+    title: "No One Knows",
+    link: ""
+  },
+  {
+    artist: "Blind Melon",
+    title: "No Rain",
+    link: ""
+  },
+  {
+    artist: "TLC",
+    title: "No Scrubs",
+    link: ""
+  },
+  {
+    artist: "Weird Al Yankovic",
+    title: "Ode To A Superhero",
+    link: ""
+  },
+  {
+    artist: "Billy Joel",
+    title: "Only The Good Die Young",
+    link: ""
+  },
+  {
+    artist: "The Rolling Stones",
+    title: "Paint It Black",
+    link: ""
+  },
+  {
+    artist: "Van Halen",
+    title: "Panama",
+    link: ""
+  },
+  {
+    artist: "The Presidents Of The United States Of America",
+    title: "Peaches",
+    link: ""
+  },
+  {
+    artist: "People Are Strange",
+    title: "The Doors",
+    link: ""
+  },
+  {
+    artist: "Billy Joel",
+    title: "Piano Man",
+    link: ""
+  },
+  {
+    artist: "Kid Rock & Sheryl Crow",
+    title: "Picture",
+    link: ""
+  },
+  {
+    artist: "Janis Joplin",
+    title: "Piece Of My Heart",
+    link: ""
+  },
+  {
+    artist: "Stone Temple Pilots",
+    title: "Plush",
+    link: ""
+  },
+  {
+    artist: "Bell Biv Devoe",
+    title: "Poison",
+    link: ""
+  },
+  {
+    artist: "Lady Gaga",
+    title: "Poker Face",
+    link: ""
+  },
+  {
+    artist: "The Toadies",
+    title: "Possum Kingdom",
+    link: ""
+  },
+  {
+    artist: "Def Leppard",
+    title: "Pour Some Sugar On Me",
+    link: ""
+  },
+  {
+    artist: "Creedence Clearwater Revival",
+    title: "Proud Mary",
+    link: ""
+  },
+  {
+    artist: "Tina Turner",
+    title: "Proud Mary",
+    link: ""
+  },
+  {
+    artist: "Prince",
+    title: "Purple Rain",
+    link: ""
+  },
+  {
+    artist: "Billy Idol",
+    title: "Rebel Yell",
+    link: ""
+  },
+  {
+    artist: "Warren G And Nate Dogg",
+    title: "Regulate",
+    link: ""
+  },
+  {
+    artist: "Johnny Cash",
+    title: "Ring Of Fire",
+    link: ""
+  },
+  {
+    artist: "Elton John",
+    title: "Rocketman",
+    link: ""
+  },
+  {
+    artist: "Adele",
+    title: "Rolling In The Deep",
+    link: ""
+  },
+  {
+    artist: "Alice In Chains",
+    title: "Rooster",
+    link: ""
+  },
+  {
+    artist: "The Police",
+    title: "Roxanne",
+    link: ""
+  },
+  {
+    artist: "Lorde",
+    title: "Royals",
+    link: ""
+  },
+  {
+    artist: "Rancid",
+    title: "Ruby Soho",
+    link: ""
+  },
+  {
+    artist: "Iron Maiden",
+    title: "Run To The Hills",
+    link: ""
+  },
+  {
+    artist: "Beastie Boys",
+    title: "Sabotage",
+    link: ""
+  },
+  {
+    artist: "Weird Al Yankovic",
+    title: "The Saga Begins",
+    link: ""
+  },
+  {
+    artist: "Sublime",
+    title: "Santeria",
+    link: ""
+  },
+  {
+    artist: "Elton John",
+    title: "Saturday Night's Alright For Fighting",
+    link: ""
+  },
+  {
+    artist: "Weezer",
+    title: "Say It Ain't So",
+    link: ""
+  },
+  {
+    artist: "Earth, Wind & Fire",
+    title: "September",
+    link: ""
+  },
+  {
+    artist: "The White Stripes",
+    title: "Seven Nation Army",
+    link: ""
+  },
+  {
+    artist: "Marcy Playground",
+    title: "Sex And Candy",
+    link: ""
+  },
+  {
+    artist: "Collective Soul",
+    title: "Shine",
+    link: ""
+  },
+  {
+    artist: "Salt-N-Pepa",
+    title: "Shoop",
+    link: ""
+  },
+  {
+    artist: "Lynyrd Skynyrd",
+    title: "Simple Man",
+    link: ""
+  },
+  {
+    artist: "Night Ranger",
+    title: "Sister Christian",
+    link: ""
+  },
+  {
+    artist: "Otis Redding",
+    title: "Sittin' On The Dock Of The Bay",
+    link: ""
+  },
+  {
+    artist: "Weird Al Yankovic",
+    title: "Smells Like Nirvana",
+    link: ""
+  },
+  {
+    artist: "Tool",
+    title: "Sober",
+    link: ""
+  },
+  {
+    artist: "John Michael Montgomery",
+    title: "Sold (The Grundy County Auction)",
+    link: ""
+  },
+  {
+    artist: "David Bowie",
+    title: "Space Oddity",
+    link: ""
+  },
+  {
+    artist: "Richard Cheese",
+    title: "Star Wars Cantina",
+    link: ""
+  },
+  {
+    artist: "Stray Cats",
+    title: "Stray Cat Strut",
+    link: ""
+  },
+  {
+    artist: "Fall Out Boy",
+    title: "Sugar, We're Goin Down",
+    link: "https://www.youtube.com/watch?v=uhG-vLZrb-g"
+  },
+  {
+    artist: "Grease",
+    title: "Summer Nights",
+    link: ""
+  },
+  {
+    artist: "Bryan Adams",
+    title: "Summer Of '69",
+    link: ""
+  },
+  {
+    artist: "Stevie Wonder",
+    title: "Superstition",
+    link: ""
+  },
+  {
+    artist: "Elvis Presley",
+    title: "Suspicious Minds",
+    link: ""
+  },
+  {
+    artist: "Megadeth",
+    title: "Sweating Bullets",
+    link: ""
+  },
+  {
+    artist: "Neil Diamond",
+    title: "Sweet Caroline",
+    link: ""
+  },
+  {
+    artist: "Guns N' Roses",
+    title: "Sweet Child O' Mine",
+    link: ""
+  },
+  {
+    artist: "Lynyrd Skynyrd",
+    title: "Sweet Home Alabama",
+    link: ""
+  },
+  {
+    artist: "Weird Al Yankovic",
+    title: "Tacky",
+    link: ""
+  },
+  {
+    artist: "Franz Ferdinand",
+    title: "Take Me Out",
+    link: ""
+  },
+  {
+    artist: "John Denver",
+    title: "Take Me Home, Country Roads",
+    link: ""
+  },
+  {
+    artist: "Poison",
+    title: "Talk Dirty To Me",
+    link: ""
+  },
+  {
+    artist: "My Chemical Romance",
+    title: "Teenagers",
+    link: ""
+  },
+  {
+    artist: "Chris Stapleton",
+    title: "Tennesse Whiskey",
+    link: ""
+  },
+  {
+    artist: "Nancy Sinatra",
+    title: "These Boots Are Made For Walkin'",
+    link: ""
+  },
+  {
+    artist: "AC/DC",
+    title: "Thunderstruck",
+    link: ""
+  },
+  {
+    artist: "Elton John",
+    title: "Tiny Dancer",
+    link: ""
+  },
+  {
+    artist: "Rush",
+    title: "Tom Sawyer",
+    link: ""
+  },
+  {
+    artist: "Bonnie Tyler",
+    title: "Total Eclipse Of The Heart",
+    link: ""
+  },
+  {
+    artist: "The Rocky Horror Picture Show",
+    title: "Touch-A, Touch-A, Touch Me",
+    link: ""
+  },
+  {
+    artist: "Tenacious D",
+    title: "Tribute",
+    link: ""
+  },
+  {
+    artist: "Bob Seger",
+    title: "Turn The Page",
+    link: ""
+  }, 
+  {
+    artist: "The Beatles",
+    title: "Twist And Shout",
+    link: ""
+  },
+  {
+    artist: "Red Hot Chili Peppers",
+    title: "Under The Bridge",
+    link: ""
+  },
+  {
+    artist: "Weezer",
+    title: "Undone - The Sweater Song",
+    link: "https://www.youtube.com/watch?v=LHQqqM5sr7g&list=PLnQjsPdbMPWiaSc9JV5NkhEEV-AK3yfKS&index=1&t=0s"
+  },
+  {
+    artist: "Muse",
+    title: "Uprising",
+    link: ""
+  },
+  {
+    artist: "Amy Winehouse",
+    title: "Valerie",
+    link: ""
+  },
+  {
+    artist: "Darius Rucker",
+    title: "Wagon Wheel",
+    link: ""
+  },
+  {
+    artist: "Old Crow Medicine Show",
+    title: "Wagon Wheel",
+    link: ""
+  },
+  {
+    artist: "Pantera",
+    title: "Walk",
+    link: ""
+  },
+  {
+    artist: "Bon Jovi",
+    title: "Wanted Dead Or Alive",
+    link: ""
+  },
+  {
+    artist: "Black Sabbath",
+    title: "War Pigs",
+    link: ""
+  },
+  {
+    artist: "TLC",
+    title: "Waterfalls",
+    link: ""
+  },
+  {
+    artist: "Louis Armstrong",
+    title: "What A Wonderful World",
+    link: ""
+  },
+  {
+    artist: "Justin Timberlake",
+    title: "What Goes Around...Comes Around",
+    link: ""
+  },
+  {
+    artist: "Sublime",
+    title: "What I Got",
+    link: ""
+  },
+  {
+    artist: "Blink 182",
+    title: "What's My Age Again",
+    link: ""
+  },
+  {
+    artist: "4 Non Blondes",
+    title: "What's Up?",
+    link: ""
+  },
+  {
+    artist: "Pixies",
+    title: "Where Is My Mind?",
+    link: ""
+  },
+  {
+    artist: "Beck",
+    title: "Where It's At",
+    link: ""
+  },
+  {
+    artist: "Billy Idol",
+    title: "White Wedding",
+    link: ""
+  },
+  {
+    artist: "Chris Isaak",
+    title: "Wicked Game",
+    link: ""
+  },
+  {
+    artist: "U2",
+    title: "With Or Without You",
+    link: ""
+  },
+  {
+    artist: "Tenacious D",
+    title: "Wonderboy",
+    link: ""
+  },
+  {
+    artist: "Eric Clapton",
+    title: "Wonderful Tonight",
+    link: ""
+  },
+  {
+    artist: "Oasis",
+    title: "Wonderwall",
+    link: ""
+  },
+  {
+    artist: "Miley Cyrus",
+    title: "Wrecking Ball",
+    link: ""
+  },
+  {
+    artist: "AC/DC",
+    title: "You Shook Me All Night Long",
+    link: ""
+  },
+  {
+    artist: "The Righteos Brothers",
+    title: "You've Lost That Lovin' Feelin'",
+    link: ""
+  },
+  {
+    artist: "The Outfield",
+    title: "Your Love",
+    link: ""
+  },
+  {
+    artist: "The Cranberries",
+    title: "Zombie",
     link: ""
   },
 ]
