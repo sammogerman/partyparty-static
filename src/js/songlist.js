@@ -221,6 +221,591 @@ const songList = [
     title: "Can't Help Falling In Love",
     link: "https://www.youtube.com/watch?v=vGJTaP6anOU"
   },
+  {
+    artist: "System Of A Down",
+    title: "Chop Suey!",
+    link: ""
+  },
+  {
+    artist: "Nine Inch Nails",
+    title: "Closer",
+    link: ""
+  },
+  {
+    artist: "Styx",
+    title: "Come Sail Away",
+    link: ""
+  },
+  {
+    artist: "The Beatles",
+    title: "Come Together",
+    link: ""
+  },
+  {
+    artist: "Barry Manilow",
+    title: "Copacabana",
+    link: ""
+  },
+  {
+    artist: "Patsy Cline",
+    title: "Crazy",
+    link: ""
+  },
+  {
+    artist: "Buckcherry",
+    title: "Crazy Bitch",
+    link: ""
+  },
+  {
+    artist: "Heart",
+    title: "Crazy On You",
+    link: ""
+  },
+  {
+    artist: "Radiohead",
+    title: "Creep",
+    link: ""
+  },
+  {
+    artist: "Stone Temple Pilots",
+    title: "Creep",
+    link: ""
+  },
+  {
+    artist: "Fionna Apple",
+    title: "Criminal",
+    link: ""
+  },
+  {
+    artist: "The Monkees",
+    title: "Daydream Believer",
+    link: ""
+  },
+  {
+    artist: "Blue Oyster Cult",
+    title: "(Don't Fear) The Reaper",
+    link: ""
+  },
+  {
+    artist: "Norah Jones",
+    title: "Don't Know Why",
+    link: ""
+  },
+  {
+    artist: "No Doubt",
+    title: "Don't Speak",
+    link: ""
+  },
+  {
+    artist: "Journey",
+    title: "Don't Stop Believin'",
+    link: "https://www.youtube.com/watch?v=1k8craCGpgs"
+  },
+  {
+    artist: "Queen",
+    title: "Don't Stop Me Now",
+    link: ""
+  },
+  {
+    artist: "Simple Minds",
+    title: "Don't You (Forget About ME)",
+    link: ""
+  },
+  {
+    artist: "Fleetwood Mac",
+    title: "Dreams",
+    link: ""
+  },
+  {
+    artist: "Dobie Gray",
+    title: "Drift Away",
+    link: ""
+  },
+  {
+    artist: "Incubus",
+    title: "Drive",
+    link: ""
+  },
+  {
+    artist: "Train",
+    title: "Drops Of Jupiter",
+    link: ""
+  },
+  {
+    artist: "MGMT",
+    title: "Electric Feel",
+    link: ""
+  },
+  {
+    artist: "Metallica",
+    title: "Enter Sandman",
+    link: ""
+  },
+  {
+    artist: "Faith No More",
+    title: "Epic",
+    link: ""
+  },
+  {
+    artist: "Foo Fighters",
+    title: "Everlong",
+    link: ""
+  },
+  {
+    artist: "George Michael",
+    title: "Faith",
+    link: ""
+  },
+  {
+    artist: "Journey",
+    title: "Faithfully",
+    link: ""
+  },
+  {
+    artist: "Hank Williams Jr.",
+    title: "Family Tradition",
+    link: ""
+  },
+  {
+    artist: "Candlebox",
+    title: "Far Behind",
+    link: ""
+  },
+  {
+    artist: "Queen",
+    title: "Fat Bottomed Girls",
+    link: ""
+  },
+  {
+    artist: "Beastie Boys",
+    title: "Fight For Your Right",
+    link: ""
+  },
+  {
+    artist: "Harvey Danger",
+    title: "Flagpole Sitta",
+    link: ""
+  },
+  {
+    artist: "Weird Al Yankovic",
+    title: "Foil",
+    link: ""
+  },
+  {
+    artist: "Johnny Cash",
+    title: "Folsom Prison Blues",
+    link: ""
+  },
+  {
+    artist: "Dr. Dre & Eminem",
+    title: "Forgot About Dre",
+    link: ""
+  },
+  {
+    artist: "Tom Petty",
+    title: "Free Fallin'",
+    link: ""
+  },
+  {
+    artist: "Garth Brooks",
+    title: "Friends In Low Places",
+    link: ""
+  },
+  {
+    artist: "Tenacious D",
+    title: "Fuck Her Gently",
+    link: ""
+  },
+  {
+    artist: "Coolio",
+    title: "Gangsta's Paradise",
+    link: ""
+  },
+  {
+    artist: "Snoop Dogg",
+    title: "Gin And Juice",
+    link: ""
+  },
+  {
+    artist: "Tracy Chapman",
+    title: "Give Me One Reason",
+    link: ""
+  },
+  {
+    artist: "Lee Greenwood",
+    title: "God Bless The U.S.A",
+    link: ""
+  },
+  {
+    artist: "Dixie Chicks",
+    title: "Goodbye Earl",
+    link: ""
+  },
+  {
+    artist: "Pharrell Williams",
+    title: "Happy",
+    link: ""
+  },
+  {
+    artist: "Nirvana",
+    title: "Heart-Shaped Box",
+    link: "https://www.youtube.com/watch?v=n6P0SitRwy8"
+  },
+  {
+    artist: "Pat Benatar",
+    title: "Heartbreaker",
+    link: ""
+  },
+  {
+    artist: "Lionel Ritchie",
+    title: "Hello",
+    link: ""
+  },
+  {
+    artist: "Gin Blossoms",
+    title: "Hey Jealousy",
+    link: ""
+  },
+  {
+    artist: "The Beatles",
+    title: "Hey Jude",
+    link: ""
+  },
+  {
+    artist: "OutKast",
+    title: "Hey Ya!",
+    link: ""
+  },
+  {
+    artist: "Pat Benatar",
+    title: "Hit Me With Your Best Shot",
+    link: ""
+  },
+  {
+    artist: "The Lumineers",
+    title: "Ho Hey",
+    link: ""
+  },
+  {
+    artist: "Dio",
+    title: "Holy Diver",
+    link: ""
+  },
+  {
+    artist: "The Eagles",
+    title: "Hotel California",
+    link: ""
+  },
+  {
+    artist: "Duran Duran",
+    title: "Hungry Like The Wolf",
+    link: ""
+  },
+  {
+    artist: "Johnny Cash",
+    title: "Hurt",
+    link: ""
+  },
+  {
+    artist: "John Mellencamp",
+    title: "Hurts So Good",
+    link: ""
+  },
+  {
+    artist: "I Believe In A Thing Called Love",
+    title: "The Darkness",
+    link: ""
+  },
+  {
+    artist: "The Rolling Stones",
+    title: "I Can't Get No Satisfaction",
+    link: ""
+  },
+  {
+    artist: "Hall & Oates",
+    title: "I Can't Go For That (No Can Do)",
+    link: ""
+  },
+  {
+    artist: "Aerosmith",
+    title: "I Don't Want To Miss A Thing",
+    link: ""
+  },
+  {
+    artist: "Joan Jett & The Blackhearts",
+    title: "I Love Rock 'N Roll",
+    link: ""
+  },
+  {
+    artist: "Toby Keith",
+    title: "I Love This Bar",
+    link: ""
+  },
+  {
+    artist: "Whitney Houston",
+    title: "I Wanna Dance With Somebody",
+    link: ""
+  },
+  {
+    artist: "Backstreet Boys",
+    title: "I Want It That Way",
+    link: ""
+  },
+  {
+    artist: "Whitney Houston",
+    title: "I Will Always Love You",
+    link: ""
+  },
+  {
+    artist: "Gloria Gaynor",
+    title: "I Will Survive",
+    link: ""
+  },
+  {
+    artist: "Cake",
+    title: "I Will Survive",
+    link: ""
+  },
+  {
+    artist: "Vanilla Ice",
+    title: "Ice Ice Baby",
+    link: ""
+  },
+  {
+    artist: "Tonic",
+    title: "If You Could Only See",
+    link: ""
+  },
+  {
+    artist: "R. Kelly",
+    title: "Ignition (Remix)",
+    link: ""
+  },
+  {
+    artist: "Melissa Etheridge",
+    title: "I'm The Only One",
+    link: ""
+  },
+  {
+    artist: "John Lennon",
+    title: "Imagine",
+    link: ""
+  },
+  {
+    artist: "Led Zeppelin",
+    title: "Immigrant Song",
+    link: ""
+  },
+  {
+    artist: "Cage The Elephant",
+    title: "In One Ear",
+    link: ""
+  },
+  {
+    artist: "Phil Collins",
+    title: "In The Air Tonight",
+    link: ""
+  },
+  {
+    artist: "Eve 6",
+    title: "Inside Out",
+    link: ""
+  },
+  {
+    artist: "Alanis Morissette",
+    title: "Ironic",
+    link: ""
+  },
+  {
+    artist: "John Mellencamp",
+    title: "Jack And Diane",
+    link: ""
+  },
+  {
+    artist: "Johnny And June Carter Cash",
+    title: "Jackson",
+    link: ""
+  },
+  {
+    artist: "Pearl Jam",
+    title: "Jeremy",
+    link: ""
+  },
+  {
+    artist: "Rick Springfield",
+    title: "Jessie's Girl",
+    link: ""
+  },
+  {
+    artist: "Chuck Berry",
+    title: "Johnny B. Goode",
+    link: ""
+  },
+  {
+    artist: "Steve Miller Band",
+    title: "The Joker",
+    link: ""
+  },
+  {
+    artist: "House Of Pain",
+    title: "Jump Around",
+    link: ""
+  },
+  {
+    artist: "No Doubt",
+    title: "Just A Girl",
+    link: ""
+  },
+  {
+    artist: "The Cars",
+    title: "Just What I Needed",
+    link: ""
+  },
+  {
+    artist: "Radiohead",
+    title: "Karma Police",
+    link: ""
+  },
+  {
+    artist: "Georgia Satellites",
+    title: "Keep Your Hands To Yourself",
+    link: ""
+  },
+  {
+    artist: "Motley Crue",
+    title: "Kickstart My Heart",
+    link: ""
+  },
+  {
+    artist: "Rage Against The Machine",
+    title: "Killing In The Name",
+    link: ""
+  },
+  {
+    artist: "The Fugees",
+    title: "Killing Me Softly",
+    link: ""
+  },
+  {
+    artist: "Seal",
+    title: "Kiss From A Rose",
+    link: ""
+  },
+  {
+    artist: "Ritchie Valens",
+    title: "La Bamba",
+    link: ""
+  },
+  {
+    artist: "The Misfits",
+    title: "Last Caress",
+    link: ""
+  },
+  {
+    artist: "Wham!",
+    title: "Last Christmas",
+    link: ""
+  },
+  {
+    artist: "The Strokes",
+    title: "Last Nite",
+    link: ""
+  },
+  {
+    artist: "Bill Withers",
+    title: "Lean On Me",
+    link: ""
+  },
+  {
+    artist: "Frozen",
+    title: "Let It Go",
+    link: ""
+  },
+  {
+    artist: "Marvin Gaye",
+    title: "Let's Get It On",
+    link: ""
+  },
+  {
+    artist: "Madonna",
+    title: "Like A Prayer",
+    link: ""
+  },
+  {
+    artist: "Audioslave",
+    title: "Like A Stone",
+    link: ""
+  },
+  {
+    artist: "Bon Jovi",
+    title: "Livin' On A Prayer",
+    link: ""
+  },
+  {
+    artist: "Bruno Mars",
+    title: "Locked Out Of Heaven",
+    link: ""
+  },
+  {
+    artist: "Eminem",
+    title: "Lose Yourself",
+    link: ""
+  },
+  {
+    artist: "The B-52s",
+    title: "Love Shack",
+    link: ""
+  },
+  {
+    artist: "Justin Bieber",
+    title: "Love Yourself",
+    link: ""
+  },
+  {
+    artist: "Journey",
+    title: "Lovin', Touchin', Squeezin'",
+    link: ""
+  },
+  {
+    artist: "Shania Twain",
+    title: "Man! I Feel Like A Woman",
+    link: ""
+  },
+  {
+    artist: "Jimmy Buffett",
+    title: "Margaritaville",
+    link: ""
+  },
+  {
+    artist: "Tom Petty",
+    title: "Mary Jane's Last Dance",
+    link: ""
+  },
+  {
+    artist: "Metallica",
+    title: "Master Of Puppets",
+    link: ""
+  },
+  {
+    artist: "Janis Joplin",
+    title: "Me And Bobby McGee",
+    link: ""
+  },
+  {
+    artist: "Jimmy Eat World",
+    title: "The Middle",
+    link: ""
+  },
+  {
+    artist: "Bobby 'Boris' Pickett",
+    title: "Monster Mash",
+    link: ""
+  },
+  {
+    artist: "",
+    title: "",
+    link: ""
+  },
 ]
 
 const search = document.querySelector(".songlist__form-input");
@@ -235,12 +820,12 @@ const tableBottomText = document.querySelector(".songlist__table-bottom-text");
 const noMatch = document.querySelector(".songlist__text-song-unavailable");
 let currentListLength = document.querySelector(".songlist__text-current-list");
 const totalListLength = document.querySelector(".songlist__text-total-list");
-
+const numOfSongs = songList.length;
 currentListLength.textContent = numOfSongs;
 let currentListNum = 0;
 
 totalListLength.textContent = numOfSongs;
-const numOfSongs = songList.length;
+
 
 const iconClasses = ["songlist__icon--unselected", "songlist__head-icon--sorted", "songlist__head-icon--reversed"];
 
