@@ -587,207 +587,207 @@ const songList = [
   {
     artist: "John Lennon",
     title: "Imagine",
-    link: ""
+    link: "https://www.youtube.com/watch?v=YkgkThdzX-8&ab_channel=johnlennon"
   },
   {
     artist: "Led Zeppelin",
     title: "Immigrant Song",
-    link: ""
+    link: "https://www.youtube.com/watch?v=RlNhD0oS5pk"
   },
   {
     artist: "Cage The Elephant",
     title: "In One Ear",
-    link: ""
+    link: "https://www.youtube.com/watch?v=DPgWNuUkuA8"
   },
   {
     artist: "Phil Collins",
     title: "In The Air Tonight",
-    link: ""
+    link: "https://www.youtube.com/watch?v=YkADj0TPrJA"
   },
   {
     artist: "Eve 6",
     title: "Inside Out",
-    link: ""
+    link: "https://www.youtube.com/watch?v=T8Xb_7YDroQ"
   },
   {
     artist: "Alanis Morissette",
     title: "Ironic",
-    link: ""
+    link: "https://www.youtube.com/watch?v=Jne9t8sHpUc"
   },
   {
     artist: "John Mellencamp",
     title: "Jack And Diane",
-    link: ""
+    link: "https://www.youtube.com/watch?v=h04CH9YZcpI&ab_channel=JohnMellencampVEVO"
   },
   {
     artist: "Johnny And June Carter Cash",
     title: "Jackson",
-    link: ""
+    link: "https://www.youtube.com/watch?v=U3NJC18Oi04"
   },
   {
     artist: "Pearl Jam",
     title: "Jeremy",
-    link: ""
+    link: "https://www.youtube.com/watch?v=MS91knuzoOA"
   },
   {
     artist: "Rick Springfield",
     title: "Jessie's Girl",
-    link: ""
+    link: "https://www.youtube.com/watch?v=qYkbTyHXwbs"
   },
   {
     artist: "Chuck Berry",
     title: "Johnny B. Goode",
-    link: ""
+    link: "https://www.youtube.com/watch?v=3z4u7h4PtdI&ab_channel=LoretoGabon"
   },
   {
     artist: "Steve Miller Band",
     title: "The Joker",
-    link: ""
+    link: "https://www.youtube.com/watch?v=dV3AziKTBUo"
   },
   {
     artist: "House Of Pain",
     title: "Jump Around",
-    link: ""
+    link: "https://www.youtube.com/watch?v=XhzpxjuwZy0"
   },
   {
     artist: "No Doubt",
     title: "Just A Girl",
-    link: ""
+    link: "https://www.youtube.com/watch?v=PHzOOQfhPFg"
   },
   {
     artist: "The Cars",
     title: "Just What I Needed",
-    link: ""
+    link: "https://www.youtube.com/watch?v=gvy2yqUHLLg"
   },
   {
     artist: "Radiohead",
     title: "Karma Police",
-    link: ""
+    link: "https://www.youtube.com/watch?v=1uYWYWPc9HU"
   },
   {
     artist: "Georgia Satellites",
     title: "Keep Your Hands To Yourself",
-    link: ""
+    link: "https://www.youtube.com/watch?v=PdpAop7gp0w"
   },
   {
     artist: "Motley Crue",
     title: "Kickstart My Heart",
-    link: ""
+    link: "https://www.youtube.com/watch?v=CmXWkMlKFkI"
   },
   {
     artist: "Rage Against The Machine",
     title: "Killing In The Name",
-    link: ""
+    link: "https://www.youtube.com/watch?v=bWXazVhlyxQ"
   },
   {
     artist: "The Fugees",
     title: "Killing Me Softly",
-    link: ""
+    link: "https://www.youtube.com/watch?v=dJvLE3jJq20&ab_channel=swaysara"
   },
   {
     artist: "Seal",
     title: "Kiss From A Rose",
-    link: ""
+    link: "https://www.youtube.com/watch?v=AMD2TwRvuoU"
   },
   {
     artist: "Ritchie Valens",
     title: "La Bamba",
-    link: ""
+    link: "https://www.youtube.com/watch?v=jSKJQ18ZoIA&ab_channel=JustinBieber"
   },
   {
     artist: "The Misfits",
     title: "Last Caress",
-    link: ""
+    link: "https://www.youtube.com/watch?v=YrUhcdu-vgc"
   },
   {
     artist: "Wham!",
     title: "Last Christmas",
-    link: ""
+    link: "https://www.youtube.com/watch?v=E8gmARGvPlI"
   },
   {
     artist: "The Strokes",
     title: "Last Nite",
-    link: ""
+    link: "https://www.youtube.com/watch?v=TOypSnKFHrE"
   },
   {
     artist: "Bill Withers",
     title: "Lean On Me",
-    link: ""
+    link: "https://www.youtube.com/watch?v=fOZ-MySzAac"
   },
   {
     artist: "Frozen",
     title: "Let It Go",
-    link: ""
+    link: "https://www.youtube.com/watch?v=YVVTZgwYwVo"
   },
   {
     artist: "Marvin Gaye",
     title: "Let's Get It On",
-    link: ""
+    link: "https://www.youtube.com/watch?v=54LgyqSPfsQ"
   },
   {
     artist: "Madonna",
     title: "Like A Prayer",
-    link: ""
+    link: "https://www.youtube.com/watch?v=79fzeNUqQbQ"
   },
   {
     artist: "Audioslave",
     title: "Like A Stone",
-    link: ""
+    link: "https://www.youtube.com/watch?v=7QU1nvuxaMA"
   },
   {
     artist: "Bon Jovi",
     title: "Livin' On A Prayer",
-    link: ""
+    link: "https://www.youtube.com/watch?v=lDK9QqIzhwk"
   },
   {
     artist: "Bruno Mars",
     title: "Locked Out Of Heaven",
-    link: ""
+    link: "https://www.youtube.com/watch?v=e-fA-gBCkj0"
   },
   {
     artist: "Eminem",
     title: "Lose Yourself",
-    link: ""
+    link: "https://www.youtube.com/watch?v=7YuAzR2XVAM"
   },
   {
     artist: "The B-52s",
     title: "Love Shack",
-    link: ""
+    link: "https://www.youtube.com/watch?v=9SOryJvTAGs"
   },
   {
     artist: "Justin Bieber",
     title: "Love Yourself",
-    link: ""
+    link: "https://www.youtube.com/watch?v=oyEuk8j8imI"
   },
   {
     artist: "Journey",
     title: "Lovin', Touchin', Squeezin'",
-    link: ""
+    link: "https://www.youtube.com/watch?v=fTkHFQC3wow"
   },
   {
     artist: "Shania Twain",
     title: "Man! I Feel Like A Woman",
-    link: ""
+    link: "https://www.youtube.com/watch?v=ZJL4UGSbeFg"
   },
   {
     artist: "Jimmy Buffett",
     title: "Margaritaville",
-    link: ""
+    link: "https://www.youtube.com/watch?v=ohDqjRGqpIU&ab_channel=JimmyBuffett-Topic"
   },
   {
     artist: "Tom Petty",
     title: "Mary Jane's Last Dance",
-    link: ""
+    link: "https://www.youtube.com/watch?v=aowSGxim_O8"
   },
   {
     artist: "Metallica",
     title: "Master Of Puppets",
-    link: ""
+    link: "https://www.youtube.com/watch?v=0obBdrfUMzU"
   },
   {
     artist: "Janis Joplin",
     title: "Me And Bobby McGee",
-    link: ""
+    link: "https://www.youtube.com/watch?v=WXV_QjenbDw"
   },
   {
     artist: "Jimmy Eat World",
@@ -1521,3 +1521,44 @@ songHeader.addEventListener("click", function(){
 })
 
 init();
+
+
+// Set a variable for our button element.
+const scrollToTopButton = document.querySelector('.top-link');
+const headRowY = headRow.getBoundingClientRect().top;
+
+// Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+const scrollFunc = () => {
+  // Get the current scroll value
+  let y = window.scrollY;
+  
+  // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
+  if (y > 1000) {
+    scrollToTopButton.className = "top-link show";
+  } else {
+    scrollToTopButton.className = "top-link hide";
+  }
+};
+
+window.addEventListener("scroll", scrollFunc);
+
+const scrollToTop = () => {
+  // Let's set a variable for the number of pixels we are from the top of the document.
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  
+  // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
+  // We'll also animate that scroll with requestAnimationFrame:
+  // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+  if (c >= headRowY) {
+    window.requestAnimationFrame(scrollToTop);
+    // ScrollTo takes an x and a y coordinate.
+    // Increase the '10' value to get a smoother/slower scroll!
+    window.scrollTo(0, (headRowY + 5));
+  }
+};
+
+// When the button is clicked, run our ScrolltoTop function above!
+scrollToTopButton.onclick = function(e) {
+  e.preventDefault();
+  scrollToTop();
+}

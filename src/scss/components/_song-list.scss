@@ -75,11 +75,49 @@
   line-height: 24px;
 }
 
+.top-link {
+  transition: all .25s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3em 3em 0;
+  border-radius: 50%;
+  padding: .25em;
+  
+  &.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  &.hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.top-button {
+  text-align: center;
+}
+
+// .top-link {
+//   display: flex;
+//   position: sticky;
+//   top: 99px;
+//   right: 80px;
+//   bottom: 50px;
+//   z-index: 2;
+// }
 .songlist__table {
   border: none;
   background-color: $color-white;
   margin: 0 rhythm(-2);
   padding: 0;
+  position: relative;
 
   @include breakpoint($until: medium) {
     display: block;
@@ -103,23 +141,23 @@
 
   @include breakpoint($until: medium) {
     display: block;
+    position: sticky;
+    top: rhythm(6);
+    z-index: 1;
   }
 }
 
 .songlist__head-row {
   @include breakpoint($until: medium) {
     display: flex;
-    position: sticky;
-    top: 50px;
-    z-index: 1;
   }
 }
 
 .songlist__head-item {
-  position: sticky;
-  top: 50px;
-  z-index: 0;
   padding: rhythm(2);
+  position: sticky;
+  top: rhythm(6);
+  z-index: 1;
 
   @include breakpoint($from: medium) {
     top: 99px;
