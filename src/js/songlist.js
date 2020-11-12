@@ -224,77 +224,77 @@ const songList = [
   {
     artist: "System Of A Down",
     title: "Chop Suey!",
-    link: ""
+    link: "https://www.youtube.com/watch?v=MlcJQYON2Go"
   },
   {
     artist: "Nine Inch Nails",
     title: "Closer",
-    link: ""
+    link: "https://vimeo.com/3554226"
   },
   {
     artist: "Styx",
     title: "Come Sail Away",
-    link: ""
+    link: "https://www.youtube.com/watch?v=e5MAg_yWsq8"
   },
   {
     artist: "The Beatles",
     title: "Come Together",
-    link: ""
+    link: "https://www.youtube.com/watch?v=l3SBBWIxGZA"
   },
   {
     artist: "Barry Manilow",
     title: "Copacabana",
-    link: ""
+    link: "https://www.youtube.com/watch?v=7cB5VQAAOYk"
   },
   {
     artist: "Patsy Cline",
     title: "Crazy",
-    link: ""
+    link: "https://www.youtube.com/watch?v=pMLBWIcrm8Y&ab_channel=33Evenstar"
   },
   {
     artist: "Buckcherry",
     title: "Crazy Bitch",
-    link: ""
+    link: "https://www.youtube.com/watch?v=UJ6pLKlU-8Q&list=PLnQ9BkYhVXMAjK6iy7Mqvkzzx7FufHU39&ab_channel=RHINO"
   },
   {
     artist: "Heart",
     title: "Crazy On You",
-    link: ""
+    link: "https://www.youtube.com/watch?v=OZuW6BH_Vak"
   },
   {
     artist: "Radiohead",
     title: "Creep",
-    link: ""
+    link: "https://www.youtube.com/watch?v=XFkzRNyygfk"
   },
   {
     artist: "Stone Temple Pilots",
     title: "Creep",
-    link: ""
+    link: "https://www.youtube.com/watch?v=sT1DdO3SISg&list=RDhVnyScPCoqM&index=3&ab_channel=StoneTemplePilots"
   },
   {
     artist: "Fionna Apple",
     title: "Criminal",
-    link: ""
+    link: "https://www.youtube.com/watch?v=FFOzayDpWoI"
   },
   {
     artist: "The Monkees",
     title: "Daydream Believer",
-    link: ""
+    link: "https://www.youtube.com/watch?v=xvqeSJlgaNk"
   },
   {
     artist: "Blue Oyster Cult",
     title: "(Don't Fear) The Reaper",
-    link: ""
+    link: "https://www.youtube.com/watch?v=PtoK2CSTehQ"
   },
   {
     artist: "Norah Jones",
     title: "Don't Know Why",
-    link: ""
+    link: "https://www.youtube.com/watch?v=tO4dxvguQDk"
   },
   {
     artist: "No Doubt",
     title: "Don't Speak",
-    link: ""
+    link: "https://www.youtube.com/watch?v=TR3Vdo5etCQ"
   },
   {
     artist: "Journey",
@@ -304,147 +304,147 @@ const songList = [
   {
     artist: "Queen",
     title: "Don't Stop Me Now",
-    link: ""
+    link: "https://www.youtube.com/watch?v=HgzGwKwLmgM"
   },
   {
     artist: "Simple Minds",
     title: "Don't You (Forget About ME)",
-    link: ""
+    link: "https://www.youtube.com/watch?v=CdqoNKCCt7A&ab_channel=SimpleMindsVEVO"
   },
   {
     artist: "Fleetwood Mac",
     title: "Dreams",
-    link: ""
+    link: "https://www.youtube.com/watch?v=Y3ywicffOj4"
   },
   {
     artist: "Dobie Gray",
     title: "Drift Away",
-    link: ""
+    link: "https://www.youtube.com/watch?v=NIuyDWzctgY"
   },
   {
     artist: "Incubus",
     title: "Drive",
-    link: ""
+    link: "https://m.youtube.com/watch?v=fgT9zGkiLig&index=4&list=PLV4tuyN9KZxN9EjHNmtSuT4Nf_hsGwPvp"
   },
   {
     artist: "Train",
     title: "Drops Of Jupiter",
-    link: ""
+    link: "https://www.youtube.com/watch?v=2KMi3dSEiFY"
   },
   {
     artist: "MGMT",
     title: "Electric Feel",
-    link: ""
+    link: "https://www.youtube.com/watch?v=MmZexg8sxyk&list=PLU2y_MST_LkIwrn7E60iS0hmEXYW9Swz_&index=33&t=0s"
   },
   {
     artist: "Metallica",
     title: "Enter Sandman",
-    link: ""
+    link: "https://www.youtube.com/watch?v=CD-E-LDc384"
   },
   {
     artist: "Faith No More",
     title: "Epic",
-    link: ""
+    link: "https://www.youtube.com/watch?v=ZG_k5CSYKhg"
   },
   {
     artist: "Foo Fighters",
     title: "Everlong",
-    link: ""
+    link: "https://www.youtube.com/watch?v=eBG7P-K-r1Y&list=RDCxKWTzr-k6s&index=8"
   },
   {
     artist: "George Michael",
     title: "Faith",
-    link: ""
+    link: "https://www.youtube.com/watch?v=6Cs3Pvmmv0E"
   },
   {
     artist: "Journey",
     title: "Faithfully",
-    link: ""
+    link: "https://www.youtube.com/watch?v=OMD8hBsA-RI"
   },
   {
     artist: "Hank Williams Jr.",
     title: "Family Tradition",
-    link: ""
+    link: "https://www.youtube.com/watch?v=xd0TGfZSACI&t=17s&ab_channel=HankWilliams"
   },
   {
     artist: "Candlebox",
     title: "Far Behind",
-    link: ""
+    link: "https://www.youtube.com/watch?v=eu3EuWg2qNI&list=PLmS0o7SrXZ5vO09bQE5MOQlUBnuuWjeJC&index=3&t=0s"
   },
   {
     artist: "Queen",
     title: "Fat Bottomed Girls",
-    link: ""
+    link: "https://www.youtube.com/watch?v=VMnjF1O4eH0"
   },
   {
     artist: "Beastie Boys",
     title: "Fight For Your Right",
-    link: ""
+    link: "https://www.youtube.com/watch?v=eBShN8qT4lk&list=PL631pvvAyiGNtnEMK0ZJAPSS8Nb4219RN&index=10&t=0s"
   },
   {
     artist: "Harvey Danger",
     title: "Flagpole Sitta",
-    link: ""
+    link: "https://www.youtube.com/watch?v=wYsMjEeEg4g&list=PLOg_WhbsiNX4CIB0Wwxp_n5XSPi3CbrEv"
   },
   {
     artist: "Weird Al Yankovic",
     title: "Foil",
-    link: ""
+    link: "https://www.youtube.com/watch?v=urglg3WimHA"
   },
   {
     artist: "Johnny Cash",
     title: "Folsom Prison Blues",
-    link: ""
+    link: "https://www.youtube.com/watch?v=kMyzoHBtaME&ab_channel=JohnnyCash1Fan1"
   },
   {
     artist: "Dr. Dre & Eminem",
     title: "Forgot About Dre",
-    link: ""
+    link: "https://www.youtube.com/watch?v=QFcv5Ma8u8k"
   },
   {
     artist: "Tom Petty",
     title: "Free Fallin'",
-    link: ""
+    link: "https://www.youtube.com/watch?v=1lWJXDG2i0A"
   },
   {
     artist: "Garth Brooks",
     title: "Friends In Low Places",
-    link: ""
+    link: "https://www.youtube.com/watch?v=0e_HtjZS8SQ&ab_channel=KingwishzVidz"
   },
   {
     artist: "Tenacious D",
     title: "Fuck Her Gently",
-    link: ""
+    link: "https://www.youtube.com/watch?v=zliY-MrI0mY&ab_channel=TenaciousD-Topic"
   },
   {
     artist: "Coolio",
     title: "Gangsta's Paradise",
-    link: ""
+    link: "https://www.youtube.com/watch?v=fPO76Jlnz6c"
   },
   {
     artist: "Snoop Dogg",
     title: "Gin And Juice",
-    link: ""
+    link: "https://www.youtube.com/watch?v=fWCZse1iwE0"
   },
   {
     artist: "Tracy Chapman",
     title: "Give Me One Reason",
-    link: ""
+    link: "https://www.youtube.com/watch?v=V6hQ9HSKlIE"
   },
   {
     artist: "Lee Greenwood",
     title: "God Bless The U.S.A",
-    link: ""
+    link: "https://www.youtube.com/watch?v=Q65KZIqay4E"
   },
   {
     artist: "Dixie Chicks",
     title: "Goodbye Earl",
-    link: ""
+    link: "https://www.youtube.com/watch?v=Gw7gNf_9njs"
   },
   {
     artist: "Pharrell Williams",
     title: "Happy",
-    link: ""
+    link: "https://www.youtube.com/watch?v=ZbZSe6N_BXs"
   },
   {
     artist: "Nirvana",
@@ -454,137 +454,137 @@ const songList = [
   {
     artist: "Pat Benatar",
     title: "Heartbreaker",
-    link: ""
+    link: "https://www.youtube.com/watch?v=mIosHNpGjTE&ab_channel=JuanClassic"
   },
   {
     artist: "Lionel Ritchie",
     title: "Hello",
-    link: ""
+    link: "https://www.youtube.com/watch?v=RZ1pQZXK3dM"
   },
   {
     artist: "Gin Blossoms",
     title: "Hey Jealousy",
-    link: ""
+    link: "https://www.youtube.com/watch?v=ah5gAkna3jI"
   },
   {
     artist: "The Beatles",
     title: "Hey Jude",
-    link: ""
+    link: "https://www.youtube.com/watch?v=A_MjCqQoLLA"
   },
   {
     artist: "OutKast",
     title: "Hey Ya!",
-    link: ""
+    link: "https://www.youtube.com/watch?v=PWgvGjAhvIw"
   },
   {
     artist: "Pat Benatar",
     title: "Hit Me With Your Best Shot",
-    link: ""
+    link: "https://www.youtube.com/watch?v=VopgyAc-F9U&ab_channel=ClassicVideos80s"
   },
   {
     artist: "The Lumineers",
     title: "Ho Hey",
-    link: ""
+    link: "https://www.youtube.com/watch?v=zvCBSSwgtg4"
   },
   {
     artist: "Dio",
     title: "Holy Diver",
-    link: ""
+    link: "https://www.youtube.com/watch?v=2lvs2FzF64o"
   },
   {
     artist: "The Eagles",
     title: "Hotel California",
-    link: ""
+    link: "https://www.youtube.com/watch?v=EiXWJMaiEZA"
   },
   {
     artist: "Duran Duran",
     title: "Hungry Like The Wolf",
-    link: ""
+    link: "https://www.youtube.com/watch?v=oJL-lCzEXgI"
   },
   {
     artist: "Johnny Cash",
     title: "Hurt",
-    link: ""
+    link: "https://www.youtube.com/watch?v=8AHCfZTRGiI"
   },
   {
     artist: "John Mellencamp",
     title: "Hurts So Good",
-    link: ""
+    link: "https://www.youtube.com/watch?v=4dOsbsuhYGQ"
   },
   {
     artist: "I Believe In A Thing Called Love",
     title: "The Darkness",
-    link: ""
+    link: "https://www.youtube.com/watch?v=tKjZuykKY1I"
   },
   {
     artist: "The Rolling Stones",
     title: "I Can't Get No Satisfaction",
-    link: ""
+    link: "https://www.youtube.com/watch?v=nrIPxlFzDi0"
   },
   {
     artist: "Hall & Oates",
     title: "I Can't Go For That (No Can Do)",
-    link: ""
+    link: "https://www.youtube.com/watch?v=ccenFp_3kq8"
   },
   {
     artist: "Aerosmith",
     title: "I Don't Want To Miss A Thing",
-    link: ""
+    link: "https://www.youtube.com/watch?v=JkK8g6FMEXE"
   },
   {
     artist: "Joan Jett & The Blackhearts",
     title: "I Love Rock 'N Roll",
-    link: ""
+    link: "https://www.youtube.com/watch?v=t1D-e29Hbhc&ab_channel=TV80s"
   },
   {
     artist: "Toby Keith",
     title: "I Love This Bar",
-    link: ""
+    link: "https://www.youtube.com/watch?v=-Fulz4ytZ54"
   },
   {
     artist: "Whitney Houston",
     title: "I Wanna Dance With Somebody",
-    link: ""
+    link: "https://www.youtube.com/watch?v=eH3giaIzONA"
   },
   {
     artist: "Backstreet Boys",
     title: "I Want It That Way",
-    link: ""
+    link: "https://www.youtube.com/watch?v=4fndeDfaWCg"
   },
   {
     artist: "Whitney Houston",
     title: "I Will Always Love You",
-    link: ""
+    link: "https://www.youtube.com/watch?v=3JWTaaS7LdU"
   },
   {
     artist: "Gloria Gaynor",
     title: "I Will Survive",
-    link: ""
+    link: "https://www.youtube.com/watch?v=ARt9HV9T0w8"
   },
   {
     artist: "Cake",
     title: "I Will Survive",
-    link: ""
+    link: "https://www.youtube.com/watch?v=f9rCUQjmkxU"
   },
   {
     artist: "Vanilla Ice",
     title: "Ice Ice Baby",
-    link: ""
+    link: "https://www.youtube.com/watch?v=rog8ou-ZepE"
   },
   {
     artist: "Tonic",
     title: "If You Could Only See",
-    link: ""
+    link: "https://www.youtube.com/watch?v=Sfg6-4mBs6Y"
   },
   {
     artist: "R. Kelly",
     title: "Ignition (Remix)",
-    link: ""
+    link: "https://www.youtube.com/watch?v=y6y_4_b6RS8"
   },
   {
     artist: "Melissa Etheridge",
     title: "I'm The Only One",
-    link: ""
+    link: "https://www.youtube.com/watch?v=oCphbDRkZSo"
   },
   {
     artist: "John Lennon",
