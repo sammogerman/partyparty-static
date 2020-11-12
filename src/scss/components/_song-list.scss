@@ -1,30 +1,29 @@
 .songlist {
   @include container();
-
   margin-bottom: rhythm(15);
   
-  @include breakpoint ($from: medium) {
+  @include breakpoint($from: medium) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: rhythm(2);
   }
-    @include breakpoint ($from: large) {
+    @include breakpoint($from: large) {
       column-gap: rhythm(3);
       margin-bottom: rhythm(20);
   }
 }
 
 .songlist__body {
-  text-align: center;
   margin-bottom: rhythm(6);
+  text-align: center;
 
-  @include breakpoint ($from: medium) {
+  @include breakpoint($from: medium) {
     grid-column: 2/12;
     margin-bottom: rhythm(6);
     text-align: center;
   }
 
-  @include breakpoint ($from: large) {
+  @include breakpoint($from: large) {
     grid-column: 4/10;
     margin-bottom: rhythm(7);
   }
@@ -32,13 +31,11 @@
 
 .songlist__form-label {
   @include form-label;
-
   margin-bottom: rhythm(2);
 }
 
 .songlist__form-input {
   @include form-input;
-
   background-image: url("/assets/icons/search.svg");
   background-position: left rhythm(2) center;
   background-repeat: no-repeat;
@@ -48,11 +45,11 @@
   padding-left: rhythm(7);
   width: 100%;
 
-  @include breakpoint ($from: medium) {
+  @include breakpoint($from: medium) {
     width: 90%; //to match how it fits in design grid
   }
 
-  @include breakpoint ($from: large) {
+  @include breakpoint($from: large) {
     width: 100%; //to match design grid
   }
 }
@@ -84,17 +81,17 @@
   margin: 0 rhythm(-2);
   padding: 0;
 
-  @include breakpoint ($until: medium) {
+  @include breakpoint($until: medium) {
     display: block;
   }
 
-  @include breakpoint ($from: medium) {
+  @include breakpoint($from: medium) {
     border-collapse: collapse;
     grid-column: 1/13;
     margin: 0;
   }
 
-  @include breakpoint ($from: large) {
+  @include breakpoint($from: large) {
     grid-column: 2/12;
   }
 }
@@ -104,14 +101,17 @@
   letter-spacing: 0.25px;
   line-height: 24px;
 
-  @include breakpoint ($until: medium) {
-      display: block;
+  @include breakpoint($until: medium) {
+    display: block;
   }
 }
 
 .songlist__head-row {
-  @include breakpoint ($until: medium){
+  @include breakpoint($until: medium) {
     display: flex;
+    position: sticky;
+    top: 50px;
+    z-index: 1;
   }
 }
 
@@ -121,46 +121,42 @@
   z-index: 0;
   padding: rhythm(2);
 
-  @include breakpoint ($from: medium) {
+  @include breakpoint($from: medium) {
     top: 99px;
   }
 
-  @include breakpoint ($from: large) {
+  @include breakpoint($from: large) {
     top: 102px;
   }
 }
 
 .songlist__head-item--artist {
   @include table-header-color-states;
-
   background-color: $color-blue;
   width: 50%;
 
   .songlist__head-row--artist-clicked & {
     @include table-header-color-states;
-
     background-color: $color-blue-active;
   }
 
-  @include breakpoint ($from: medium) {
+  @include breakpoint($from: medium) {
     width: 45%;
   }
 }
 
 .songlist__head-item--song {
   @include table-header-color-states;
-
   background-color: $color-blue-active;
   border-left: 1px solid $color-silver;
   width: 50%;
 
   .songlist__head-row--artist-clicked & {
     @include table-header-color-states;
-    
     background-color: $color-blue;
   }
 
-  @include breakpoint ($from: medium) {
+  @include breakpoint($from: medium) {
     width: 45%;
   }
 }
@@ -168,7 +164,7 @@
 .songlist__head-item--link {
   background-color: $color-blue;
 
-  @include breakpoint ($until: medium) {
+  @include breakpoint($until: medium) {
     display: none;
   }
 
@@ -185,7 +181,6 @@
 }
 
 .songlist__icon--unselected {
-
   .songlist__head-icon--sorted &, 
   .songlist__head-icon--reversed & {
     display: none;
@@ -195,7 +190,7 @@
 .songlist__icon--sort {
   display: none;
 
-  .songlist__head-icon--sorted &{
+  .songlist__head-icon--sorted & {
     display: inline-block;
   }
   .songlist__head-icon--reversed & {
@@ -210,13 +205,13 @@
     display: inline-block;
   }
 
-  .songlist__head-icon--sorted &{
+  .songlist__head-icon--sorted & {
     display: none;
   }
 }
 
 .songlist__table-body {
-  @include breakpoint ($until: medium) {
+  @include breakpoint($until: medium) {
     display: block; 
   }
 }
@@ -233,7 +228,7 @@
     padding: rhythm(1) rhythm(2);
   }
   
-  @include breakpoint ($from: medium) {
+  @include breakpoint($from: medium) {
     margin: 0;
   }
 }
@@ -251,7 +246,7 @@
   letter-spacing: 0.25px;
   line-height: 30px;
 
-  @include breakpoint ($until: medium) {
+  @include breakpoint($until: medium) {
   grid-column: 1/4;
   grid-row: 1/2;
   }
@@ -260,7 +255,7 @@
 .songlist__body-item--song {
   @include body-1;
 
-  @include breakpoint ($until: medium) {
+  @include breakpoint($until: medium) {
     grid-column: 1/4;
     grid-row: 2/3;
   }
@@ -271,7 +266,7 @@
 }
 
 .songlist__body-item--link {
-  @include breakpoint ($until: medium) {
+  @include breakpoint($until: medium) {
     align-self: center;
     grid-column: 4/5;
     grid-row: 1/3;
@@ -299,25 +294,25 @@
 }
 
 .songlist__table-bottom-text {
-  text-align: center;
   grid-column: 1/13;
   margin-top: rhythm(2);
+  text-align: center;
 
-  @include breakpoint ($from: large) {
+  @include breakpoint($from: large) {
     margin-top: rhythm(3);
   }
 }
 .songlist__text-song-unavailable {
   display: none;
-  text-align: center;
   grid-column: 1/13;
   margin-bottom: rhythm(2);
+  text-align: center;
 
   .songlist__text-song-unavailable--shown & {
     display: inline-block;
   }
 
-  @include breakpoint ($from: large) {
+  @include breakpoint($from: large) {
     margin-bottom: rhythm(3);
   }
 }
