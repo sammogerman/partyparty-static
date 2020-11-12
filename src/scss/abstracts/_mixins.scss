@@ -270,3 +270,13 @@
     line-height: 34px;
   }
 }
+
+@mixin table-header-color-states {  
+  &:hover {
+    background-color: $color-blue-hover;
+  }
+  
+  &:active {
+    background-color: $color-blue-active;
+  }
+}
