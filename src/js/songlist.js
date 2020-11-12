@@ -1,5 +1,3 @@
-// const e = require("express");
-
 const songList = [
   {
     artist: "A Perfect Circle",
@@ -1358,20 +1356,15 @@ const randomSong = document.querySelector(".songlist__link-text");
 const headRow = document.querySelector(".songlist__head-row");
 const artistHeader = document.querySelector(".songlist__head-item--artist");
 const songHeader = document.querySelector(".songlist__head-item--song");
-const orderIcon = document.querySelectorAll(".songlist__head-icon ");
+const orderIcon = document.querySelectorAll(".songlist__head-icon");
 const tableBody = document.querySelector(".songlist__table-body");
 const tableRow = document.querySelector(".songlist__body-row");
 const tableBottomText = document.querySelector(".songlist__table-bottom-text");
 const noMatch = document.querySelector(".songlist__text-song-unavailable");
-let currentListLength = document.querySelector(".songlist__text-current-list");
+const currentListLength = document.querySelector(".songlist__text-current-list");
 const totalListLength = document.querySelector(".songlist__text-total-list");
 const numOfSongs = songList.length;
-currentListLength.textContent = numOfSongs;
 let currentListNum = 0;
-
-totalListLength.textContent = numOfSongs;
-
-
 const iconClasses = ["songlist__icon--unselected", "songlist__head-icon--sorted", "songlist__head-icon--reversed"];
 
 const getRandomInt = (num) => {
@@ -1441,6 +1434,8 @@ const populateTable = (arr) => {
 }
 
 const init = () => {
+  currentListLength.textContent = numOfSongs;
+  totalListLength.textContent = numOfSongs;
   sortByArtist(songList);
   tableBody.innerHTML = "";
   populateTable(songList);
