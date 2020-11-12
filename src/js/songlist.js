@@ -1444,7 +1444,9 @@ const init = () => {
 search.addEventListener("input", function(e){
   const userSearch = search.value;
   const userPick = songList.filter((el) => {
-    if (el.title.toLowerCase().includes(userSearch.toLowerCase().trim()) || el.artist.toLowerCase().includes(userSearch.toLowerCase().trim())) {
+    if (el.title.toLowerCase().includes(userSearch.toLowerCase()
+    .trim()
+    .replace("46", "forty six").replace("and", "&")) || el.artist.toLowerCase().includes(userSearch.toLowerCase().trim())) {
       return el;
     }
   })
