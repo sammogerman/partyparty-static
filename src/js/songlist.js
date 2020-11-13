@@ -1510,9 +1510,7 @@ search.addEventListener("input", function(e){
     if (el.title.toLowerCase().includes(userSearch.toLowerCase().trim()) || el.artist.toLowerCase().includes(userSearch.toLowerCase().trim())) {
       return el;
     } else if (el.hasOwnProperty("synonyms")) {
-      if (el.synonyms.toLowerCase().includes(userSearch.toLowerCase().trim())) {
-        return el;
-      }
+      return (el.synonyms.toLowerCase().includes(userSearch.toLowerCase().trim()))
     }
   })
   tableBody.innerHTML = "";
@@ -1590,42 +1588,38 @@ songHeader.addEventListener("click", function(){
 init();
 
 
-// Set a variable for our button element.
-const scrollToTopButton = document.querySelector('.top-link');
-const headRowY = headRow.getBoundingClientRect().top;
+//Get the button:
+const topLink = document.querySelector(".songlist__top-link");
 
-// Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
-const scrollFunc = () => {
-  // Get the current scroll value
-  let y = window.scrollY;
-  
-  // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
-  if (y > 1000) {
-    scrollToTopButton.className = "top-link show";
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (window.innerWidth <= 720) {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+      topLink.classList.add("songlist__top-link--visible");
+    } else {
+      topLink.classList.remove("songlist__top-link--visible");
+    }
   } else {
-    scrollToTopButton.className = "top-link hide";
+    if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+      topLink.classList.add("songlist__top-link--visible");
+    } else {
+      topLink.classList.remove("songlist__top-link--visible");
+    }
   }
-};
-
-window.addEventListener("scroll", scrollFunc);
-
-const scrollToTop = () => {
-  // Let's set a variable for the number of pixels we are from the top of the document.
-  const c = document.documentElement.scrollTop || document.body.scrollTop;
-  
-  // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
-  // We'll also animate that scroll with requestAnimationFrame:
-  // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
-  if (c >= headRowY) {
-    window.requestAnimationFrame(scrollToTop);
-    // ScrollTo takes an x and a y coordinate.
-    // Increase the '10' value to get a smoother/slower scroll!
-    window.scrollTo(0, (headRowY + 5));
-  }
-};
-
-// When the button is clicked, run our ScrolltoTop function above!
-scrollToTopButton.onclick = function(e) {
-  e.preventDefault();
-  scrollToTop();
 }
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  if (window.innerWidth <= 720) {
+    document.body.scrollTop = 650; // For Safari
+    document.documentElement.scrollTop = 650; // For Chrome, Firefox, IE and Opera
+  } else {
+    document.body.scrollTop = 750; // For Safari
+    document.documentElement.scrollTop = 750; // For Chrome, Firefox, IE and Opera
+  }
+
+}
+
+topLink.addEventListener("click", (topFunction));
