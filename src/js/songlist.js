@@ -3,61 +3,74 @@ const songList = [
     artist: "A Perfect Circle",
     title: "Judith",
     link: "https://www.youtube.com/watch?v=xTgKRCXybSM&ab_channel=APerfectCircleVEVO"
+
   },
   {
     artist: "Alanis Morissette",
     title: "You Oughta Know",
-    link: "https://www.youtube.com/watch?v=NPcyTyilmYY&ab_channel=AlanisMorissette"
+    link: "https://www.youtube.com/watch?v=NPcyTyilmYY&ab_channel=AlanisMorissette",
+    synonyms: "Ought To"
   },
   {
     artist: "Amy Winehouse",
     title: "Rehab",
     link: "https://www.youtube.com/watch?v=KUmZp8pR1uc&ab_channel=AmyWinehouseVEVO"
+
   },
   {
     artist: "Aretha Franklin",
     title: "Respect",
     link: "https://www.youtube.com/watch?v=6FOUqQt3Kg0&ab_channel=TatanBrown"
+
   },
   {
     artist: "Audioslave",
     title: "Like a Stone",
     link: "https://www.youtube.com/watch?v=7QU1nvuxaMA&ab_channel=AudioslaveVEVO"
+
   },
   {
     artist: "The Smashing Pumpkins",
     title: "1979",
     link: "https://www.youtube.com/watch?v=4aeETEoNfOg"
+
   }, 
   {
     artist: "Tool",
     title: "Forty Six & 2",
-    link: "https://www.youtube.com/watch?v=GIuZUCpm9hc"
+    link: "https://www.youtube.com/watch?v=GIuZUCpm9hc",
+    synonyms: "46 6 four and two"
+
   },
   {
     artist: "Tool",
     title: "Sober",
     link: "youtube.com/watch?v=nspxAG12Cpc&ab_channel=TOOLVEVO"
+
   },
   {
     artist: "Aladdin",
     title: "A Whole New World",
     link: "https://www.youtube.com/watch?v=MJLOCAWkRoc&ab_channel=DisneyLyrics18"
+
   },
   {
     artist: "Motorhead",
     title: "Ace of Spades",
     link: "https://www.youtube.com/watch?v=3mbvWn1EY6g&ab_channel=Mot%C3%B6rheadOfficial"
+
   },
   {
     artist: "Toto",
     title: "Africa",
     link: "https://www.youtube.com/watch?v=FTQbiNvZqaY&ab_channel=TotoVEVO"
+
   },
   {
     artist: "Green Day",
     title: "American Idiot",
     link: "https://www.youtube.com/watch?v=Ee_uujKuJMI&ab_channel=GreenDay"
+
   },
   {
     artist: "American Pie",
@@ -68,26 +81,32 @@ const songList = [
     artist: "Amish Paradise",
     title: "Weird Al Yankovic",
     link: "https://www.youtube.com/watch?v=lOfZLb33uCg"
+
   },
   {
     artist: "Jet",
     title: "Are You Gonna Be My Girl",
-    link: "Jet - Are You Gonna Be My Girl"
+    link: "https://www.youtube.com/watch?v=tuK6n2Lkza0",
+    synonyms: "going to"
+
   },
   {
     artist: "Sir Mix-A-Lot",
     title: "Baby Got Back",
     link: "https://www.youtube.com/watch?v=X53ZSxkQ3Ho"
+
   },
   {
     artist: "Dean Martin",
     title: "Baby, It's Cold Outside",
-    link: "https://www.youtube.com/watch?v=crFQpOCDfEc&ab_channel=Oda"
+    link: "https://www.youtube.com/watch?v=crFQpOCDfEc&ab_channel=Oda",
+    synonyms: "Baby Its"
   },
   {
     artist: "Britney Spears",
     title: "...Baby One More Time",
-    link: "https://www.youtube.com/watch?v=C-u5WLJ9Yk4"
+    link: "https://www.youtube.com/watch?v=C-u5WLJ9Yk4",
+    synonyms: "1"
   },
   {
     artist: "Bloodhound Gang",
@@ -142,7 +161,8 @@ const songList = [
   {
     artist: "Michael Jackson",
     title: "Billie Jean",
-    link: "https://www.youtube.com/watch?v=Zi_XLOBDo_Y"
+    link: "https://www.youtube.com/watch?v=Zi_XLOBDo_Y",
+    synonyms: "billy"
   },
   {
     artist: "Ram Jam",
@@ -242,7 +262,8 @@ const songList = [
   {
     artist: "Barry Manilow",
     title: "Copacabana",
-    link: "https://www.youtube.com/watch?v=7cB5VQAAOYk"
+    link: "https://www.youtube.com/watch?v=7cB5VQAAOYk",
+    synonyms: "Copa cabana"
   },
   {
     artist: "Patsy Cline",
@@ -282,32 +303,38 @@ const songList = [
   {
     artist: "Blue Oyster Cult",
     title: "(Don't Fear) The Reaper",
-    link: "https://www.youtube.com/watch?v=PtoK2CSTehQ"
+    link: "https://www.youtube.com/watch?v=PtoK2CSTehQ",
+    synonyms: "dont"
   },
   {
     artist: "Norah Jones",
     title: "Don't Know Why",
-    link: "https://www.youtube.com/watch?v=tO4dxvguQDk"
+    link: "https://www.youtube.com/watch?v=tO4dxvguQDk",
+    synonyms: "dont"
   },
   {
     artist: "No Doubt",
     title: "Don't Speak",
-    link: "https://www.youtube.com/watch?v=TR3Vdo5etCQ"
+    link: "https://www.youtube.com/watch?v=TR3Vdo5etCQ",
+    synonyms: "dont"
   },
   {
     artist: "Journey",
     title: "Don't Stop Believin'",
-    link: "https://www.youtube.com/watch?v=1k8craCGpgs"
+    link: "https://www.youtube.com/watch?v=1k8craCGpgs",
+    synonyms: "dont"
   },
   {
     artist: "Queen",
     title: "Don't Stop Me Now",
-    link: "https://www.youtube.com/watch?v=HgzGwKwLmgM"
+    link: "https://www.youtube.com/watch?v=HgzGwKwLmgM",
+    synonyms: "dont"
   },
   {
     artist: "Simple Minds",
-    title: "Don't You (Forget About ME)",
-    link: "https://www.youtube.com/watch?v=CdqoNKCCt7A&ab_channel=SimpleMindsVEVO"
+    title: "Don't You (Forget About Me)",
+    link: "https://www.youtube.com/watch?v=CdqoNKCCt7A&ab_channel=SimpleMindsVEVO",
+    synonyms: "dont"
   },
   {
     artist: "Fleetwood Mac",
@@ -362,7 +389,8 @@ const songList = [
   {
     artist: "Hank Williams Jr.",
     title: "Family Tradition",
-    link: "https://www.youtube.com/watch?v=xd0TGfZSACI&t=17s&ab_channel=HankWilliams"
+    link: "https://www.youtube.com/watch?v=xd0TGfZSACI&t=17s&ab_channel=HankWilliams",
+    synonyms: "junior"
   },
   {
     artist: "Candlebox",
@@ -392,17 +420,20 @@ const songList = [
   {
     artist: "Johnny Cash",
     title: "Folsom Prison Blues",
-    link: "https://www.youtube.com/watch?v=kMyzoHBtaME&ab_channel=JohnnyCash1Fan1"
+    link: "https://www.youtube.com/watch?v=kMyzoHBtaME&ab_channel=JohnnyCash1Fan1",
+    synonyms: "jonny"
   },
   {
     artist: "Dr. Dre & Eminem",
     title: "Forgot About Dre",
-    link: "https://www.youtube.com/watch?v=QFcv5Ma8u8k"
+    link: "https://www.youtube.com/watch?v=QFcv5Ma8u8k",
+    synonyms: "and"
   },
   {
     artist: "Tom Petty",
     title: "Free Fallin'",
-    link: "https://www.youtube.com/watch?v=1lWJXDG2i0A"
+    link: "https://www.youtube.com/watch?v=1lWJXDG2i0A",
+    synonyms: "falling"
   },
   {
     artist: "Garth Brooks",
@@ -417,7 +448,8 @@ const songList = [
   {
     artist: "Coolio",
     title: "Gangsta's Paradise",
-    link: "https://www.youtube.com/watch?v=fPO76Jlnz6c"
+    link: "https://www.youtube.com/watch?v=fPO76Jlnz6c",
+    synonyms: "gangstas gangster gangsters"
   },
   {
     artist: "Snoop Dogg",
@@ -427,12 +459,14 @@ const songList = [
   {
     artist: "Tracy Chapman",
     title: "Give Me One Reason",
-    link: "https://www.youtube.com/watch?v=V6hQ9HSKlIE"
+    link: "https://www.youtube.com/watch?v=V6hQ9HSKlIE",
+    synonyms: "gimme"
   },
   {
     artist: "Lee Greenwood",
     title: "God Bless The U.S.A",
-    link: "https://www.youtube.com/watch?v=Q65KZIqay4E"
+    link: "https://www.youtube.com/watch?v=Q65KZIqay4E",
+    synonyms: "usa"
   },
   {
     artist: "Dixie Chicks",
@@ -447,12 +481,14 @@ const songList = [
   {
     artist: "Nirvana",
     title: "Heart-Shaped Box",
-    link: "https://www.youtube.com/watch?v=n6P0SitRwy8"
+    link: "https://www.youtube.com/watch?v=n6P0SitRwy8",
+    synonyms: "heart shape shaped"
   },
   {
     artist: "Pat Benatar",
     title: "Heartbreaker",
-    link: "https://www.youtube.com/watch?v=mIosHNpGjTE&ab_channel=JuanClassic"
+    link: "https://www.youtube.com/watch?v=mIosHNpGjTE&ab_channel=JuanClassic",
+    synonyms: "heart breaker"
   },
   {
     artist: "Lionel Ritchie",
@@ -507,32 +543,37 @@ const songList = [
   {
     artist: "John Mellencamp",
     title: "Hurts So Good",
-    link: "https://www.youtube.com/watch?v=4dOsbsuhYGQ"
+    link: "https://www.youtube.com/watch?v=4dOsbsuhYGQ",
+    synonyms: "hurt"
   },
   {
-    artist: "I Believe In A Thing Called Love",
-    title: "The Darkness",
+    artist: "The Darkness",
+    title: "I Believe In A Thing Called Love",
     link: "https://www.youtube.com/watch?v=tKjZuykKY1I"
   },
   {
     artist: "The Rolling Stones",
     title: "I Can't Get No Satisfaction",
-    link: "https://www.youtube.com/watch?v=nrIPxlFzDi0"
+    link: "https://www.youtube.com/watch?v=nrIPxlFzDi0",
+    synonyms: "cant"
   },
   {
     artist: "Hall & Oates",
     title: "I Can't Go For That (No Can Do)",
-    link: "https://www.youtube.com/watch?v=ccenFp_3kq8"
+    link: "https://www.youtube.com/watch?v=ccenFp_3kq8",
+    synonyms: "cant and"
   },
   {
     artist: "Aerosmith",
     title: "I Don't Want To Miss A Thing",
-    link: "https://www.youtube.com/watch?v=JkK8g6FMEXE"
+    link: "https://www.youtube.com/watch?v=JkK8g6FMEXE",
+    synonyms: "wanna"
   },
   {
     artist: "Joan Jett & The Blackhearts",
     title: "I Love Rock 'N Roll",
-    link: "https://www.youtube.com/watch?v=t1D-e29Hbhc&ab_channel=TV80s"
+    link: "https://www.youtube.com/watch?v=t1D-e29Hbhc&ab_channel=TV80s",
+    synonyms: "and"
   },
   {
     artist: "Toby Keith",
@@ -542,7 +583,8 @@ const songList = [
   {
     artist: "Whitney Houston",
     title: "I Wanna Dance With Somebody",
-    link: "https://www.youtube.com/watch?v=eH3giaIzONA"
+    link: "https://www.youtube.com/watch?v=eH3giaIzONA",
+    synonyms: "want to"
   },
   {
     artist: "Backstreet Boys",
@@ -582,7 +624,8 @@ const songList = [
   {
     artist: "Melissa Etheridge",
     title: "I'm The Only One",
-    link: "https://www.youtube.com/watch?v=oCphbDRkZSo"
+    link: "https://www.youtube.com/watch?v=oCphbDRkZSo",
+    synonyms: "im"
   },
   {
     artist: "John Lennon",
@@ -597,7 +640,8 @@ const songList = [
   {
     artist: "Cage The Elephant",
     title: "In One Ear",
-    link: "https://www.youtube.com/watch?v=DPgWNuUkuA8"
+    link: "https://www.youtube.com/watch?v=DPgWNuUkuA8",
+    synonyms: "1"
   },
   {
     artist: "Phil Collins",
@@ -607,7 +651,8 @@ const songList = [
   {
     artist: "Eve 6",
     title: "Inside Out",
-    link: "https://www.youtube.com/watch?v=T8Xb_7YDroQ"
+    link: "https://www.youtube.com/watch?v=T8Xb_7YDroQ",
+    synonyms: "six"
   },
   {
     artist: "Alanis Morissette",
@@ -617,7 +662,8 @@ const songList = [
   {
     artist: "John Mellencamp",
     title: "Jack And Diane",
-    link: "https://www.youtube.com/watch?v=h04CH9YZcpI&ab_channel=JohnMellencampVEVO"
+    link: "https://www.youtube.com/watch?v=h04CH9YZcpI&ab_channel=JohnMellencampVEVO",
+    synonyms: "&"
   },
   {
     artist: "Johnny And June Carter Cash",
@@ -632,12 +678,14 @@ const songList = [
   {
     artist: "Rick Springfield",
     title: "Jessie's Girl",
-    link: "https://www.youtube.com/watch?v=qYkbTyHXwbs"
+    link: "https://www.youtube.com/watch?v=qYkbTyHXwbs",
+    synonyms: "jessies"
   },
   {
     artist: "Chuck Berry",
     title: "Johnny B. Goode",
-    link: "https://www.youtube.com/watch?v=3z4u7h4PtdI&ab_channel=LoretoGabon"
+    link: "https://www.youtube.com/watch?v=3z4u7h4PtdI&ab_channel=LoretoGabon",
+    synonyms: "jonny b good"
   },
   {
     artist: "Steve Miller Band",
@@ -672,7 +720,8 @@ const songList = [
   {
     artist: "Motley Crue",
     title: "Kickstart My Heart",
-    link: "https://www.youtube.com/watch?v=CmXWkMlKFkI"
+    link: "https://www.youtube.com/watch?v=CmXWkMlKFkI",
+    synonyms: "kick start"
   },
   {
     artist: "Rage Against The Machine",
@@ -707,7 +756,8 @@ const songList = [
   {
     artist: "The Strokes",
     title: "Last Nite",
-    link: "https://www.youtube.com/watch?v=TOypSnKFHrE"
+    link: "https://www.youtube.com/watch?v=TOypSnKFHrE",
+    synonyms: "night"
   },
   {
     artist: "Bill Withers",
@@ -722,7 +772,8 @@ const songList = [
   {
     artist: "Marvin Gaye",
     title: "Let's Get It On",
-    link: "https://www.youtube.com/watch?v=54LgyqSPfsQ"
+    link: "https://www.youtube.com/watch?v=54LgyqSPfsQ",
+    synonyms: "lets"
   },
   {
     artist: "Madonna",
@@ -737,7 +788,8 @@ const songList = [
   {
     artist: "Bon Jovi",
     title: "Livin' On A Prayer",
-    link: "https://www.youtube.com/watch?v=lDK9QqIzhwk"
+    link: "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+    synonyms: "living"
   },
   {
     artist: "Bruno Mars",
@@ -752,7 +804,8 @@ const songList = [
   {
     artist: "The B-52s",
     title: "Love Shack",
-    link: "https://www.youtube.com/watch?v=9SOryJvTAGs"
+    link: "https://www.youtube.com/watch?v=9SOryJvTAGs",
+    synonyms: "b 52s fifty two twos"
   },
   {
     artist: "Justin Bieber",
@@ -762,12 +815,14 @@ const songList = [
   {
     artist: "Journey",
     title: "Lovin', Touchin', Squeezin'",
-    link: "https://www.youtube.com/watch?v=fTkHFQC3wow"
+    link: "https://www.youtube.com/watch?v=fTkHFQC3wow",
+    synonyms: "loving touching squeezing loving, touching, squeezing"
   },
   {
     artist: "Shania Twain",
     title: "Man! I Feel Like A Woman",
-    link: "https://www.youtube.com/watch?v=ZJL4UGSbeFg"
+    link: "https://www.youtube.com/watch?v=ZJL4UGSbeFg",
+    synonyms: "man i"
   },
   {
     artist: "Jimmy Buffett",
@@ -777,7 +832,8 @@ const songList = [
   {
     artist: "Tom Petty",
     title: "Mary Jane's Last Dance",
-    link: "https://www.youtube.com/watch?v=aowSGxim_O8"
+    link: "https://www.youtube.com/watch?v=aowSGxim_O8",
+    synonyms: "janes"
   },
   {
     artist: "Metallica",
@@ -792,222 +848,227 @@ const songList = [
   {
     artist: "Jimmy Eat World",
     title: "The Middle",
-    link: ""
+    link: "https://www.youtube.com/watch?v=oKsxPW6i3pM"
   },
   {
     artist: "Bobby 'Boris' Pickett",
     title: "Monster Mash",
-    link: ""
+    link: "https://www.youtube.com/watch?v=l2PoSljk8cE&ab_channel=TamaraBaum"
   },
   {
     artist: "Danzig",
     title: "Mother",
-    link: ""
+    link: "https://www.youtube.com/watch?v=Q7KLdET1lBM&ab_channel=greek90"
   },
   {
     artist: "Billy Joel",
     title: "Movin' Out (Anthony's Song)",
-    link: ""
+    link: "https://www.youtube.com/watch?v=cJtL8vWNZ4o",
+    synonyms: "moving out anthonys"
   },
   {
     artist: "The Killers",
     title: "Mr. Brightside",
-    link: ""
+    link: "https://www.youtube.com/watch?v=gGdGFtwCNBE",
+    synonyms: "mister"
   },
   {
     artist: "Red Hot Chili Peppers",
     title: "My Friends",
-    link: ""
+    link: "https://www.youtube.com/watch?v=0kT5w27YxyI"
   },
   {
     artist: "The Temptations",
     title: "My Girl",
-    link: ""
+    link: "https://www.youtube.com/watch?v=swSytFVMHuU&ab_channel=HoraceWinkk"
   },
   {
     artist: "Celine Dion",
     title: "My Heart Will Go On",
-    link: ""
+    link: "https://www.youtube.com/watch?v=CUmOFqQRkco"
   },
   {
     artist: "Billy Joel",
     title: "My Life",
-    link: ""
+    link: "https://www.youtube.com/watch?v=h3JFEfdK_Ls"
   },
   {
     artist: "Lit",
     title: "My Own Worst Enemy",
-    link: ""
+    link: "https://www.youtube.com/watch?v=sc5iTNVEOAg"
   },
   {
     artist: "Frank Sinatra",
     title: "New York, New York",
-    link: ""
+    link: "https://www.youtube.com/watch?v=EUrUfJW1JGk"
   },
   {
     artist: "Queens Of The Stone Age",
     title: "No One Knows",
-    link: ""
+    link: "https://www.youtube.com/watch?v=s88r_q7oufE"
   },
   {
     artist: "Blind Melon",
     title: "No Rain",
-    link: ""
+    link: "https://www.youtube.com/watch?v=3qVPNONdF58"
   },
   {
     artist: "TLC",
     title: "No Scrubs",
-    link: ""
+    link: "https://www.youtube.com/watch?v=FrLequ6dUdM"
   },
   {
     artist: "Weird Al Yankovic",
     title: "Ode To A Superhero",
-    link: ""
+    link: "https://www.youtube.com/watch?v=aDPkrtH-2FI"
   },
   {
     artist: "Billy Joel",
     title: "Only The Good Die Young",
-    link: ""
+    link: "https://www.youtube.com/watch?v=Crif5E67ar0"
   },
   {
     artist: "The Rolling Stones",
     title: "Paint It Black",
-    link: ""
+    link: "https://www.youtube.com/watch?v=O4irXQhgMqg"
   },
   {
     artist: "Van Halen",
     title: "Panama",
-    link: ""
+    link: "https://www.youtube.com/watch?v=fuKDBPw8wQA"
   },
   {
     artist: "The Presidents Of The United States Of America",
     title: "Peaches",
-    link: ""
+    link: "https://www.youtube.com/watch?v=wvAnQqVJ3XQ"
   },
   {
     artist: "People Are Strange",
     title: "The Doors",
-    link: ""
+    link: "https://www.youtube.com/watch?v=sezc05A4s2g"
   },
   {
     artist: "Billy Joel",
     title: "Piano Man",
-    link: ""
+    link: "https://www.youtube.com/watch?v=gxEPV4kolz0"
   },
   {
     artist: "Kid Rock & Sheryl Crow",
     title: "Picture",
-    link: ""
+    link: "https://www.youtube.com/watch?v=rKFx0MMqb48",
+    synonyms: "and ft"
   },
   {
     artist: "Janis Joplin",
     title: "Piece Of My Heart",
-    link: ""
+    link: "https://www.youtube.com/watch?v=7uG2gYE5KOs&ab_channel=enderca%C3%B1izalez"
   },
   {
     artist: "Stone Temple Pilots",
     title: "Plush",
-    link: ""
+    link: "https://www.youtube.com/watch?v=V5UOC0C0x8Q"
   },
   {
     artist: "Bell Biv Devoe",
     title: "Poison",
-    link: ""
+    link: "https://www.youtube.com/watch?v=RcbMW2-Goog&ab_channel=BellBivDeVoeVEVO"
   },
   {
     artist: "Lady Gaga",
     title: "Poker Face",
-    link: ""
+    link: "https://www.youtube.com/watch?v=bESGLojNYSo"
   },
   {
     artist: "The Toadies",
     title: "Possum Kingdom",
-    link: ""
+    link: "https://www.youtube.com/watch?v=EkwD5rQ-_d4"
   },
   {
     artist: "Def Leppard",
     title: "Pour Some Sugar On Me",
-    link: ""
+    link: "https://www.youtube.com/watch?v=0UIB9Y4OFPs"
   },
   {
     artist: "Creedence Clearwater Revival",
     title: "Proud Mary",
-    link: ""
+    link: "https://www.youtube.com/watch?v=5hid10EgMXE",
+    synonyms: "ccr"
   },
   {
     artist: "Tina Turner",
     title: "Proud Mary",
-    link: ""
+    link: "https://www.youtube.com/watch?v=TTfYnRQgKgY"
   },
   {
     artist: "Prince",
     title: "Purple Rain",
-    link: ""
+    link: "https://www.youtube.com/watch?v=S6Y1gohk5-A"
   },
   {
     artist: "Billy Idol",
     title: "Rebel Yell",
-    link: ""
+    link: "https://www.youtube.com/watch?v=VdphvuyaV_I"
   },
   {
     artist: "Warren G And Nate Dogg",
     title: "Regulate",
-    link: ""
+    link: "https://www.youtube.com/watch?v=1plPyJdXKIY",
+    synonyms: "ft ft."
   },
   {
     artist: "Johnny Cash",
     title: "Ring Of Fire",
-    link: ""
+    link: "https://www.youtube.com/watch?v=5WyLhwYFgmk"
   },
   {
     artist: "Elton John",
     title: "Rocketman",
-    link: ""
+    link: "https://www.youtube.com/watch?v=DtVBCG6ThDk"
   },
   {
     artist: "Adele",
     title: "Rolling In The Deep",
-    link: ""
+    link: "https://www.youtube.com/watch?v=rYEDA3JcQqw"
   },
   {
     artist: "Alice In Chains",
     title: "Rooster",
-    link: ""
+    link: "https://www.youtube.com/watch?v=uAE6Il6OTcs"
   },
   {
     artist: "The Police",
     title: "Roxanne",
-    link: ""
+    link: "https://www.youtube.com/watch?v=3T1c7GkzRQQ"
   },
   {
     artist: "Lorde",
     title: "Royals",
-    link: ""
+    link: "https://www.youtube.com/watch?v=nlcIKh6sBtc"
   },
   {
     artist: "Rancid",
     title: "Ruby Soho",
-    link: ""
+    link: "https://www.youtube.com/watch?v=0P9QMkm9Eew"
   },
   {
     artist: "Iron Maiden",
     title: "Run To The Hills",
-    link: ""
+    link: "https://www.youtube.com/watch?v=86URGgqONvA"
   },
   {
     artist: "Beastie Boys",
     title: "Sabotage",
-    link: ""
+    link: "https://www.youtube.com/watch?v=z5rRZdiu1UE"
   },
   {
     artist: "Weird Al Yankovic",
     title: "The Saga Begins",
-    link: ""
+    link: "https://www.youtube.com/watch?v=hEcjgJSqSRU"
   },
   {
     artist: "Sublime",
     title: "Santeria",
-    link: ""
+    link: "https://www.youtube.com/watch?v=AEYN5w4T_aM"
   },
   {
     artist: "Elton John",
@@ -1022,12 +1083,14 @@ const songList = [
   {
     artist: "Earth, Wind & Fire",
     title: "September",
-    link: ""
+    link: "",
+    synonyms: "and"
   },
   {
     artist: "The White Stripes",
     title: "Seven Nation Army",
-    link: ""
+    link: "",
+    synonyms: "7"
   },
   {
     artist: "Marcy Playground",
@@ -1413,20 +1476,20 @@ const reverseSortBySong = (arr) => {
 
 const populateTable = (arr) => {
   for (let song of arr) {
-    // Clone the first row variable (https://gomakethings.com/how-to-copy-or-clone-an-element-with-vanilla-js/).
+    // Clone the first row variable
     const rowClone = tableRow.cloneNode(true);
     rowClone.children[0].textContent = song.artist;
     rowClone.children[1].textContent = song.title;
     rowClone.children[2].setAttribute("href", song.link);
     tableBody.appendChild(rowClone);
     currentListNum += 1;
-    currentListLength.textContent = currentListNum.toString();
   } 
   // if no songs found, set current songs displayed to 0, and display text via css class
   if (arr.length === 0) {
     currentListLength.textContent = 0;
     tableBottomText.classList.add("songlist__text-song-unavailable--shown");
   } else {
+    currentListLength.textContent = currentListNum.toString();
     tableBottomText.classList.remove("songlist__text-song-unavailable--shown");
   }
   // reset current list count
@@ -1444,10 +1507,12 @@ const init = () => {
 search.addEventListener("input", function(e){
   const userSearch = search.value;
   const userPick = songList.filter((el) => {
-    if (el.title.toLowerCase().includes(userSearch.toLowerCase()
-    .trim()
-    .replace("46", "forty six").replace("and", "&")) || el.artist.toLowerCase().includes(userSearch.toLowerCase().trim())) {
+    if (el.title.toLowerCase().includes(userSearch.toLowerCase().trim()) || el.artist.toLowerCase().includes(userSearch.toLowerCase().trim())) {
       return el;
+    } else if (el.hasOwnProperty("synonyms")) {
+      if (el.synonyms.toLowerCase().includes(userSearch.toLowerCase().trim())) {
+        return el;
+      }
     }
   })
   tableBody.innerHTML = "";
