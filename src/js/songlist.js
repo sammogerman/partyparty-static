@@ -1,5 +1,6 @@
 const search = document.querySelector(".songlist__form-input");
 const randomSong = document.querySelector(".songlist__link-text");
+const topLink = document.querySelector(".songlist__top-link");
 const headRow = document.querySelector(".songlist__head-row");
 const artistHeader = document.querySelector(".songlist__head-item--artist");
 const songHeader = document.querySelector(".songlist__head-item--song");
@@ -64,7 +65,7 @@ const populateTable = (arr) => {
     const rowClone = tableRow.cloneNode(true);
     rowClone.children[0].textContent = song.artist;
     rowClone.children[1].textContent = song.title;
-    rowClone.children[2].setAttribute("href", song.link);
+    rowClone.children[2].children[0].children[0].href = song.link;
     tableBody.appendChild(rowClone);
     currentListNum += 1;
   } 
@@ -88,7 +89,7 @@ const init = () => {
   populateTable(songList);
 }
 
-search.addEventListener("input", function(e){
+search.addEventListener("input", function(){
   const userSearch = search.value;
   const userPick = songList.filter((el) => {
     if (el.title.toLowerCase().includes(userSearch.toLowerCase().trim()) || el.artist.toLowerCase().includes(userSearch.toLowerCase().trim())) {
@@ -113,7 +114,7 @@ randomSong.addEventListener("click", function(e){
 });
 
 // click listener on artist header to sort list by artist name and toggle sort icons
-artistHeader.addEventListener("click", function(){
+artistHeader.addEventListener("click", function(e){
   orderIcon[1].classList.remove(...iconClasses);
   orderIcon[1].classList.add("songlist__head-icon--unsorted");
   tableBody.innerHTML = "";
@@ -169,33 +170,25 @@ songHeader.addEventListener("click", function(){
   populateTable(songList);
 })
 
-init();
-
-
-//Get the button:
-const topLink = document.querySelector(".songlist__top-link");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
+// When the user scrolls down 1000px from the top of the document, show the button
+window.addEventListener("scroll", function() {
   if (window.innerWidth <= 720) {
-    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    if ((window.scrollY >= 1000) && (window.scrollY < 22000) && (!tableBottomText.classList.contains("songlist__text-song-unavailable--shown"))) {
       topLink.classList.add("songlist__top-link--visible");
     } else {
       topLink.classList.remove("songlist__top-link--visible");
     }
   } else {
-    if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+    if ((window.scrollY >= 1250) && (window.scrollY < 18000) && (!tableBottomText.classList.contains("songlist__text-song-unavailable--shown"))) {
       topLink.classList.add("songlist__top-link--visible");
     } else {
       topLink.classList.remove("songlist__top-link--visible");
     }
   }
-}
+})
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+// When the user clicks on the button, scroll to the top of the table
+topLink.addEventListener("click", function() {
   if (window.innerWidth <= 720) {
     document.body.scrollTop = 650; // For Safari
     document.documentElement.scrollTop = 650; // For Chrome, Firefox, IE and Opera
@@ -203,7 +196,6 @@ function topFunction() {
     document.body.scrollTop = 750; // For Safari
     document.documentElement.scrollTop = 750; // For Chrome, Firefox, IE and Opera
   }
+});
 
-}
-
-topLink.addEventListener("click", (topFunction));
+init();

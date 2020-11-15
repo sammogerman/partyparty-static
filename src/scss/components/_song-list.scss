@@ -76,6 +76,7 @@
 }
 
 .songlist__top-link {
+  visibility: hidden;
   bottom: 20px;
   cursor: pointer;
   left: 0px;
@@ -83,6 +84,11 @@
   right: 0px;
   text-align: center;
   z-index: 2;
+
+  @include breakpoint($from: medium) {
+    left: auto;
+    right: 40px;
+  }
 }
 
 .songlist__top-link-button {
