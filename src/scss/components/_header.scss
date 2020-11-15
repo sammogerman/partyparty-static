@@ -123,6 +123,10 @@
     color: $color-white;
   }
 
+  &:hover {
+    color: $color-white;
+  }
+
   @include breakpoint($from: medium) {
     padding: 40px 16px;
   }
@@ -144,8 +148,8 @@
   text-align: center;
   color: $color-white;
   display: block;
-//This padding is a temporary/eyeball value to make the entire vertical 
-//space clickable. Likely to change when we insert actual logo image.
+  // This padding is a temporary/eyeball value to make the entire vertical 
+  // space clickable. Likely to change when we insert actual logo image.
   padding: rhythm(1.8) 0; 
   text-decoration: none;
   width: 100%;
