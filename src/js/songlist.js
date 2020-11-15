@@ -1,3 +1,4 @@
+const navList = document.querySelector(".header__main-nav-list");
 const search = document.querySelector(".songlist__form-input");
 const randomSong = document.querySelector(".songlist__link-text");
 const topLink = document.querySelector(".songlist__top-link");
@@ -172,20 +173,23 @@ songHeader.addEventListener("click", function(){
 
 // When the user scrolls down 1000px from the top of the document, show the button
 window.addEventListener("scroll", function() {
-  if (window.innerWidth <= 720) {
-    if ((window.scrollY >= 1000) && (window.scrollY < 22000) && (!tableBottomText.classList.contains("songlist__text-song-unavailable--shown"))) {
-      topLink.classList.add("songlist__top-link--visible");
+  if (!navList.classList.contains("header__main-nav-list--expanded")) {
+    if (window.innerWidth <= 720) {
+      if ((window.scrollY >= 1000) && (window.scrollY < 22000) && (!tableBottomText.classList.contains("songlist__text-song-unavailable--shown"))) {
+        topLink.classList.add("songlist__top-link--visible");
+      } else {
+        topLink.classList.remove("songlist__top-link--visible");
+      }
     } else {
-      topLink.classList.remove("songlist__top-link--visible");
-    }
-  } else {
-    if ((window.scrollY >= 1250) && (window.scrollY < 18000) && (!tableBottomText.classList.contains("songlist__text-song-unavailable--shown"))) {
-      topLink.classList.add("songlist__top-link--visible");
-    } else {
-      topLink.classList.remove("songlist__top-link--visible");
+      if ((window.scrollY >= 1250) && (window.scrollY < 18000) && (!tableBottomText.classList.contains("songlist__text-song-unavailable--shown"))) {
+        topLink.classList.add("songlist__top-link--visible");
+      } else {
+        topLink.classList.remove("songlist__top-link--visible");
+      }
     }
   }
-})
+  })
+  
 
 // When the user clicks on the button, scroll to the top of the table
 topLink.addEventListener("click", function() {

@@ -1,8 +1,8 @@
 //This outer code will ensure the code doesn't execute until all of the elements have been loaded on the page.
 document.addEventListener("DOMContentLoaded", function() {
   
-  let headerButton = document.querySelector(".header__button");
-  let navList = document.querySelector(".header__main-nav-list");
+  const headerButton = document.querySelector(".header__button");
+  const navList = document.querySelector(".header__main-nav-list");
 
   //listens for click on nav button and toggles the nav list to be hidden or visible.
   headerButton.addEventListener("click", function(){
