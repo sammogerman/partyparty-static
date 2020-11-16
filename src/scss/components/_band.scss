@@ -109,6 +109,7 @@
 .band__member-name {
   margin-bottom: rhythm(1);
   margin-top: rhythm(2);
+  text-align: center;
 
   @include breakpoint($from: medium) {
     margin-top: rhythm(3);

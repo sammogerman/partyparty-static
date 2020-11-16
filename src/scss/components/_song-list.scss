@@ -1,0 +1,344 @@
+.songlist {
+  @include container();
+  margin-bottom: rhythm(15);
+  
+  @include breakpoint($from: medium) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: rhythm(2);
+  }
+    @include breakpoint($from: large) {
+      column-gap: rhythm(3);
+      margin-bottom: rhythm(20);
+  }
+}
+
+.songlist__body {
+  margin-bottom: rhythm(6);
+  text-align: center;
+
+  @include breakpoint($from: medium) {
+    grid-column: 2/12;
+    margin-bottom: rhythm(6);
+    text-align: center;
+  }
+
+  @include breakpoint($from: large) {
+    grid-column: 4/10;
+    margin-bottom: rhythm(7);
+  }
+}
+
+.songlist__form-label {
+  @include form-label;
+  margin-bottom: rhythm(2);
+}
+
+.songlist__form-input {
+  @include form-input;
+  background-image: url("/assets/icons/search.svg");
+  background-position: left rhythm(2) center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 28px;
+  height: 56px;
+  padding-left: rhythm(7);
+  width: 100%;
+
+  @include breakpoint($from: medium) {
+    width: 90%; //to match how it fits in design grid
+  }
+
+  @include breakpoint($from: large) {
+    width: 100%; //to match design grid
+  }
+}
+
+.songlist__link-text {
+  color: $color-white;
+
+  &:visited {
+    color: $color-white;
+  }
+}
+
+.songlist__text {
+  margin-bottom: rhythm(1);
+  margin-top: rhythm(4);
+}
+
+.songlist__link-text {
+  color: $color-white;
+  font-size: 20px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+}
+
+.songlist__top-link {
+  visibility: hidden;
+  bottom: 20px;
+  cursor: pointer;
+  left: 0px;
+  position: fixed;
+  right: 0px;
+  text-align: center;
+  z-index: 2;
+
+  @include breakpoint($from: medium) {
+    left: auto;
+    right: 40px;
+  }
+}
+
+.songlist__top-link-button {
+  visibility: hidden;
+
+  .songlist__top-link--visible & {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.songlist__table {
+  border: none;
+  background-color: $color-white;
+  margin: 0 rhythm(-2);
+  padding: 0;
+  position: relative;
+
+  @include breakpoint($until: medium) {
+    display: block;
+  }
+
+  @include breakpoint($from: medium) {
+    border-collapse: collapse;
+    grid-column: 1/13;
+    margin: 0;
+  }
+
+  @include breakpoint($from: large) {
+    grid-column: 2/12;
+  }
+}
+
+.songlist__table-head {
+  font-size: 20px;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+
+  @include breakpoint($until: medium) {
+    display: block;
+    position: sticky;
+    top: rhythm(6);
+    z-index: 0;
+  }
+}
+
+.songlist__head-row {
+  @include breakpoint($until: medium) {
+    display: flex;
+  }
+}
+
+.songlist__head-item {
+  padding: rhythm(2);
+
+
+  @include breakpoint($from: medium) {
+    position: sticky;
+    z-index: 0;
+    top: 99px;
+  }
+
+  @include breakpoint($from: large) {
+    top: 102px;
+  }
+}
+
+.songlist__head-item--artist {
+  @include table-header-color-states;
+  background-color: $color-blue;
+  width: 50%;
+
+  .songlist__head-row--artist-clicked & {
+    @include table-header-color-states;
+    background-color: $color-blue-active;
+  }
+
+  @include breakpoint($from: medium) {
+    width: 45%;
+  }
+}
+
+.songlist__head-item--song {
+  @include table-header-color-states;
+  background-color: $color-blue-active;
+  border-left: 1px solid $color-silver;
+  width: 50%;
+
+  .songlist__head-row--artist-clicked & {
+    @include table-header-color-states;
+    background-color: $color-blue;
+  }
+
+  @include breakpoint($from: medium) {
+    width: 45%;
+  }
+}
+
+.songlist__head-item--link {
+  background-color: $color-blue;
+
+  @include breakpoint($until: medium) {
+    display: none;
+  }
+
+  @include breakpoint($from: medium) {
+    border-left: 1px solid $color-silver;
+    padding: rhythm(2);
+    width: 10%;
+  }
+}
+
+.songlist__head-elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.songlist__icon--unselected {
+  .songlist__head-icon--sorted &, 
+  .songlist__head-icon--reversed & {
+    display: none;
+  }
+}
+
+.songlist__icon--sort {
+  display: none;
+
+  .songlist__head-icon--sorted & {
+    display: inline-block;
+  }
+  .songlist__head-icon--reversed & {
+    display: none;
+  }
+}
+
+.songlist__icon--reverse {
+  display: none;
+
+  .songlist__head-icon--reversed & {
+    display: inline-block;
+  }
+
+  .songlist__head-icon--sorted & {
+    display: none;
+  }
+}
+
+.songlist__table-body {
+  @include breakpoint($until: medium) {
+    display: block; 
+  }
+}
+
+.songlist__body-row {
+  &:nth-child(even) {
+    background-color: $color-silver-30;
+  }
+
+  @include breakpoint($until: medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: rhythm(1) rhythm(2);
+  }
+  
+  @include breakpoint($from: medium) {
+    margin: 0;
+  }
+}
+
+.songlist__body-item {
+  @include breakpoint($from: medium) {
+    padding: rhythm(2);
+  }
+}
+
+.songlist__body-item--artist {
+  color: $color-black;
+  font-size: 20px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.25px;
+  line-height: 30px;
+
+  @include breakpoint($until: medium) {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  }
+}
+
+.songlist__body-item--song {
+  @include body-1;
+
+  @include breakpoint($until: medium) {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  @include breakpoint($from: medium) {
+    border-left: 1px solid $color-silver;
+  }
+}
+
+.songlist__body-item--link {
+  @include breakpoint($until: medium) {
+    align-self: center;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    justify-self: flex-end;
+  }
+
+  @include breakpoint($from: medium) {
+    border-left: 1px solid $color-silver;
+    padding: rhythm(2);
+  }
+}
+
+.songlist__link-container {
+  display: flex;
+  justify-content: center;
+}
+
+.songlist__link-container-image {
+  height: 24px;
+  width: auto;
+
+  @include breakpoint($from: medium) {
+    height: 32px;
+  }
+}
+
+.songlist__table-bottom-text {
+  grid-column: 1/13;
+  margin-top: rhythm(2);
+  text-align: center;
+
+  @include breakpoint($from: large) {
+    margin-top: rhythm(3);
+  }
+}
+.songlist__text-song-unavailable {
+  display: none;
+  grid-column: 1/13;
+  margin-bottom: rhythm(2);
+  text-align: center;
+
+  .songlist__text-song-unavailable--shown & {
+    display: inline-block;
+  }
+
+  @include breakpoint($from: large) {
+    margin-bottom: rhythm(3);
+  }
+}
