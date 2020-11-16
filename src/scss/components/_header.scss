@@ -2,7 +2,7 @@
   background-color: $color-black;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .header__main-nav {
@@ -123,6 +123,16 @@
     color: $color-white;
   }
 
+  &:hover {
+    color: $color-white;
+    
+    .header__link-text {
+      border-bottom: 4px solid $color-turquise;
+    }
+  }
+
+ 
+
   @include breakpoint($from: medium) {
     padding: 40px 16px;
   }
@@ -131,6 +141,8 @@
     padding: rhythm(5) rhythm(3.5) rhythm(5) rhythm(3.5);
   }
 }
+
+
 
 //Adds active class to nav link, which applies the underline to current page
 .header__main-nav-link--active {
@@ -144,8 +156,8 @@
   text-align: center;
   color: $color-white;
   display: block;
-//This padding is a temporary/eyeball value to make the entire vertical 
-//space clickable. Likely to change when we insert actual logo image.
+  // This padding is a temporary/eyeball value to make the entire vertical 
+  // space clickable. Likely to change when we insert actual logo image.
   padding: rhythm(1.8) 0; 
   text-decoration: none;
   width: 100%;
