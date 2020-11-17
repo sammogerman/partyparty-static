@@ -105,21 +105,6 @@
   }
 }
 
-.band__image-pic {
-  border-radius: 50%;
-  height: rhythm(15);
-  width: rhythm(15);
-
-  @include breakpoint($from: medium) {
-    height: 188px;
-    width: 188px;
-  }
-  @include breakpoint($from: large) {
-    height: 208px;
-    width: 208px;
-  }
-}
-
 .band__member-name {
   margin-bottom: rhythm(1);
   margin-top: rhythm(2);
