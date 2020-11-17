@@ -26,11 +26,21 @@
   }
 }
 
-.header__logo {
-  font-weight: $font-weight-medium;
+.header__logo-link-image {
+  height: rhythm(6);
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: auto;
+
+  @include breakpoint($from: medium) {
+    height: 99px;
+    left: 25px;
+  }
 
   @include breakpoint($from: large) {
-    font-size: 20px;
+    height: 102px;
+    left: 55px;
   }
 }
 
