@@ -84,22 +84,19 @@
 }
 
 .events__image {
-  background-color: gray;
-  height: 340px;
-  margin-bottom: 137px;
+  height: auto;
   margin-top: rhythm(5);
+  width: 100%;
 
   @include breakpoint ($from: medium) {
-    grid-column: 8/13;
+    grid-column: 9/13;
     grid-row: 2/3;
-    height: 303px;
-    margin-top: 58px;
+    margin: 56px 0;
   }
 
   @include breakpoint ($from: large) {
-    height: 458px;
+    grid-column: 8/13;
     margin-bottom: rhythm(10);
-    margin-top: 0;
   } 
 }
 
