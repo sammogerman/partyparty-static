@@ -26,21 +26,25 @@
   }
 }
 
+.header__logo {
+  padding: 0;
+}
+
+.header__logo-link {
+  padding: 0;
+}
+
 .header__logo-link-image {
   height: rhythm(6);
   margin: 0;
-  position: absolute;
-  top: 0;
   width: auto;
 
   @include breakpoint($from: medium) {
     height: 99px;
-    left: 25px;
   }
 
   @include breakpoint($from: large) {
     height: 102px;
-    left: 55px;
   }
 }
 
