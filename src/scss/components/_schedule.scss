@@ -35,31 +35,30 @@
     grid-column: 1/13;
     flex-direction: row;
     margin: 0;
-    padding: rhythm(5) 0;
+    padding: rhythm(5) 0 rhythm(5) rhythm(2);
   }
 
   @include breakpoint ($from: large) {
     column-gap: rhythm(3);
-    padding: rhythm(2) 0;
+    padding: rhythm(2) 0 rhythm(2) rhythm(2);
   }
 }
 
 .schedule__featured-event-image {
   justify-self: center;
-  background-color: grey;
-  height: 251px;
+  height: auto;
   margin-bottom: rhythm(3);
   width: 100%;
 
   @include breakpoint ($from: medium) {
     grid-column: 1/6;
     height: 198px;
+    width: auto;
     margin: 0;
-    width: 90%;
   }
 
   @include breakpoint ($from: large) {
-    height: 380px;
+    height: 250px;
   }
 }
 
