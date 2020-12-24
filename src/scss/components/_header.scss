@@ -9,7 +9,7 @@
   @include container();
   align-items: center;
   display: flex;
-  height: rhythm(6);
+  height: rhythm(8);
   justify-content: space-between;
   padding: 14px rhythm(2);
 
@@ -35,7 +35,7 @@
 }
 
 .header__logo-link-image {
-  height: rhythm(6);
+  height: rhythm(8);
   margin: 0;
   width: auto;
 
