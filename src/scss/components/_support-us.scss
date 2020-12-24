@@ -67,9 +67,6 @@
 .support-us__title{
   margin-bottom: rhythm(3);
 
-  //I just added this because it looked kinda smooshed after adding to the top-values 
-  //of the background shapes. Idk if it's necessary and we'll probably change it when we
-  //add the events component to the mix.
   @include breakpoint($until: medium) {
     padding-top: 100px; 
   }
