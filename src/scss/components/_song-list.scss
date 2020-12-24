@@ -46,11 +46,11 @@
   width: 100%;
 
   @include breakpoint($from: medium) {
-    width: 90%; //to match how it fits in design grid
+    width: 90%;
   }
 
   @include breakpoint($from: large) {
-    width: 100%; //to match design grid
+    width: 100%;
   }
 }
 
@@ -103,18 +103,19 @@
 }
 
 .songlist__table {
-  border: none;
   background-color: $color-white;
+  border: none;
+  border-collapse: collapse;
   margin: 0 rhythm(-2);
   padding: 0;
   position: relative;
 
   @include breakpoint($until: medium) {
     display: block;
+    width: 109%;
   }
 
   @include breakpoint($from: medium) {
-    border-collapse: collapse;
     grid-column: 1/13;
     margin: 0;
   }
