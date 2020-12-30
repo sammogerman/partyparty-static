@@ -1,4 +1,5 @@
 .band {
+  overflow: hidden;
   padding-bottom: 150px;
   padding-top: rhythm(26);
   position: relative;
@@ -24,12 +25,12 @@
 
 .band:after {
   background-color: $color-turquise-screen;
-  transform: perspective(500px) rotateY(9deg);
+  transform: perspective(500px) rotateY(7deg);
   content: '';
   mix-blend-mode: screen;
   position: absolute;
   top: 120px;
-  bottom: 35px;
+  bottom: 65px;
   left: -200px;
   right: -200px;
   z-index: -1;
