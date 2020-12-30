@@ -60,6 +60,9 @@
 
 .page-form__form-input {
   @include form-input;
+
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .page-form__form-input:focus {

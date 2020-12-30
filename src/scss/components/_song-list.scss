@@ -112,7 +112,7 @@
 
   @include breakpoint($until: medium) {
     display: block;
-    width: 109%;
+    width: calc(100% + 32px);
   }
 
   @include breakpoint($from: medium) {

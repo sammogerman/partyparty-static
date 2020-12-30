@@ -12,6 +12,8 @@
   padding: 13px 37px;
   cursor: pointer;
   text-decoration: none;
+  -webkit-appearance: none;
+  appearance: none;
 
   &:visited {
     color: $color-white;
