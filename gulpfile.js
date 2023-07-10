@@ -10,11 +10,9 @@ const browsersync = require('browser-sync');
 const concat = require('gulp-concat');
 const flatmap = require('gulp-flatmap');
 const nodemon = require('gulp-nodemon');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const streamqueue = require('streamqueue');
-
-sass.compiler = require('node-sass');
 
 /**
  * Copies the static src/ image assets, such as icons, into the dist/ directory.
