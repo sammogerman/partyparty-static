@@ -6,7 +6,7 @@
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "browser-sync": "^2.29.3",
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
